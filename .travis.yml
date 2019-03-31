@@ -1,0 +1,31 @@
+language: go
+
+branches:
+  only:
+  - hugo-source
+
+before_install:
+  - export TZ='Asia/Shanghai'
+
+install:
+  - go get github.com/gohugoio/hugo
+
+script:
+  - hugo -t academic
+
+after_success:
+  - cd public
+  - git config --global user.name "dldylan"
+  - git config --global user.email "zjpjzdl@qq.com"
+  - git init
+  - git add .
+  - git commit -m "Travis CI Build ${TRAVIS_BUILD_NUMBER}"
+  - git push --force "https://${GH_TOKEN}@github.com/dldylan/dldylan.github.io.git" master:master
+  - git push --force "https://dldylan:${CODING_TOKEN}@git.dev.tencent.com/dldylan/dldylan.coding.me.git" master:master
+
+notifications:
+  email:
+    recipients:
+      - zjpjzdl@qq.com
+    on_success: always # default: change
+    on_failure: always # default: always
