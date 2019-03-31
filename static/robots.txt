@@ -1,0 +1,7 @@
+User-agent: *
+Disallow: /js
+Disallow: /img
+Disallow: /post/page
+Disallow: /tags
+
+Sitemap: https://dongleizhang.com/sitemap.xml
