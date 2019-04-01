@@ -4,4 +4,4 @@ Disallow: /img
 Disallow: /post/page
 Disallow: /tags
 
-Sitemap: https://dongleizhang.com/sitemap.xml
+Sitemap: http://dongleizhang.com/sitemap.xml
