@@ -1,5 +1,5 @@
 ## Academic Homepage
-[![Build Status](https://travis-ci.com/dldylan/dldylan.github.io.svg?branch=hugo-source)](https://travis-ci.com/dldylan/dldylan.github.io)
+[![Build Status](https://travis-ci.com/dldylan/dldylan.github.io.svg?branch=hugo-source)](https://travis-ci.com/dldylan/dldylan.github.io) [![Netlify Status](https://api.netlify.com/api/v1/badges/bbc02925-c90f-4eef-b1e1-167b7b39a560/deploy-status)](https://app.netlify.com/sites/dldylan/deploys)
 
 This repo contains all codes of my academic homepage. `hugo-source` branch contains source files and `master` branch includes web files published by Travis CI automatically. `CNAME` should be put in `/static` folder if you would like to host it on GitHub Pages.
 
