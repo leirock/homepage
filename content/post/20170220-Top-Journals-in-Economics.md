@@ -1,6 +1,7 @@
 ---
 title: Top Journals in Economics
-categories: list
+categories:
+  - list
 tags:
   - econ
   - journal

@@ -1,6 +1,7 @@
 ---
 title: Antimonopoly Law Legislation in USA and China
-categories: essay
+categories:
+  - essay
 tags:
   - antitrust
   - law

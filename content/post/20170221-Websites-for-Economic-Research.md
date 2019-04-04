@@ -1,9 +1,9 @@
 ---
 title: Websites for Economic Study & Research
-categories: list
+categories:
+  - list
 tags:
   - econ
-no_reward: true
 date: 2017-02-21 18:30:00
 type: post
 ---
