@@ -1,16 +1,11 @@
 ---
 title: Antimonopoly Law Legislation in USA and China
-categories:
-  - essay
+categories: essay
 tags:
   - antitrust
   - law
-abbrlink: fdbd388d
 date: 2016-12-16 18:31:22
-comments:
-mathjax:
-no_toc:
-no_reward:
+type: post
 ---
 > This is the essay of CUHK PhD level course *Industrial Organization*.
 

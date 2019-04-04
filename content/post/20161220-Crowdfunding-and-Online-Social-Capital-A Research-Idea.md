@@ -1,16 +1,11 @@
 ---
 title: 'Crowdfunding and Online Social Capital: A Research Idea'
-categories:
-  - idea
+categories: idea
 tags:
   - crowdfunding
   - econ
-abbrlink: 3b22d99a
 date: 2016-12-20 01:35:21
-mathjax:
-no_toc:
-comments:
-no_reward:
+type: post
 ---
 ## 1. Background
 

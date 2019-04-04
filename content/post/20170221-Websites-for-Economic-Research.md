@@ -1,15 +1,11 @@
 ---
 title: Websites for Economic Study & Research
-categories:
-  - list
+categories: list
 tags:
   - econ
-abbrlink: ceda0f99
 no_reward: true
 date: 2017-02-21 18:30:00
-mathjax:
-no_toc:
-comments:
+type: post
 ---
 ### Papers and Journals
 - [EconPaper](http://econpapers.repec.org/)

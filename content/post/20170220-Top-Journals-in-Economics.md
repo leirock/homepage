@@ -1,16 +1,11 @@
 ---
 title: Top Journals in Economics
-categories:
-  - list
+categories: list
 tags:
   - econ
   - journal
-abbrlink: 40e31eef
-no_reward: true
 date: 2017-02-20 09:30:00
-mathjax:
-no_toc:
-comments:
+type: post
 ---
 The rank of this list is based on [SUFE journal list](http://econ.shufe.edu.cn/se/kxyj_con/87/1489).
 
