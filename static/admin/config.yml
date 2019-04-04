@@ -86,8 +86,8 @@ collections: # A list of collections the CMS should be able to edit
             name: "main"
             widget: "list"
             fields:
-              - {label: "名称", name: "name", widget: "string", default: ""},
-              - {label: "链接（首页插件用 #）", name: "url", widget: "string", default: ""},
+              - {label: "名称", name: "name", widget: "string", default: ""}
+              - {label: "链接（首页插件用 #）", name: "url", widget: "string", default: ""}
               - {label: "次序", name: "weight", widget: "number", min: 1, step: 1, default: ""}
 
 
