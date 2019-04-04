@@ -72,12 +72,4 @@ collections: # A list of collections the CMS should be able to edit
         fields:
           - {label: "标题", name: "title", widget: "string"}
           - {label: "正文", name: "body", widget: "markdown"}
-      - file: "/content/contact/index.md"
-        label: "Contact"
-        name: "contact"
-        fields:
-          - {label: "标题", name: "title", widget: "string"}
-          - {label: "正文", name: "body", widget: "markdown"}
-
-
 
