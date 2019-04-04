@@ -16,7 +16,6 @@ show_preview_links: true
 #   clean_accents: true
 #   sanitize_replacement: "_"  # default: "-"
 
-
 collections: # A list of collections the CMS should be able to edit
   - name: "post" # Used in routes, ie.: /admin/collections/:slug/edit
     label: "科研动态" # Used in the UI, ie.: "New Post"
@@ -40,54 +39,55 @@ collections: # A list of collections the CMS should be able to edit
         fields:
           - {label: "姓名", name: "name", widget: "string"}
           - {label: "科研兴趣", name: "interests", widget: "list",, default: [""]}
-          - {label: "学历", name: "education", widget: "object", fields: [
-              {label: "courses", name: "courses", widget: "list", fields: [
-                {label: Course, name: course , widget: string},
-                {label: Institution, name: institution, widget: string},
-                {label: Year, name: year, default: 2010}]}]}
-          - { label: "Body", name: "body", widget: "markdown", required: false }
-  - name: "research" # Used in routes, ie.: /admin/collections/:slug/edit
-    label: "科研" # Used in the UI, ie.: "New Post"
-    folder: "/content/research" # The path to the folder where the documents are stored
-    create: false # Allow users to create new documents in this collection
-    fields: # The fields each document in this collection have
-      - {label: "标题", name: "title", widget: "string"}
-      - {label: "正文", name: "body", widget: "markdown"}
-  - name: "contact" # Used in routes, ie.: /admin/collections/:slug/edit
-    label: "联络方式" # Used in the UI, ie.: "New Post"
-    folder: "/content/contact" # The path to the folder where the documents are stored
-    create: false # Allow users to create new documents in this collection
-    fields: # The fields each document in this collection have
-      - {label: "标题", name: "title", widget: "string"}
-      - {label: "正文", name: "body", widget: "markdown"}
-  - name: "home" # Used in routes, ie.: /admin/collections/:slug/edit
-    label: "首页设置" # Used in the UI, ie.: "New Post"
-    folder: "/content/author/admin" # The path to the folder where the documents are stored
-    create: false # Allow users to create new documents in this collection
-    fields: # The fields each document in this collection have
-      - {label: "姓名", name: "name", widget: "string"}
-      - {label: "科研兴趣", name: "interests", widget: "list",, default: [""]}
-      - {label: "职位身份", name: "role", widget: "string"}
-      - label: "所属组织机构"
-        name: "organizations"
-        widget: list
+          - {label: "职位身份", name: "role", widget: "string"}
+          - label: "所属组织机构"
+            name: "organizations"
+            widget: list
+            fields:
+              - {label: "组织名称", name: name, widget: string}
+              - {label: "链接", name: url, widget: string, default: "https://"}
+          - label: "学习经历"
+            name: "education"
+            widget: "object"
+            fields: 
+              - label: "学位"
+                name: "courses"
+                widget: "list"
+                allow_add: false
+                fields:
+                  - {label: "学位课程", name: "course", widget: "string"} 
+                  - {label: "学校", name: "institution", widget: "string"} 
+                  - {label: "毕业年份", name: "year", widget: "string"} 
+          - label: "社交媒体"
+            name: "social"
+            widget: list
+            fields:
+              - {label: "图标", name: "icon", widget: "string"} 
+              - {label: "图标库", name: "icon_pack", widget: "select", options: ["fab", "fas", "ai"]} 
+              - {label: "链接", name: "link", widget: "string", default: "https://"} 
+          - {label: "个人简介", name: "body", widget: "markdown"}
+      - file: "/content/research/index.md"
+        label: "Research"
+        name: "research"
         fields:
-          - {label: "组织名称", name: name, widget: string}
-          - {label: "链接", name: url, widget: string, default: "https://"}
-      - label: "学历"
-        name: "education.courses"
-        widget: list
-        allow_add: false
+          - {label: "标题", name: "title", widget: "string"}
+          - {label: "正文", name: "body", widget: "markdown"}
+      - file: "/content/contact/index.md"
+        label: "Contact"
+        name: "contact"
         fields:
-          - {label: "学位", name: "course", widget: "string"} 
-          - {label: "学校", name: "institution", widget: "string"} 
-          - {label: "毕业年份", name: "year", widget: "string"} 
-      - label: "社交媒体"
-        name: "social"
-        widget: list
+          - {label: "标题", name: "title", widget: "string"}
+          - {label: "正文", name: "body", widget: "markdown"}
+      - file: "/config/_default/menus.toml"
+        label: "Menu"
+        name: "menu"
         fields:
-          - {label: "图标", name: "icon", widget: "string"} 
-          - {label: "图标库", name: "icon_pack", widget: "select", options: ["fab", "fas", "ai"]} 
-          - {label: "链接", name: "link", widget: "string", default: "https://"} 
-      - {label: "个人简介", name: "body", widget: "markdown"}
+          - label: "Main"
+            name: "main"
+            widget: "list"
+            fields:
+              - {label: "名称", name: "name", widget: "string", default: ""},
+              - {label: "链接（首页插件用 #）", name: "url", widget: "string", default: ""},
+              - {label: "次序", name: "weight", widget: "number", min: 1, step: 1, default: ""}
+
 
