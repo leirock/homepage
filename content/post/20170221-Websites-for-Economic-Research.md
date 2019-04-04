@@ -6,6 +6,7 @@ tags:
   - econ
 date: 2017-02-21 18:30:00
 type: post
+math: false
 ---
 ### Papers and Journals
 - [EconPaper](http://econpapers.repec.org/)

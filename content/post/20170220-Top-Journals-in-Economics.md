@@ -7,6 +7,7 @@ tags:
   - journal
 date: 2017-02-20 09:30:00
 type: post
+math: false
 ---
 The rank of this list is based on [SUFE journal list](http://econ.shufe.edu.cn/se/kxyj_con/87/1489).
 

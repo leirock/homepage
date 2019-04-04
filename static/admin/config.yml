@@ -29,7 +29,7 @@ collections: # A list of collections the CMS should be able to edit
       - {label: "分类", name: "categories", widget: "list",, default: [""]}
       - {label: "标签", name: "tags", widget: "list", default: [""]}
       - {label: "发布日期", name: "date", widget: "datetime", format: YYYY-MM-DD HH:mm:ss}
-      - {label: "识别符", name: "type", widget: "string", default: "post"}
+      - {label: "数学符号", name: "math", widget: "boolean", default: "false"}
       - {label: "正文", name: "body", widget: "markdown"}
   - name: "research" # Used in routes, ie.: /admin/collections/:slug/edit
     label: "科研" # Used in the UI, ie.: "New Post"
@@ -53,25 +53,26 @@ collections: # A list of collections the CMS should be able to edit
       - {label: "姓名", name: "name", widget: "string"}
       - {label: "科研兴趣", name: "interests", widget: "list",, default: [""]}
       - {label: "职位身份", name: "role", widget: "string"}
-      - label: 组织
-        name: organizations
+      - label: "所属组织机构"
+        name: "organizations"
         widget: list
         fields:
-          - {label: 组织名称, name: name, widget: string, default: ""}
-          - {label: 链接, name: url, widget: string, default: ""}
-      - label: 学历
-        name: education.courses
+          - {label: "组织名称", name: name, widget: string}
+          - {label: "链接", name: url, widget: string, default: "https://"}
+      - label: "学历"
+        name: "education.courses"
         widget: list
+        allow_add: false
         fields:
           - {label: "学位", name: "course", widget: "string"} 
           - {label: "学校", name: "institution", widget: "string"} 
           - {label: "毕业年份", name: "year", widget: "string"} 
-      - label: 社交媒体
-        name: social
+      - label: "社交媒体"
+        name: "social"
         widget: list
         fields:
           - {label: "图标", name: "icon", widget: "string"} 
           - {label: "图标库", name: "icon_pack", widget: "select", options: ["fab", "fas", "ai"]} 
-          - {label: "链接", name: "link", widget: "string"} 
+          - {label: "链接", name: "link", widget: "string", default: "https://"} 
       - {label: "个人简介", name: "body", widget: "markdown"}
 
