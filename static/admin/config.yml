@@ -72,4 +72,20 @@ collections: # A list of collections the CMS should be able to edit
         fields:
           - {label: "标题", name: "title", widget: "string"}
           - {label: "正文", name: "body", widget: "markdown"}
-
+      - file: "/content/contact/index.md"
+        label: "Contact"
+        name: "contact"
+        fields:
+          - {label: "标题", name: "title", widget: "string"}
+          - {label: "正文", name: "body", widget: "markdown"}
+      - file: "/config/_default/menus.toml"
+        label: "Menu"
+        name: "menu"
+        fields:
+          - label: "Main"
+            name: "main"
+            widget: "list"
+            fields:
+              - {label: "名称", name: "name", widget: "string"}
+              - {label: "链接（首页插件用 #）", name: "url", widget: "string"}
+              - {label: "次序", name: "weight", widget: "number", min: 1, step: 1}
