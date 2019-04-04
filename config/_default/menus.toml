@@ -6,33 +6,33 @@
 [[main]]
   name = "Home"
   url = "#about"
-  weight = 10
+  weight = 1
 
 [[main]]
   name = "Posts"
   url = "/post/"
-  weight = 20
+  weight = 2
 
 [[main]]
   name = "Research"
   url = "/research/"
-  weight = 30
+  weight = 3
 
 [[main]]
   name = "Contact"
   url = "/contact/"
-  weight = 60
+  weight = 6
 
 [[main]]
   name = "Blog"
   url = "https://blog.dongleizhang.com/"
-  weight = 70
+  weight = 7
 
 # Link to a PDF of your resume/CV from the menu.
 # To enable, copy your resume/CV to `static/files/cv.pdf` and uncomment the lines below.
  [[main]]
     name = "CV"
     url = "https://banbanramble-1256060851.cos.ap-shanghai.myqcloud.com/file/CV_Donglei_Zhang.pdf"
-    weight = 80
+    weight = 8
 
 
