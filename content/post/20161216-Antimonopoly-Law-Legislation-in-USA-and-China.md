@@ -6,7 +6,6 @@ tags:
   - antitrust
   - law
 date: '2016-12-16 18:31:22'
-type: post
 math: false
 ---
 > This is the essay of CUHK PhD level course *Industrial Organization*.
