@@ -5,7 +5,7 @@ categories:
 tags:
   - antitrust
   - law
-date: 2016-12-16 18:31:22
+date: '2016-12-16 18:31:22'
 type: post
 math: false
 ---

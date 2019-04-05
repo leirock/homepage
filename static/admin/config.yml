@@ -27,8 +27,8 @@ collections: # A list of collections the CMS should be able to edit
       - {label: "标题", name: "title", widget: "string"}
       - {label: "分类", name: "categories", widget: "list",, default: [""]}
       - {label: "标签", name: "tags", widget: "list", default: [""]}
-      - {label: "发布日期", name: "date", widget: "datetime", format: YYYY-MM-DD HH:mm:ss}
-      - {label: "LaTex", name: "math", widget: "boolean", default: "false"}
+      - {label: "发布日期", name: "date", widget: "datetime", format: "YYYY-MM-DD HH:mm:ss"}
+      - {label: "LaTex", name: "math", widget: "boolean", default: false}
       - {label: "正文", name: "body", widget: "markdown"}
   - name: "pages"
     label: "分页设置"
@@ -42,10 +42,10 @@ collections: # A list of collections the CMS should be able to edit
           - {label: "职位身份", name: "role", widget: "string"}
           - label: "所属组织机构"
             name: "organizations"
-            widget: list
+            widget: "list"
             fields:
-              - {label: "组织名称", name: name, widget: string}
-              - {label: "链接", name: url, widget: string, default: "https://"}
+              - {label: "组织名称", name: "name", widget: "string"}
+              - {label: "链接", name: "url", widget: "string", default: "https://"}
           - label: "学习经历"
             name: "education"
             widget: "object"
@@ -60,7 +60,7 @@ collections: # A list of collections the CMS should be able to edit
                   - {label: "毕业年份", name: "year", widget: "string"} 
           - label: "社交媒体"
             name: "social"
-            widget: list
+            widget: "list"
             fields:
               - {label: "图标", name: "icon", widget: "string"} 
               - {label: "图标库", name: "icon_pack", widget: "select", options: ["fab", "fas", "ai"]} 
