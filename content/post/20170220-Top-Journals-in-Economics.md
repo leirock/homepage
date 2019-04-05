@@ -5,7 +5,7 @@ categories:
 tags:
   - econ
   - journal
-date: 2017-02-20 09:30:00
+date: '2017-02-20 09:30:00'
 type: post
 math: false
 ---
