@@ -28,7 +28,7 @@ collections: # A list of collections the CMS should be able to edit
       - {label: "分类", name: "categories", widget: "list",, default: [""]}
       - {label: "标签", name: "tags", widget: "list", default: [""]}
       - {label: "发布日期", name: "date", widget: "datetime", format: YYYY-MM-DD HH:mm:ss}
-      - {label: "数学符号", name: "math", widget: "boolean", default: "false"}
+      - {label: "LaTex", name: "math", widget: "boolean", default: "false"}
       - {label: "正文", name: "body", widget: "markdown"}
   - name: "pages"
     label: "分页设置"
