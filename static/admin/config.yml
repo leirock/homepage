@@ -89,3 +89,13 @@ collections: # A list of collections the CMS should be able to edit
               - {label: "名称", name: "name", widget: "string"}
               - {label: "链接（首页插件用 #）", name: "url", widget: "string"}
               - {label: "次序", name: "weight", widget: "number", min: 1, step: 1}
+      - name: "readme_hugo"
+        label: "README (hugo-source)"
+        file: "/static/README.md"
+        fields:
+          - {label: "正文", name: "body", widget: "markdown"}
+      - name: "readme_master"
+        label: "README (master)"
+        file: "/README.md"
+        fields:
+          - {label: "正文", name: "body", widget: "markdown"}
