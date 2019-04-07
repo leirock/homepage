@@ -66,7 +66,7 @@ interests = [
 [[social]]
   icon = "github"
   icon_pack = "fab"
-  link = "https://github.com/dldylan"
+  link = "https://github.com/dongleizhang"
 
 [[social]]
   icon = "zhihu"
