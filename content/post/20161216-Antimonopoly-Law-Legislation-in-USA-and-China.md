@@ -7,6 +7,7 @@ tags:
   - law
 date: '2016-12-16 18:31:22'
 math: false
+type: post
 ---
 > This is the essay of CUHK PhD level course *Industrial Organization*.
 

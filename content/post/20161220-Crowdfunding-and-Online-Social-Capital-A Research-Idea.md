@@ -7,6 +7,7 @@ tags:
   - econ
 date: '2016-12-20 01:35:21'
 math: false
+type: post
 ---
 ## 1. Background
 
