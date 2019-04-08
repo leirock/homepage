@@ -1,0 +1,47 @@
+backend:
+  name: git-gateway
+  repo: dongleizhang/dongleizhang.github.io
+  branch: hugo-source # Branch to update (master by default)
+
+media_folder: "static/img" # Folder path where uploaded files should be saved, relative to the base of the repo.
+public_folder: "/img" # Folder path where uploaded files will be accessed, relative to the base of the built site.
+
+publish_mode: editorial_workflow
+site_url: https://dongleizhang.com
+display_url: https://dongleizhang.com
+logo_url: /cloud/img/logo.svg
+show_preview_links: true
+# slug:
+#   encoding: "ascii" # default: unicode
+#   clean_accents: true
+#   sanitize_replacement: "_"  # default: "-"
+
+
+collections: # A list of collections the CMS should be able to edit
+  - name: "post" # Used in routes, ie.: /admin/collections/:slug/edit
+    label: "科研动态" # Used in the UI, ie.: "New Post"
+    folder: "/content/post" # The path to the folder where the documents are stored
+    filter: {field: "type", value: "post"}
+    create: true # Allow users to create new documents in this collection
+    slug: "{{year}}{{month}}{{day}}-{{slug}}"
+    fields: # The fields each document in this collection have
+      - {label: "标题", name: "title", widget: "string"}
+      - {label: "分类", name: "categories", widget: "list", default: [""]}
+      - {label: "标签", name: "tags", widget: "list", default: [""]}
+      - {label: "发布日期", name: "date", widget: "datetime", format: "YYYY-MM-DD HH:mm:ss"}
+      - {label: "LaTex", name: "math", widget: "boolean", default: false}
+      - {label: "类别（不要改）", name: "type", widget: "string", default: "post"}
+      - {label: "正文", name: "body", widget: "markdown", default: "<!-- more -->"}
+  - name: "readme"
+    label: "README"
+    files:
+      - name: "readme_hugo"
+        label: "README (hugo-source)"
+        file: "/static/README.md"
+        fields:
+          - {label: "正文", name: "body", widget: "markdown"}
+      - name: "readme_master"
+        label: "README (master)"
+        file: "/README.md"
+        fields:
+          - {label: "正文", name: "body", widget: "markdown"}
