@@ -1,0 +1,8 @@
+# These rules will change if you change your site’s custom domains or HTTPS settings
+
+# Redirect default Netlify subdomain to primary domain
+https://dongleizhang.netlify.com/* https://dongleizhang.com/:splat 301!
+
+# Redirect menu items
+/blog https://blog.dongleizhang.com 301!
+/cv   https://banbanramble-1256060851.cos.ap-shanghai.myqcloud.com/file/CV_Donglei_Zhang.pdf

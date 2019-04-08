@@ -10,29 +10,29 @@
 
 [[main]]
   name = "Posts"
-  url = "/post/"
+  url = "/post"
   weight = 2
 
 [[main]]
   name = "Research"
-  url = "/research/"
+  url = "/research"
   weight = 3
 
 [[main]]
   name = "Contact"
-  url = "/contact/"
+  url = "/contact"
   weight = 4
 
 [[main]]
   name = "Blog"
-  url = "https://blog.dongleizhang.com/"
+  url = "/blog"
   weight = 5
 
 # Link to a PDF of your resume/CV from the menu.
 # To enable, copy your resume/CV to `static/files/cv.pdf` and uncomment the lines below.
  [[main]]
     name = "CV"
-    url = "https://banbanramble-1256060851.cos.ap-shanghai.myqcloud.com/file/CV_Donglei_Zhang.pdf"
+    url = "/cv"
     weight = 6
 
 
