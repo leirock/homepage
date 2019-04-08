@@ -13,7 +13,7 @@ baseurl = "https://dongleizhang.com/"
 
 # Enter a copyright notice to display in the site footer.
 # To display a copyright symbol, type `&copy;`. For current year, type `{year}`.
-copyright = "&copy; {year} <span style='margin: 0 3px'><i class='fas fa-heart'></i></span> Donglei Zhang"
+copyright = "&copy; {year} <span style='margin: 0 3px'><i class='fas fa-heart'></i></span> <a href='/admin' style='border-bottom: none' target='_blank'>Donglei Zhang</a>"
 
 # Enable analytics by entering your Google Analytics tracking ID
 googleAnalytics = ""
