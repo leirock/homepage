@@ -6,3 +6,9 @@ https://dongleizhang.netlify.com/* https://dongleizhang.com/:splat 301!
 # Redirect menu items
 /blog https://blog.dongleizhang.com 301!
 /cv   https://banbanramble-1256060851.cos.ap-shanghai.myqcloud.com/file/CV_Donglei_Zhang.pdf
+
+# Redirect social media link
+/linkedin  https://www.linkedin.com/in/dongleizhang
+/weibo     https://weibo.com/prczdl
+/github    https://github.com/dongleizhang
+/zhihu     https://www.zhihu.com/people/ZhangDylan
