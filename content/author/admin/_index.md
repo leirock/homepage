@@ -56,22 +56,22 @@ interests = [
 [[social]]
   icon = "linkedin"
   icon_pack = "fab"
-  link = "/linkedin"
+  link = "https://www.linkedin.com/in/dongleizhang"
 
 [[social]]
   icon = "weibo"
   icon_pack = "fab"
-  link = "/weibo"
+  link = "https://weibo.com/prczdl"
 
 [[social]]
   icon = "github"
   icon_pack = "fab"
-  link = "/github"
+  link = "https://github.com/dongleizhang"
 
 [[social]]
   icon = "zhihu"
   icon_pack = "fab"
-  link = "/zhihu"
+  link = "https://www.zhihu.com/people/ZhangDylan"
 
 # Link to a PDF of your resume/CV from the About widget.
 # To enable, copy your resume/CV to `static/files/cv.pdf` and uncomment the lines below.
