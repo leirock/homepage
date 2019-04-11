@@ -1,7 +1,7 @@
 [Settings]
 # Added automatically by the Netlify CLI. It has no effect during normal 
 # Git-backed deploys.
-ID = "dongleizhang"
+ID = "dlzhang"
 
 # Settings in the [build] context are global and are applied to all contexts 
 # unless otherwise overridden by more specific contexts.  
@@ -21,8 +21,8 @@ ID = "dongleizhang"
 
 # Redirect default Netlify subdomain to primary domain
 [[redirects]]
-  from = "https://dongleizhang.netlify.com/*"
-  to = "https://dongleizhang.com/:splat"
+  from = "https://dlzhang.netlify.com/*"
+  to = "https://dlzhang.com/:splat"
   status = 301
   force = true # COMMENT: ensure that we always redirect
 

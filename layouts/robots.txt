@@ -2,4 +2,4 @@ User-agent: *
 Disallow: /js/
 Disallow: /img/
 
-Sitemap: https://dongleizhang.com/sitemap.xml
+Sitemap: https://dlzhang.com/sitemap.xml

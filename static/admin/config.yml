@@ -7,8 +7,8 @@ media_folder: "static/img" # Folder path where uploaded files should be saved, r
 public_folder: "/img" # Folder path where uploaded files will be accessed, relative to the base of the built site.
 
 publish_mode: editorial_workflow
-site_url: https://dongleizhang.com
-display_url: https://dongleizhang.com
+site_url: https://dlzhang.com
+display_url: https://dlzhang.com
 logo_url: /img/logo.svg
 show_preview_links: true
 # slug:
