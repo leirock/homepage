@@ -1,5 +1,6 @@
 User-agent: *
 Disallow: /js/
 Disallow: /img/
+Disallow: /admin/
 
 Sitemap: https://dlzhang.com/sitemap.xml
