@@ -300,7 +300,7 @@ chat:
 text_align:
   # Available values: start | end | left | right | center | justify | justify-all | match-parent
   desktop: justify
-  mobile: justify
+  mobile: left
 
 # Automatically scroll page to section which is under <!-- more --> mark.
 scroll_to_more: false
