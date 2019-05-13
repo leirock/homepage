@@ -16,7 +16,7 @@ ID = "dlzhang"
   publish = "/public"
 
   # Default build command.
-  command = "hugo -t academic"
+  command = "hexo generate"
 
 
 # Redirect default Netlify subdomain to primary domain
