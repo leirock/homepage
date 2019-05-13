@@ -25,5 +25,5 @@ My research interests span the fields of applied microeconometrics, and I am rec
 　<i class="fa fa-fw fa-weibo"></i>&nbsp;&nbsp;[Weibo](https://www.weibo.com/prczdl "@班班_Dylan")
 　<i class="fa fa-fw fa-custom zhihu"></i>&nbsp;&nbsp;[Zhihu](https://www.zhihu.com/people/ZhangDylan "@班班")
 　<i class="fa fa-fw fa-github"></i>&nbsp;&nbsp;[GitHub](https://github.com/dongleizhang "@dongleizhang")
-　<i class="fa fa-fw fa-weixin"></i>&nbsp;&nbsp;<a data-fancybox="gallery" href="/cloud/img/wechat_platform.jpg" title="@班班碎碎念">WeChat Channel</a>
+　<i class="fa fa-fw fa-weixin"></i>&nbsp;&nbsp;<a data-fancybox="gallery" href="/cloud/img/wechat_channel.jpg" title="@班班碎碎念">WeChat Channel</a>
 　
