@@ -157,10 +157,10 @@ baidu_push: true
 # Value after `||` delimeter is the name of FontAwesome icon. If icon (with or without delimeter) is not specified, question icon will be loaded.
 # External url should start with http:// or https://
 menu:
-  about: /about/ || user
-  research: /research/ || university
-  contact: /contact/ || envelope
-  blog: https://blog.dlzhang.com || rss
+  About: /about/ || user
+  Research: /research/ || university
+  Contact: /contact/ || envelope
+  Blog: https://blog.dlzhang.com || rss
   #home: / || home
   #tags: /tags/ || tags
   #categories: /categories/ || th
@@ -180,8 +180,8 @@ menu_settings:
 # ---------------------------------------------------------------
 
 # Schemes
-#scheme: Muse
-scheme: Mist
+scheme: Muse
+#scheme: Mist
 #scheme: Pisces
 #scheme: Gemini
 
@@ -444,7 +444,7 @@ tagcloud:
 # ---------------------------------------------------------------
 
 font:
-  enable: false
+  enable: true
 
   # Uri of fonts host, e.g. //fonts.googleapis.com (Default).
   host:
@@ -464,7 +464,7 @@ font:
   # Fallback to `global` font settings.
   headings:
     external: true
-    family:
+    family: PT Serif
     size:
 
   # Font settings for posts.
@@ -477,13 +477,13 @@ font:
   # Fallback to `global` font settings.
   logo:
     external: true
-    family:
-    size:
+    family: Marck Script
+    size: 40
 
   # Font settings for <code> and code blocks.
   codes:
     external: true
-    family:
+    family: Source Code Pro
     size:
 
 
