@@ -1,19 +1,21 @@
 ---
 title:
-  archive: 归档
-  category: 分类
+  archive: 文章归档
+  category: 专栏
   tag: 标签
   schedule: 日程表
 menu:
   home: 首页
-  archives: 归档
-  categories: 分类
+  archives: 文章归档
+  categories: 专栏
   tags: 标签
-  about: 关于
+  about: 关于班班
   search: 搜索
   schedule: 日程表
   sitemap: 站点地图
   commonweal: 公益 404
+  photos: 光影留痕
+  books: 书破万卷
 sidebar:
   overview: 站点概览
   toc: 文章目录
@@ -23,7 +25,7 @@ post:
   created: 创建时间
   modified: 修改时间
   edit: 编辑
-  in: 分类于
+  in: 专栏
   more: 更多
   read_more: 阅读全文
   untitled: 未命名
@@ -52,20 +54,20 @@ counter:
   tag_cloud:
     zero: 暂无标签
     one: 目前共计 1 个标签
-    other: "目前共计 %d 个标签"
+    other: '<i class="fa fa-fw fa-tags"></i> 目前共计 %d 个标签'
   categories:
-    zero: 暂无分类
-    one: 目前共计 1 个分类
-    other: "目前共计 %d 个分类"
+    zero: 暂无专栏
+    one: 目前共计 1 个专栏
+    other: '<i class="fa fa-fw fa-th"></i> 目前共计 %d 个专栏'
   archive_posts:
-    zero: 暂无日志。
-    one: 目前共计 1 篇日志。
-    other: "目前共计 %d 篇日志。"
+    zero: 暂无文章。
+    one: 目前共计 1 篇文章。
+    other: "目前共计 %d 篇文章。"
 state:
-  posts: 日志
+  posts: 文章
   pages: 页面
   tags: 标签
-  categories: 分类
+  categories: 专栏
 search:
   placeholder: 搜索...
 cheers:
@@ -81,9 +83,9 @@ symbol:
   period: "。"
   colon: "："
 reward:
-  donate: 打赏
-  wechatpay: 微信支付
-  alipay: 支付宝
+  donate: <i class="fa fa-qrcode fa-2x" style="line-height:35px;"></i>
+  wechatpay: 微信赞赏
+  alipay: 微信公众号
   bitcoin: 比特币
 gitmentbutton: 显示 Gitment 评论
 accessibility:

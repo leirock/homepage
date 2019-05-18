@@ -18,3 +18,540 @@
 }
 .zhihu:before { content: "\e6ba"; }
 .douban:before { content: "\e638"; }
+
+//*********//
+//**标题区**//
+//*********//
+
+//页面最上面黑细条
+.headband {
+  display: none;
+}
+//标题背景
+.brand {
+  background: transparent;
+}
+//标题文字粗细
+.site-meta .site-title {
+  font-weight: 900;
+}
+//副标题
+.site-meta .site-subtitle {
+  font-family: Lato, "PingFang SC", "Microsoft YaHei", Georgia, sans-serif;
+  color: #fff;
+}
+//导航区背景
+.header {
+  background: url("/img/header-bg.jpg");
+  //background-position-y: -15vh;
+}
+.header-inner{
+  padding: 25px 0 20px;
+}
+//页面背景
+body {
+  background-image:url("/img/body-bg.png");
+  background-repeat: repeat;
+  background-attachment:fixed;
+  background-position:50% 50%; 
+}
+
+//导航栏
+
+//要在 Muse 下实现导航栏图标与文字在同一行，
+//1. 需要将 themes/next/layout/_partials/header/menu.swig 中搜索图标后的换行符删去
+//2. 需要将 themes/next/layout/_macro/menu/menu-item.swig 中其他图标后的换行符删去
+//3. 以下一条 CSS
+.menu .menu-item .fa {
+  display: inline;
+}
+  
+.menu {
+  margin-top: 30px;
+}
+.menu .menu-item {
+  margin: 0 2px;
+}
+.menu .menu-item a {
+  border-bottom-color: transparent !important;
+  font-size: 14px;
+  color: #fff;
+  border-radius: 4px;
+  padding: 0px 12px;
+  background: none;
+  border: none;
+  transition-property: background;
+  display: block;
+  line-height: inherit;
+  transition-duration: 0.2s;
+  transition-timing-function: ease-in-out;
+  transition-delay: 0s;
+
+  &:hover {
+  transition-duration: 0.3s;
+  background: rgba(255,253,192,0.3);
+  border-bottom-color: #777;
+  color: #fff;
+  }
+}
+
+@media (max-width: 767px){
+  .menu {
+    margin-top: 20px;
+  }
+  .menu .menu-item a {
+    padding: 4px 10px;
+    color: #0f2e41;
+    background: rgba(255,253,192,0.1);
+
+    &:hover {
+      background: #ddd;
+    }
+  } 
+  .site-nav {
+    background: rgba(255,255,255,0.9);
+  }
+}
+.btn-bar {
+  background-color: #fff;
+}
+
+//内容区
+h1, h2, h3, h4, h5, h6 {
+  font-weight:900;
+}
+//文章内文字间距
+.post-body p {
+  letter-spacing: .5px;
+}
+//链接文本样式
+.post-body a{
+  color: #0477ab;
+  border-bottom: none;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+//外链添加图标标示
+.post-body a[target="_blank"]:not([title^="@"]):after {
+    font-family: "FontAwesome"; 
+    content: "\f08e"; 
+    font-size: 12px; 
+    padding-left: 2px; 
+} 
+//文章图片边框取消
+.posts-expand .post-body img {
+  border: 0px;
+}
+.post {
+  margin-bottom: 40px;  //文章全文页与评论框间距
+  padding: 30px 40px 30px;  //文章页边距
+  -webkit-box-shadow: 0 0 14px #cacbcb;
+  -moz-box-shadow: 0 0 14px #cacbcb;
+  box-shadow: 0 0 14px #cacbcb;
+  background: #fff;
+  border-radius: 10px;  //文章框四周角弧度
+}
+.page {
+  margin-bottom: 40px;  //文章全文页与评论框间距
+  padding: 30px 40px 40px;  //文章页边距
+  -webkit-box-shadow: 0 0 14px #cacbcb;
+  -moz-box-shadow: 0 0 14px #cacbcb;
+  box-shadow: 0 0 14px #cacbcb;
+  background: #fff;
+  border-radius: 10px;  //文章框四周角弧度
+}
+.posts-collapse {
+    margin: 0 20px 0;
+  }
+
+.post-block.archive .posts-collapse {
+  margin: 0 5px 0;
+}
+
+.posts-collapse .post{
+  margin: 30px 0 30px 3px;
+}
+
+.posts-collapse .collection-title small {
+  color: #808080;
+}
+
+//调整分类页面缩进以配合日期格式长度
+//修改 /themes/next/layout/_macro/post-collapse.swig 中 {{ date(post.date, 'YYYY-MM-DD') }} 
+.posts-collapse .post-meta {
+  left:15px;
+  top: 8px;
+}
+.posts-expand .post-meta {
+  text-align: left;
+  margin: 3px 0 40px 0;
+}
+.posts-expand .post-block.archive .post-meta  {
+  color: #555;
+}
+.posts-expand .post-meta time {
+  border-bottom: none;
+  cursor: initial;
+}
+.posts-collapse .post-title {
+  margin-left: 90px
+  padding: 5px 0 0 0;
+}
+.post-block.archive .posts-collapse .post-title {
+  padding: 2px 0 0 0;
+}
+.posts-expand .post-title {
+  font-size: 24px;
+  border-left: #649ab6 8px solid;
+  font-weight: 900;
+  padding-left: 10px;
+  text-align: left;
+}
+.posts-expand .post-eof {
+  display: block;
+  margin: 0px auto 0px;
+  width: 0;
+}
+.post-block.archive .posts-collapse .collection-title {
+  margin: 0;
+}
+.posts-expand .post-block.archive .post-title-link:hover::before{
+  visibility: hidden;
+}
+.posts-expand .post-title-link{
+  line-height: 1.5;
+}
+.post-block.archive .post {
+  padding: 5px 30px 15px;
+  line-height: 0.7;
+}
+.post-block.archive .post-title h3 {
+  margin: 10px 0 10px;
+}
+.post-block.category .post, .post-block.tag .post {
+  padding: 5px 30px 15px;
+  line-height: 1.25;
+}
+.post-block.category .post .post-title, .post-block.tag .post .post-title, .post-block.archive .post .post-title {
+  font-family: Lato, "PingFang SC", "Microsoft YaHei", Georgia, sans;
+  font-size: 16px;
+  border-left: none;
+  font-weight: normal;
+  padding-left: 0;
+}
+.post-block.page .post-body hr {
+  margin: 35px 0;
+}
+.page-post-detail .post-title, .page-post-detail .post-meta {
+  text-align: center;
+  border-left: none;
+  padding-left: 0;
+}
+
+@media (max-width: 767px) {
+  .post {
+    padding: 15px 5px 15px;
+  }
+  .page {
+    margin-bottom: 10px;  //文章全文页与评论框间距
+  }
+  .posts-expand {
+    margin: 20px !important;
+  }
+  .posts-expand .post-title {
+    font-size: 21px;
+  }
+  .post-block.archive .posts-collapse .post-title {
+    margin-left: 72px;
+  }
+  .posts-expand .post-block.archive .post-header {
+    padding: 0 0 0 18px;
+  }
+  hr {
+    margin: 40px 10px;
+  }
+  .post-body > ul, .post-body > li {
+    padding:0 40px;
+  }
+  .post-block.page .category-all-page .category-list {
+  list-style: initial;
+  }
+}
+
+a#hexo-douban-tab1.hexo-douban-tab.hexo-douban-active, a#hexo-douban-tab2.hexo-douban-tab.hexo-douban-active , a#hexo-douban-tab3.hexo-douban-tab.hexo-douban-active {
+  color: #fff;
+  text-decoration: none;
+}
+@media (max-width: 767px) {
+  .hexo-douban-item {
+    width: inherit !important; 
+  }
+  .hexo-douban-item, .hexo-douban-tabs {
+    margin: 0 10px 0;
+  }
+}
+
+
+//评论区
+.comments{
+  padding: 30px 35px 30px;
+  -webkit-box-shadow: 0 0 14px #cacbcb;
+  -moz-box-shadow: 0 0 14px #cacbcb;
+  box-shadow: 0 0 14px #cacbcb;
+  background: #fff;
+  margin: 0;
+  border-radius: 10px;
+}
+@media (max-width: 767px) {
+  .comments {
+    padding: 20px;
+    margin: 0 20px 0 !important;
+  }
+}
+
+//分类项目符修正bug
+@media (max-width: 767px) {
+  .category-all-page .category-list-item {
+    margin: 5px 40px;
+  }
+}
+@media (min-width: 767px) {
+  .category-all-page .category-list-item {
+    margin-left: 15px;
+  }
+  ul.category-list {
+    text-align:center;
+  }
+  li.category-list-item  {
+    display: inline-block;
+  }
+  li.category-list-item a {
+    -webkit-box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    -moz-box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    transition: 0.2s ease-out;
+    padding: 10px 15px;
+    background: #649ab6;
+    color: #fff
+    border-bottom: none;
+    border-radius: 15px;
+    line-height: 4;
+    word-break: keep-all;
+
+    &:hover {
+    text-decoration: none;
+    -webkit-box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    -moz-box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    }
+  }
+  .category-all-page .category-list {
+    padding-top: 10px;
+  }
+}
+
+
+//页码栏
+.pagination, .pagination .prev, .pagination .next, .pagination .page-number {
+  border:none;
+}
+.pagination .page-number.current {
+  border-radius: 15px;
+  background: #34495e;
+}
+.pagination {
+  margin: 60px 0 20px;
+}
+
+
+//侧边栏信息样式修改
+.site-author-name, .site-description {
+  font-family: 'Comic Sans MS', "PingFang SC", "Microsoft YaHei", Georgia, sans-serif;
+}
+.links-of-author {
+  margin-top: 40px;
+}
+.links-of-author a {
+  border-bottom: none;
+  background-color: #3a5c6b;
+  border-radius: 4px;
+  padding: 0px 8px;
+  color: #fff;
+}
+.links-of-author a:before, .links-of-author .exturl:before{
+  // background: #649ab6;
+  display: none;
+}
+.links-of-blogroll-title {
+  margin-top: 45px;
+}
+.links-of-blogroll-item {
+  margin-right: 7px;
+  padding: 0 8px;
+  background-color: #555; //#50842e;
+  border-radius: 4px;
+}
+.links-of-blogroll-item a {
+  color: #fff;
+  border-bottom: none;
+  display: inline;
+}
+
+//侧栏按钮样式
+.sidebar-toggle, .back-to-top {
+  background: #3a5c6b;
+}
+.sidebar-toggle-line {
+  background: #fff !important;
+}
+
+
+//修改阅读全文按钮样式
+.post-button {
+  text-align: right;
+  margin-top: 15px;
+}
+.btn {
+  padding: 3px 15px
+  color: #fff !important;
+  background-color: #bdc3c7;
+  border: 0px;
+  border-radius: 15px;
+
+  &:hover {
+    color: #fff !important;
+    background: #34495e;
+    text-decoration: none !important;
+  }
+}
+@media (max-width: 767px) {
+  .post-button {
+    margin-right: 18px;
+  }
+}
+
+
+//Disqus加载按钮样式
+/*
+.btncomment {
+  display: inline-block;
+  padding: 0 20px;
+  font-size: 14px;
+  color: #fff;
+  background: #222;
+  border: 2px solid #222;
+  text-decoration: none;
+  border-radius: 0;
+  transition-property: background-color;
+  transition-duration: 0.2s;
+  transition-timing-function: ease-in-out;
+  transition-delay: 0s;
+  line-height: 2;
+
+  &:hover {
+  border-color: #222;
+  color: #222;
+  background: #fff;
+  }
+}
+*/
+
+//赞赏按钮样式
+#reward-button {
+  height: 35px;
+  width: 35px;
+  padding: 0;
+  font-size: 15px;
+  font-family: "PingFang SC", "Microsoft YaHei", Georgia, sans-serif;
+  background: #34495e;
+  border-radius: 5px;
+  -webkit-box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  -moz-box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  transition: 0.2s ease-out;
+
+  &:hover {
+  background: #649ab6;
+  -webkit-box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+  -moz-box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+  }
+}
+
+//文章页内标签样式
+.posts-expand .post-tags {
+  margin: 40px 10px 0 10px;
+  text-align: left;
+}
+.posts-expand .post-tags a {
+  -webkit-box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  -moz-box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  font-family: 'Comic Sans MS', sans-serif;
+  transition: 0.2s ease-out;
+  padding: 3px 5px;
+  margin: 5px;
+  background: #f5f5f5;
+  border-bottom: none;
+  border-radius: 15px;
+
+  &:hover {
+  background: rgba(100,154,182,0.902);
+  color: #fff;
+  -webkit-box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+  -moz-box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+  }
+}
+
+.tag-cloud a {
+  -webkit-box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  -moz-box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  transition: 0.2s ease-out;
+  padding: 2px 10px;
+  margin: 8px;
+  background: #f5f5f5;
+  border-bottom: none;
+  border-radius: 12px;
+
+  &:hover {
+  text-decoration: none;
+  background: rgba(100,154,182,0.902);
+  color: #fff !important;
+  -webkit-box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+  -moz-box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+  }
+}
+
+
+//相册样式
+.ImageGrid {
+  width: 100%;
+  max-width: 1040px;
+  margin: 0 auto;
+  text-align: center;
+}
+.card {
+  overflow: hidden;
+  transition: .3s ease-in-out;
+  border-radius: 8px;
+  background-color: #ddd;
+}
+.ImageInCard img {
+  padding: 0 0 0 0;
+  border-radius: 8px;
+}
+
+
+//页脚
+.footer, .footer a{
+  color: #666;
+}
+.footer {
+  padding-top: 40px;
+  padding-bottom: 20px;
+}
