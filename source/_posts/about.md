@@ -18,9 +18,3 @@ I come from [Pujiang](https://en.wikipedia.org/wiki/Pujiang_County,_Zhejiang), a
 ### CV
 
 　<i class="fa fa-fw fa-file-pdf-o"></i>&nbsp;&nbsp;[Download CV](/cloud/file/cv_donglei_zhang.pdf)
-
-### Find me around the web
-
-　<i class="fa fa-fw fa-linkedin"></i>&nbsp;&nbsp;[LinkedIn](https://www.linkedin.com/in/dongleizhang "@dongleizhang")
-　<i class="fa fa-fw fa-weibo"></i>&nbsp;&nbsp;[Weibo](https://www.weibo.com/prczdl "@班班_Dylan")
-　<i class="fa fa-fw fa-github"></i>&nbsp;&nbsp;[GitHub](https://github.com/dongleizhang "@dongleizhang")
