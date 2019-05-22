@@ -12,9 +12,9 @@ title: Research
 
 ### Presentations
 
-- The 7th International Research Exchange and Faculty Development Conference, Apr. 2017
+- 7th International Research Exchange and Faculty Development Conference, Apr. 2017
 
 ### Research Grants
 
-- Xinmiao Talent Program (2014R401002), Department of Education, Zhejiang Province, China, 2014
-  Student Research Training Program, Zhejiang University, 2013
+- Xinmiao Talent Program, Department of Education, Zhejiang Province, China, 2014
+- Student Research Training Program, Zhejiang University, 2013

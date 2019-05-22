@@ -11,9 +11,9 @@ I come from [Pujiang](https://en.wikipedia.org/wiki/Pujiang_County,_Zhejiang), a
 
 ### Education
 
-　<i class="fa fa-fw fa-graduation-cap"></i>&nbsp;&nbsp;Ph.D. in Decision Sciences and Managerial Economics, The Chinese University of Hong Kong, 2020 expected
-　<i class="fa fa-fw fa-graduation-cap"></i>&nbsp;&nbsp;M.Sc. in Economics, The Hong Kong University of Science and Technology, 2016
-　<i class="fa fa-fw fa-graduation-cap"></i>&nbsp;&nbsp;B.A. in Economics, Zhejiang University, 2011
+* Ph.D. in Decision Sciences and Managerial Economics, The Chinese University of Hong Kong, 2020 expected
+* M.Sc. in Economics, The Hong Kong University of Science and Technology, 2016
+* B.A. in Economics, Zhejiang University, 2011
 
 ### CV
 
