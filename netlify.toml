@@ -26,6 +26,12 @@ ID = "dlzhang"
   status = 301
   force = true # COMMENT: ensure that we always redirect
 
+[[redirects]]
+  from = "https://dlzhang.com/blog"
+  to = "https://blog.dlzhang.com"
+  status = 301
+  force = true # COMMENT: ensure that we always redirect
+
 # Redirect qcloud link
 [[redirects]]
   from = "/cloud/*"

@@ -82,5 +82,5 @@ theme: next
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
   - type: git
-    repo: https://GH_TOKEN@github.com/dongleizhang/dongleizhang.github.io.git
+    repo: https://GH_TOKEN@github.com/lei2rock/homepage.git
     branch: master
