@@ -23,7 +23,7 @@ script:
   - hexo generate
 
 after_success:
-  - git config --global user.name "dongleizhang"
+  - git config --global user.name "lei2rock"
   - git config --global user.email "zjpjzdl@qq.com"
   - sed -i "s/GH_TOKEN/${GH_TOKEN}/g" ./_config.yml
 # - sed -i "s/CODING_TOKEN/${CODING_TOKEN}/g" ./_config.yml
