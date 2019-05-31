@@ -755,9 +755,9 @@ needmoreshare2:
 #growingio_analytics: #your projectId
 
 # Google Analytics
-#google_analytics:
-   tracking_id: UA-141207776-2
-   localhost_ignored: true
+google_analytics:
+  tracking_id: UA-141207776-2
+  localhost_ignored: true
 
 # CNZZ count
 #cnzz_siteid:
