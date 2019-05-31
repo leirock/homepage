@@ -748,7 +748,7 @@ needmoreshare2:
 # ---------------------------------------------------------------
 
 # Baidu Analytics ID
-baidu_analytics: 8f921f9545fd373f951190d2b584abe6
+#baidu_analytics:
 
 # Growingio Analytics ID
 # Copyright 2015-2018 GrowingIO, Inc. More info available at https://www.growingio.com
@@ -756,8 +756,8 @@ baidu_analytics: 8f921f9545fd373f951190d2b584abe6
 
 # Google Analytics
 #google_analytics:
-#  tracking_id:
-#  localhost_ignored: true
+   tracking_id: UA-141207776-2
+   localhost_ignored: true
 
 # CNZZ count
 #cnzz_siteid:
