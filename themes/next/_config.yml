@@ -43,7 +43,7 @@ favicon:
   ms_browserconfig: /img/browserconfig.xml
 
 # Set rss to false to disable feed link.
-# Leave rss as blank to use site's feed link, and install hexo-generator-feed: `npm install hexo-generator-feed --save`.
+# Leave rss as blank to use site's feed link, and install dependencies hexo-generator-feed by `npm install hexo-generator-feed --save`.
 # Set rss to specific value if you have burned your feed already.
 rss:
 
@@ -83,7 +83,10 @@ footer:
     icp:
 
   # Any custom text can be defined here.
-  #custom_text: Hosted by <a href="https://pages.coding.me" class="theme-link" rel="noopener" target="_blank">Coding Pages</a>
+  custom_text: '<i class="fa fa-fw fa-pencil-square-o" ></i>&nbsp;<a href="/admin" style="border-bottom: none" rel="noopener" target="_blank">文章</a>&nbsp;&nbsp;&middot;&nbsp;&nbsp;
+                <i class="fa fa-fw fa-comments"></i>&nbsp;<a href="https://lei2rock.cn-e1.leanapp.cn" style="border-bottom: none" rel="noopener" target="_blank">评论</a>&nbsp;&nbsp;&middot;&nbsp;&nbsp;
+                <i class="fa fa-fw fa-cloud"></i>&nbsp;<a href="https://console.cloud.tencent.com" style="border-bottom: none" rel="noopener" target="_blank">图床</a>'
+  # Hosted by <a href="https://pages.coding.me" class="theme-link" rel="noopener" target="_blank">Coding Pages</a>
 
 # Creative Commons 4.0 International License.
 # See: https://creativecommons.org/share-your-work/licensing-types-examples
@@ -153,18 +156,17 @@ baidu_push: true
 # When running the site in a subdirectory (e.g. domain.tld/blog), remove the leading slash from link value (/archives -> archives).
 # Usage: `Key: /link/ || icon`
 # Key is the name of menu item. If the translation for this item is available, the translated text will be loaded, otherwise the Key name will be used. Key is case-senstive.
-# Value before `||` delimeter is the target link.
-# Value after `||` delimeter is the name of FontAwesome icon. If icon (with or without delimeter) is not specified, question icon will be loaded.
+# Value before `||` delimiter is the target link.
+# Value after `||` delimiter is the name of FontAwesome icon. If icon (with or without delimiter) is not specified, question icon will be loaded.
 # External url should start with http:// or https://
 menu:
-  About: /about/ || user
-  Research: /research/ || university
-  Contact: /contact/ || envelope
-  Blog: https://blog.dlzhang.com || rss
-  #home: / || home
+  home: / || home
   #tags: /tags/ || tags
   #categories: /categories/ || th
-  #archives: /archives/ || archive
+  archives: /archives/ || archive
+  photos: /photos || camera-retro
+  books: /books || book
+  about: /about/ || heart
   #schedule: /schedule/ || calendar
   #sitemap: /sitemap.xml || sitemap
   #commonweal: /404/ || heartbeat
@@ -197,14 +199,15 @@ site_state: true
 # Social Links
 # Usage: `Key: permalink || icon`
 # Key is the link label showing to end users.
-# Value before `||` delimeter is the target permalink.
-# Value after `||` delimeter is the name of FontAwesome icon. If icon (with or without delimeter) is not specified, globe icon will be loaded.
+# Value before `||` delimiter is the target permalink.
+# Value after `||` delimiter is the name of FontAwesome icon. If icon (with or without delimiter) is not specified, globe icon will be loaded.
 social:
-  #GitHub: https://github.com/yourname || github
+  "  微博": https://weibo.com/prczdl || weibo
+  "  Twitter": https://twitter.com/lei2rock || twitter
+  "  GitHub": https://github.com/lei2rock || github
   #E-Mail: mailto:yourname@gmail.com || envelope
   #Weibo: https://weibo.com/yourname || weibo
   #Google: https://plus.google.com/yourname || google
-  #Twitter: https://twitter.com/yourname || twitter
   #FB Page: https://www.facebook.com/yourname || facebook
   #VK Group: https://vk.com/yourname || vk
   #StackOverflow: https://stackoverflow.com/yourname || stack-overflow
@@ -240,7 +243,7 @@ avatar:
 
 # Table Of Contents in the Sidebar
 toc:
-  enable: false
+  enable: true
   # Automatically add list number to toc.
   number: false
   # If true, all words will placed on next lines if header width longer then sidebar width.
@@ -265,7 +268,7 @@ sidebar:
   #  - always  expand for all pages automatically.
   #  - hide    expand only when click on the sidebar toggle icon.
   #  - remove  totally remove sidebar including sidebar toggle.
-  display: remove
+  display: post
 
   # Sidebar offset from top menubar in pixels (only for Pisces | Gemini).
   offset: 12
@@ -319,16 +322,16 @@ auto_excerpt:
 
 # Read more button
 # If true, the read more button would be displayed in excerpt section.
-read_more_btn: true
+read_more_btn: false
 
 # Post meta display settings
 post_meta:
-  item_text: false
-  created_at: false
+  item_text: true
+  created_at: true
   updated_at:
     enable: false
     another_day: true
-  categories: false
+  categories: true
 
 # Post wordcount display settings
 # Dependencies: https://github.com/theme-next/hexo-symbols-count-time
@@ -350,6 +353,9 @@ codeblock:
     # Style: only 'flat' is currently available, leave it blank if you prefer default theme
     style:
 
+# Use icon instead of the symblo # to indicate the tag at the bottom of the post
+tag_icon: true
+
 # Wechat Subscriber
 wechat_subscriber:
   enable: false
@@ -360,13 +366,13 @@ wechat_subscriber:
 reward_settings:
   # If true, reward would be displayed in every article by default.
   # You can show or hide reward in a specific article throuth `reward: true | false` in Front-matter.
-  enable: false
+  enable: true
   animation: false
-  #comment: Donate comment here
+  comment: <p style="font-size:14px; color:#34495e; margin:0 0 5px 0;">赞赏一下吧～ 还可以关注公众号订阅最新内容</p>
 
 reward:
-  #wechatpay: /images/wechatpay.png
-  #alipay: /images/alipay.png
+  wechatpay: /cloud/img/wechat_reward.jpg
+  alipay: /cloud/img/wechat_channel.jpg
   #bitcoin: /images/bitcoin.png
 
 # Related popular posts
@@ -477,7 +483,7 @@ font:
   # Fallback to `global` font settings.
   logo:
     external: true
-    family: Marck Script
+    family: Caveat
     size: 40
 
   # Font settings for <code> and code blocks.
@@ -508,7 +514,7 @@ math:
   engine: mathjax
   #engine: katex
 
-  # hexo-rendering-pandoc (or hexo-renderer-kramed) needed to full MathJax support.
+  # hexo-renderer-pandoc (or hexo-renderer-kramed) needed to full MathJax support.
   mathjax:
     cdn: //cdn.jsdelivr.net/npm/mathjax@2/MathJax.js?config=TeX-AMS-MML_HTMLorMML
     #cdn: //cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML
@@ -527,10 +533,6 @@ math:
       enable: false
       copy_tex_js: //cdn.jsdelivr.net/npm/katex@0/dist/contrib/copy-tex.min.js
       copy_tex_css: //cdn.jsdelivr.net/npm/katex@0/dist/contrib/copy-tex.min.css
-
-# Han Support
-# Dependencies: https://github.com/theme-next/theme-next-han
-han: false
 
 # Pangu Support
 # Dependencies: https://github.com/theme-next/theme-next-pangu
@@ -634,16 +636,16 @@ changyan:
 # You can get your appid and appkey from https://leancloud.cn
 # More info available at https://valine.js.org
 valine:
-  enable: false # When enable is set to be true, leancloud_visitors is recommended to be closed for the re-initialization problem within different leancloud adk version.
-  appid:  # your leancloud application appid
-  appkey:  # your leancloud application appkey
+  enable: true # When enable is set to be true, leancloud_visitors is recommended to be closed for the re-initialization problem within different leancloud adk version.
+  appid:  qhtORdWyQtsW3UVygYWy5Atk-9Nh9j0Va # your leancloud application appid
+  appkey: 8HhONPOGj86wbdlfDzuWx9JR # your leancloud application appkey
   notify: false # mail notifier, See: https://github.com/xCss/Valine/wiki
   verify: false # Verification code
-  placeholder: Just go go # comment box placeholder
-  avatar: mm # gravatar style
-  guest_info: nick,mail,link # custom comment header
+  placeholder: 留下邮箱，有回复时你将收到提醒，邮箱不会被公开。 # comment box placeholder
+  avatar: wavatar # gravatar style https://valine.js.org/avatar/
+  guest_info: nick,mail # custom comment header default: nick,mail,link
   pageSize: 10 # pagination size
-  language: # language, available values: en, zh-cn
+  language: zh-cn # language, available values: en, zh-cn
   visitor: false # leancloud-counter-security is not supported for now. When visitor is set to be true, appid and appkey are recommended to be the same as leancloud_visitors' for counter compatibility. Article reading statistic https://valine.js.org/visitor.html
   comment_count: true # if false, comment count will only be displayed in post page, not in home page
 
@@ -756,7 +758,7 @@ needmoreshare2:
 
 # Google Analytics
 google_analytics:
-  tracking_id: UA-141207776-2
+  tracking_id: UA-141207776-1
   localhost_ignored: true
 
 # CNZZ count
@@ -805,14 +807,14 @@ rating:
 # Show number of visitors to each article.
 # You can visit https://leancloud.cn to get AppID and AppKey.
 leancloud_visitors:
-  enable: false
-  app_id: #<app_id>
-  app_key: #<app_key>
+  enable: true
+  app_id: qhtORdWyQtsW3UVygYWy5Atk-9Nh9j0Va
+  app_key: 8HhONPOGj86wbdlfDzuWx9JR
   # Dependencies: https://github.com/theme-next/hexo-leancloud-counter-security
   # If you don't care about security in leancloud counter and just want to use it directly
   # (without hexo-leancloud-counter-security plugin), set `security` to `false`.
-  security: true
-  betterPerformance: false
+  security: false
+  betterPerformance: true
 
 # Another tool to show number of visitors to each article.
 # Visit https://console.firebase.google.com/u/0/ to get apiKey and projectId.
@@ -830,9 +832,9 @@ busuanzi_count:
   enable: false
   total_visitors: true
   total_visitors_icon: user
-  total_views: false
+  total_views: true
   total_views_icon: eye
-  post_views: false
+  post_views: true
   post_views_icon: eye
 
 # Tencent analytics ID
@@ -862,7 +864,7 @@ algolia_search:
 # Local search
 # Dependencies: https://github.com/theme-next/hexo-generator-searchdb
 local_search:
-  enable: false
+  enable: true
   # If auto, trigger search by changing input.
   # If manual, trigger search by pressing enter key or search button.
   trigger: auto
@@ -1038,10 +1040,10 @@ vendors:
   # Internal path prefix. Please do not edit it.
   _internal: lib
 
-  # Internal version: 2.1.3
+  # Internal version: 3.4.1
   # Example:
-  # jquery: //cdn.jsdelivr.net/npm/jquery@2/dist/jquery.min.js
-  # jquery: //cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js
+  # jquery: //cdn.jsdelivr.net/npm/jquery@3/dist/jquery.min.js
+  # jquery: //cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js
   jquery:
 
   # Internal version: 2.1.5 & 3.5.7
@@ -1078,11 +1080,11 @@ vendors:
   velocity:
   velocity_ui:
 
-  # Internal version: 4.6.2
+  # Internal version: 4.7.0
   # See: https://fontawesome.com
   # Example:
   # fontawesome: //cdn.jsdelivr.net/npm/font-awesome@4/css/font-awesome.min.css
-  # fontawesome: //cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.2/css/font-awesome.min.css
+  # fontawesome: //cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css
   fontawesome:
 
   # Internal version: 2.10.4
@@ -1128,13 +1130,6 @@ vendors:
   # Example:
   # canvas_ribbon: //cdn.jsdelivr.net/gh/theme-next/theme-next-canvas-ribbon@1/canvas-ribbon.js
   canvas_ribbon:
-
-  # Internal version: 3.3.0
-  # See: https://github.com/ethantw/Han
-  # Example:
-  # han: //cdn.jsdelivr.net/npm/han-css@3/dist/han.min.css
-  # han: //cdnjs.cloudflare.com/ajax/libs/Han/3.3.0/han.min.css
-  han:
 
   # Internal version: 4.0.7
   # See: https://github.com/vinta/pangu.js
