@@ -3,6 +3,7 @@
   set js_commons = [
     'utils.js',
     'motion.js',
+    'comment-locate.js',
     'minigrid.min.js',
     'photo.js'
   ]
@@ -11,7 +12,8 @@
 {%
   set js_commons = [
     'utils.js',
-    'motion.js'
+    'motion.js',
+    'comment-locate.js'
   ]
 %}
 {% endif %}
