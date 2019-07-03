@@ -69,6 +69,10 @@ body {
   
 .menu {
   margin-top: 30px;
+  
+  @media (max-width: 767px){
+    margin-top: 20px;
+  }
 }
 .menu .menu-item {
   margin: 0 2px;
@@ -94,13 +98,8 @@ body {
   border-bottom-color: #777;
   color: #fff;
   }
-}
-
-@media (max-width: 767px){
-  .menu {
-    margin-top: 20px;
-  }
-  .menu .menu-item a {
+  
+  @media (max-width: 767px){
     padding: 4px 10px;
     color: #0f2e41;
     background: rgba(255,253,192,0.1);
@@ -109,10 +108,14 @@ body {
       background: #ddd;
     }
   } 
+}
+
+@media (max-width: 767px){
   .site-nav {
     background: rgba(255,255,255,0.9);
   }
 }
+
 .btn-bar {
   background-color: #fff;
 }
@@ -153,6 +156,10 @@ h1, h2, h3, h4, h5, h6 {
   box-shadow: 0 0 14px #cacbcb;
   background: #fff;
   border-radius: 10px;  //文章框四周角弧度
+  
+  @media (max-width: 767px) {
+    padding: 15px 5px 15px;
+  }
 }
 .page {
   margin-bottom: 40px;  //文章全文页与评论框间距
@@ -162,6 +169,10 @@ h1, h2, h3, h4, h5, h6 {
   box-shadow: 0 0 14px #cacbcb;
   background: #fff;
   border-radius: 10px;  //文章框四周角弧度
+  
+  @media (max-width: 767px) {
+    margin-bottom: 10px;  //文章全文页与评论框间距
+  }
 }
 .posts-collapse {
     margin: 0 20px 0;
@@ -179,10 +190,7 @@ h1, h2, h3, h4, h5, h6 {
   color: #808080;
 }
 
-//调整分类页面缩进以配合日期格式长度
-//修改 /themes/next/layout/_macro/post-collapse.swig 中 {{ date(post.date, 'YYYY-MM-DD') }} 
 .posts-collapse .post-meta {
-  left:15px;
   top: 8px;
 }
 .posts-expand .post-meta {
@@ -202,6 +210,10 @@ h1, h2, h3, h4, h5, h6 {
 }
 .post-block.archive .posts-collapse .post-title {
   padding: 2px 0 0 0;
+  
+  @media (max-width: 767px) {
+    margin-left: 72px;
+  }
 }
 .posts-expand .post-title {
   font-size: 24px;
@@ -209,6 +221,10 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 900;
   padding-left: 10px;
   text-align: left;
+  
+  @media (max-width: 767px) {
+    font-size: 21px;
+  }
 }
 .posts-expand .post-eof {
   display: block;
@@ -244,6 +260,10 @@ h1, h2, h3, h4, h5, h6 {
 }
 .post-block.page .post-body hr {
   margin: 35px 0;
+  
+  @media (max-width: 767px) {
+    margin: 40px 10px;
+  }
 }
 .page-post-detail .post-title, .page-post-detail .post-meta {
   text-align: center;
@@ -252,45 +272,17 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 @media (max-width: 767px) {
-  .post {
-    padding: 15px 5px 15px;
-  }
-  .page {
-    margin-bottom: 10px;  //文章全文页与评论框间距
-  }
   .posts-expand {
     margin: 20px !important;
   }
-  .posts-expand .post-title {
-    font-size: 21px;
-  }
-  .post-block.archive .posts-collapse .post-title {
-    margin-left: 72px;
-  }
   .posts-expand .post-block.archive .post-header {
     padding: 0 0 0 18px;
-  }
-  hr {
-    margin: 40px 10px;
   }
   .post-body > ul, .post-body > li {
     padding:0 40px;
   }
   .post-block.page .category-all-page .category-list {
   list-style: initial;
-  }
-}
-
-a#hexo-douban-tab1.hexo-douban-tab.hexo-douban-active, a#hexo-douban-tab2.hexo-douban-tab.hexo-douban-active , a#hexo-douban-tab3.hexo-douban-tab.hexo-douban-active {
-  color: #fff;
-  text-decoration: none;
-}
-@media (max-width: 767px) {
-  .hexo-douban-item {
-    width: inherit !important; 
-  }
-  .hexo-douban-item, .hexo-douban-tabs {
-    margin: 0 10px 0;
   }
 }
 
@@ -304,12 +296,15 @@ a#hexo-douban-tab1.hexo-douban-tab.hexo-douban-active, a#hexo-douban-tab2.hexo-d
   background: #fff;
   margin: 0;
   border-radius: 10px;
-}
-@media (max-width: 767px) {
-  .comments {
-    padding: 20px;
-    margin: 0 20px 0 !important;
+
+  @media (max-width: 767px) {
+      padding: 20px;
+      margin: 0 20px 0 !important;
   }
+}
+
+.v .vlist .vcard .vhead .vsys {
+  display:none !important;
 }
 
 //Disqus加载按钮样式
@@ -438,7 +433,12 @@ a#hexo-douban-tab1.hexo-douban-tab.hexo-douban-active, a#hexo-douban-tab2.hexo-d
 .post-button {
   text-align: right;
   margin-top: 15px;
+  
+  @media (max-width: 767px) {
+    margin-right: 18px;
+  }
 }
+
 .btn {
   padding: 3px 15px
   color: #fff !important;
@@ -452,11 +452,7 @@ a#hexo-douban-tab1.hexo-douban-tab.hexo-douban-active, a#hexo-douban-tab2.hexo-d
     text-decoration: none !important;
   }
 }
-@media (max-width: 767px) {
-  .post-button {
-    margin-right: 18px;
-  }
-}
+
 
 
 //赞赏按钮样式
