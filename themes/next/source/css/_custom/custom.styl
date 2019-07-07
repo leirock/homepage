@@ -19,36 +19,11 @@
 .zhihu:before { content: "\e6ba"; }
 .douban:before { content: "\e638"; }
 
-//*********//
-//**标题区**//
-//*********//
-
-//页面最上面黑细条
-.headband {
-  display: none;
-}
-//标题背景
-.brand {
-  background: transparent;
-}
-//标题文字粗细
-.site-meta .site-title {
-  font-weight: 900;
-}
-//副标题
-.site-meta .site-subtitle {
-  font-family: Lato, "PingFang SC", "Microsoft YaHei", Georgia, sans-serif;
-  font-style: italic;
-  color: #fff;
-}
 //导航区背景
-.header {
+.site-meta {
   background: url("/img/header-bg.jpg");
-  //background-position-y: -15vh;
 }
-.header-inner{
-  padding: 25px 0 20px;
-}
+
 //页面背景
 body {
   background-image:url("/img/body-bg.png");
@@ -57,253 +32,86 @@ body {
   background-position:50% 50%; 
 }
 
-//导航栏
-
-//要在 Muse 下实现导航栏图标与文字在同一行，
-//1. 需要将 themes/next/layout/_partials/header/menu.swig 中搜索图标后的换行符删去
-//2. 需要将 themes/next/layout/_macro/menu/menu-item.swig 中其他图标后的换行符删去
-//3. 以下一条 CSS
-.menu .menu-item .fa {
-  display: inline;
-}
+//文章页卡片
+.post-block, #posts > article + article .post-block {
+  margin-top: 5px;
+  margin-bottom: 18px;
+  margin-left: 5px; 
+  border-radius: 8px;
   
-.menu {
-  margin-top: 30px;
-  
-  @media (max-width: 767px){
-    margin-top: 20px;
-  }
-}
-.menu .menu-item {
-  margin: 0 2px;
-}
-.menu .menu-item a {
-  border-bottom-color: transparent !important;
-  font-size: 14px;
-  color: #fff;
-  border-radius: 4px;
-  padding: 0px 12px;
-  background: none;
-  border: none;
-  transition-property: background;
-  display: block;
-  line-height: inherit;
-  transition-duration: 0.2s;
-  transition-timing-function: ease-in-out;
-  transition-delay: 0s;
-
-  &:hover {
-  transition-duration: 0.3s;
-  background: rgba(255,253,192,0.3);
-  border-bottom-color: #777;
-  color: #fff;
-  }
-  
-  @media (max-width: 767px){
-    padding: 4px 10px;
-    color: #0f2e41;
-    background: rgba(255,253,192,0.1);
-
-    &:hover {
-      background: #ddd;
-    }
-  } 
-}
-
-@media (max-width: 767px){
-  .site-nav {
-    background: rgba(255,255,255,0.9);
-  }
-}
-
-.btn-bar {
-  background-color: #fff;
-}
-
-//内容区
-h1, h2, h3, h4, h5, h6 {
-  font-weight:900;
-}
-//文章内文字间距
-.post-body p {
-  letter-spacing: .5px;
-}
-//链接文本样式
-.post-body a{
-  color: #0477ab;
-  border-bottom: none;
-
-  &:hover {
-    text-decoration: underline;
-  }
-}
-//外链添加图标标示
-.post-body a[target="_blank"]:not([title^="@"]):after {
-    font-family: "FontAwesome"; 
-    content: "\f08e"; 
-    font-size: 12px; 
-    padding-left: 2px; 
-} 
-//文章图片边框取消
-.posts-expand .post-body img {
-  border: 0px;
-}
-.post {
-  margin-bottom: 40px;  //文章全文页与评论框间距
-  padding: 30px 40px 30px;  //文章页边距
-  -webkit-box-shadow: 0 0 14px #cacbcb;
-  -moz-box-shadow: 0 0 14px #cacbcb;
-  box-shadow: 0 0 14px #cacbcb;
-  background: #fff;
-  border-radius: 10px;  //文章框四周角弧度
+//  -webkit-box-shadow: 0 0 14px #cacbcb;
+//  -moz-box-shadow: 0 0 14px #cacbcb;
+//  box-shadow: 0 0 14px #cacbcb;
+//  background: #fff;
   
   @media (max-width: 767px) {
-    padding: 15px 5px 15px;
+    padding: 25px 0 15px !important;
+    margin: 0 15px 20px;
   }
 }
-.page {
-  margin-bottom: 40px;  //文章全文页与评论框间距
-  padding: 30px 40px 40px;  //文章页边距
-  -webkit-box-shadow: 0 0 14px #cacbcb;
-  -moz-box-shadow: 0 0 14px #cacbcb;
-  box-shadow: 0 0 14px #cacbcb;
-  background: #fff;
-  border-radius: 10px;  //文章框四周角弧度
-  
-  @media (max-width: 767px) {
-    margin-bottom: 10px;  //文章全文页与评论框间距
-  }
-}
-.posts-collapse {
-    margin: 0 20px 0;
-  }
 
-.post-block.archive .posts-collapse {
-  margin: 0 5px 0;
+//页面最上面黑细条
+.headband {
+  display: none;
 }
 
-.posts-collapse .post{
-  margin: 30px 0 30px 3px;
-}
-
-.posts-collapse .collection-title small {
-  color: #808080;
-}
-
-.posts-collapse .post-meta {
-  top: 8px;
-}
-.posts-expand .post-meta {
-  text-align: left;
-  margin: 3px 0 40px 0;
-}
-.posts-expand .post-block.archive .post-meta  {
-  color: #555;
-}
-.posts-expand .post-meta time {
-  border-bottom: none;
-  cursor: initial;
-}
-.posts-collapse .post-title {
-  margin-left: 90px
-  padding: 5px 0 0 0;
-}
-.post-block.archive .posts-collapse .post-title {
-  padding: 2px 0 0 0;
-  
-  @media (max-width: 767px) {
-    margin-left: 72px;
-  }
-}
-.posts-expand .post-title {
-  font-size: 24px;
-  border-left: #649ab6 8px solid;
+//左侧卡片样式//
+.site-title { //标题文字粗细
   font-weight: 900;
-  padding-left: 10px;
-  text-align: left;
-  
-  @media (max-width: 767px) {
-    font-size: 21px;
-  }
 }
-.posts-expand .post-eof {
-  display: block;
-  margin: 0px auto 0px;
-  width: 0;
+.site-subtitle { //副标题
+  font-family: Lato, "PingFang SC", "Microsoft YaHei", Georgia, sans-serif;
+  font-style: italic;
+  color: #fff;
 }
-.post-block.archive .posts-collapse .collection-title {
-  margin: 0;
-}
-.posts-expand .post-block.archive .post-title-link:hover::before{
-  visibility: hidden;
-}
-.posts-expand .post-title-link{
-  line-height: 1.5;
-}
-.post-block.archive .post {
-  padding: 5px 30px 15px;
-  line-height: 0.7;
-}
-.post-block.archive .post-title h3 {
-  margin: 10px 0 10px;
-}
-.post-block.category .post, .post-block.tag .post {
-  padding: 5px 30px 15px;
-  line-height: 1.25;
-}
-.post-block.category .post .post-title, .post-block.tag .post .post-title, .post-block.archive .post .post-title {
-  font-family: Lato, "PingFang SC", "Microsoft YaHei", Georgia, sans;
-  font-size: 16px;
-  border-left: none;
-  font-weight: normal;
-  padding-left: 0;
-}
-.post-block.page .post-body hr {
-  margin: 35px 0;
-  
-  @media (max-width: 767px) {
-    margin: 40px 10px;
-  }
-}
-.page-post-detail .post-title, .page-post-detail .post-meta {
-  text-align: center;
-  border-left: none;
-  padding-left: 0;
-}
+.site-author-name {
+  font-family: 'Comic Sans MS', "PingFang SC", "Microsoft YaHei", Georgia, sans-serif;
 
-@media (max-width: 767px) {
-  .posts-expand {
-    margin: 20px !important;
-  }
-  .posts-expand .post-block.archive .post-header {
-    padding: 0 0 0 18px;
-  }
-  .post-body > ul, .post-body > li {
-    padding:0 40px;
-  }
-  .post-block.page .category-all-page .category-list {
-  list-style: initial;
-  }
 }
+.header-inner {
+  margin-top: 5px; 
+  border-radius: 8px;
 
+//  -webkit-box-shadow: 0 0 14px #cacbcb;
+//  -moz-box-shadow: 0 0 14px #cacbcb;
+//  box-shadow: 0 0 14px #cacbcb;
+//  background: #fff;
+}
+.sidebar-inner {
+  margin-top: 10px; 
+  border-radius: 8px;
+  
+//  -webkit-box-shadow: 0 0 14px #cacbcb;
+//  -moz-box-shadow: 0 0 14px #cacbcb;
+//  box-shadow: 0 0 14px #cacbcb;
+//  background: #fff;
+}
+.sidebar {
+  background: transparent;
+}
+.links-of-author-item { //社交媒体按钮样式
+  width: auto;
+}
+.sidebar-toggle, .back-to-top { //返回最上按钮
+  background: #3a5c6b;
+}
 
 //评论区
 .comments{
-  padding: 30px 35px 30px;
-  -webkit-box-shadow: 0 0 14px #cacbcb;
-  -moz-box-shadow: 0 0 14px #cacbcb;
-  box-shadow: 0 0 14px #cacbcb;
-  background: #fff;
-  margin: 0;
-  border-radius: 10px;
-
+  margin-left: 5px;
+  border-radius: 8px;
+  
+//  -webkit-box-shadow: 0 0 14px #cacbcb;
+//  -moz-box-shadow: 0 0 14px #cacbcb;
+//  box-shadow: 0 0 14px #cacbcb;
+//  background: #fff;
+  
   @media (max-width: 767px) {
-      padding: 20px;
-      margin: 0 20px 0 !important;
+    padding: 15px;
+    margin: 0 15px 20px;
   }
 }
-
-.v .vlist .vcard .vhead .vsys {
+.v .vlist .vcard .vhead .vsys { //评论区设备信息隐藏
   display:none !important;
 }
 
@@ -332,7 +140,78 @@ h1, h2, h3, h4, h5, h6 {
 }
 */
 
-//分类项目符修正bug
+//首页文章标题左侧
+.posts-expand .post-meta {
+  text-align: left;
+  margin: 3px 0 40px 0;
+}
+
+//首页文章标题下时间格式
+.posts-expand .post-meta time {
+  border-bottom: none;
+  cursor: initial;
+}
+
+//首页文章标题
+.posts-expand .post-title {
+  font-size: 24px;
+  border-left: #649ab6 8px solid;
+  font-weight: 900;
+  padding-left: 10px;
+  text-align: left;
+  
+  @media (max-width: 767px) {
+    font-size: 21px;
+  }
+}
+
+//归档、标签、分类页文章标题字体
+.posts-collapse .post-title a {
+  font-family: Lato, "PingFang SC", "Microsoft YaHei", Georgia, sans;
+}
+
+//文章页标题
+.page-post-detail .post-title, .page-post-detail .post-meta {
+  text-align: center;
+  border-left: none;
+  padding-left: 0;
+}
+
+//文章内文字间距
+.post-body p {
+  letter-spacing: .5px;
+}
+
+//链接文本样式
+.post-body a{
+  color: #0477ab;
+  border-bottom: none;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+//外链添加图标标示
+.post-body a[target="_blank"]:not([title^="@"]):after {
+  font-family: "FontAwesome"; 
+  content: "\f08e"; 
+  font-size: 12px; 
+  padding-left: 2px; 
+} 
+
+//段落中代码样式
+code {
+  background: none;
+  color: #dd4b39;
+}
+
+//文章图片边框取消
+.posts-expand .post-body img {
+  border: 0px;
+}
+
+//分类页样式
 @media (max-width: 767px) {
   .category-all-page .category-list-item {
     margin: 5px 40px;
@@ -373,61 +252,18 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
-
 //页码栏
 .pagination, .pagination .prev, .pagination .next, .pagination .page-number {
   border:none;
 }
 .pagination .page-number.current {
-  border-radius: 15px;
+  border-radius: 16px;
   background: #34495e;
 }
 .pagination {
-  margin: 60px 0 20px;
+  background: none;
+  box-shadow: none;
 }
-
-
-//侧边栏信息样式修改
-.site-author-name, .site-description {
-  font-family: 'Comic Sans MS', "PingFang SC", "Microsoft YaHei", Georgia, sans-serif;
-}
-.links-of-author {
-  margin-top: 40px;
-}
-.links-of-author a {
-  border-bottom: none;
-  background-color: #3a5c6b;
-  border-radius: 4px;
-  padding: 0px 8px;
-  color: #fff;
-}
-.links-of-author a:before, .links-of-author .exturl:before{
-  // background: #649ab6;
-  display: none;
-}
-.links-of-blogroll-title {
-  margin-top: 45px;
-}
-.links-of-blogroll-item {
-  margin-right: 7px;
-  padding: 0 8px;
-  background-color: #555; //#50842e;
-  border-radius: 4px;
-}
-.links-of-blogroll-item a {
-  color: #fff;
-  border-bottom: none;
-  display: inline;
-}
-
-//侧栏按钮样式
-.sidebar-toggle, .back-to-top {
-  background: #3a5c6b;
-}
-.sidebar-toggle-line {
-  background: #fff !important;
-}
-
 
 //修改阅读全文按钮样式
 .post-button {
@@ -435,10 +271,9 @@ h1, h2, h3, h4, h5, h6 {
   margin-top: 15px;
   
   @media (max-width: 767px) {
-    margin-right: 18px;
+    margin-right: 18px !important;
   }
 }
-
 .btn {
   padding: 3px 15px
   color: #fff !important;
@@ -452,8 +287,6 @@ h1, h2, h3, h4, h5, h6 {
     text-decoration: none !important;
   }
 }
-
-
 
 //赞赏按钮样式
 #reward-button {
@@ -500,7 +333,7 @@ h1, h2, h3, h4, h5, h6 {
   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
   }
 }
-
+//标签云样式
 .tag-cloud a {
   -webkit-box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
   -moz-box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
@@ -522,7 +355,6 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
-
 //相册样式
 .ImageGrid {
   width: 100%;
@@ -541,12 +373,7 @@ h1, h2, h3, h4, h5, h6 {
   border-radius: 8px;
 }
 
-
 //页脚
 .footer, .footer a{
   color: #666;
-}
-.footer {
-  padding-top: 40px;
-  padding-bottom: 20px;
 }
