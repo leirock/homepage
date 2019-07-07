@@ -1,6 +1,6 @@
 backend:
   name: git-gateway
-  repo: dongleizhang/dongleizhang.github.io
+  repo: lei2rock/homepage
   branch: hexo-source # Branch to update (master by default)
 
 media_folder: "source/img" # Folder path where uploaded files should be saved, relative to the base of the repo.
