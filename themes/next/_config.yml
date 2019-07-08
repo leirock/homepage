@@ -35,12 +35,12 @@ cache:
 # ---------------------------------------------------------------
 
 favicon:
-  small: /favicon/favicon-16x16.png
-  medium: /favicon/favicon-32x32.png
-  apple_touch_icon: /favicon/apple-touch-icon.png
-  safari_pinned_tab: /favicon/safari-pinned-tab.svg
-  android_manifest: /favicon/site.webmanifest
-  ms_browserconfig: /favicon/browserconfig.xml
+  small: /img/favicon-16x16.png
+  medium: /img/favicon-32x32.png
+  apple_touch_icon: /img/apple-touch-icon.png
+  safari_pinned_tab: /img/safari-pinned-tab.svg
+  android_manifest: /img/site.webmanifest
+  ms_browserconfig: /img/browserconfig.xml
 
 # Set rss to false to disable feed link.
 # Leave rss as blank to use site's feed link, and install dependencies hexo-generator-feed by `npm install hexo-generator-feed --save`.

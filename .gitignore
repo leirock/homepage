@@ -5,7 +5,4 @@ db.json
 node_modules/
 public/
 .deploy*/
-scripts/
-admin-panel/
 source/.MWebMetaData/
-source/cloud/
