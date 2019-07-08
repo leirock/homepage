@@ -1,7 +1,7 @@
 ---
 title: Contact
 ---
-**Email:** zhangdonglei@link.cuhk.edu.hk 
+**Email:** zhangdonglei (at) link.cuhk.edu.hk 
 **Phone:** +852 3943 1588
 **Office:** 
 　Room 951, Cheng Yu Tung Building,
