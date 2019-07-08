@@ -200,7 +200,7 @@ site_state: false
 # Value before `||` delimiter is the target permalink.
 # Value after `||` delimiter is the name of FontAwesome icon. If icon (with or without delimiter) is not specified, globe icon will be loaded.
 social:
-  Weibo: https://weibo.com/prczdl || weibo
+  Weibo: https://weibo.com/7216640993 || weibo
   Twitter: https://twitter.com/lei2rock || twitter
   GitHub: https://github.com/lei2rock || github
   #E-Mail: mailto:yourname@gmail.com || envelope
