@@ -5,7 +5,7 @@ Hi, I’m Donglei. Ph.D. candidate in Decision Sciences and Managerial Economics
 
 My research interests span the fields of applied microeconometrics, and I am recently interested in the topic about pollution regulation, carbon emission allowance trading and social welfare.
 
-I come from [Pujiang](https://en.wikipedia.org/wiki/Pujiang_County,_Zhejiang), a beautiful county in Zhejiang Province of China. My nickname is _BanBan_, and my friends also like to call me _LeiLei_.  Whenever I am not doing research, I love to read [books](https://blog.dlzhang.com/books/) and watch [documentaries](https://blog.dlzhang.com/posts/546f324b/), and [dramas](https://blog.dlzhang.com/posts/f90d4bca). <!-- more -->
+I come from [Pujiang](https://en.wikipedia.org/wiki/Pujiang_County,_Zhejiang), a beautiful county in Zhejiang Province of China. My nickname is _BanBan_, and my friends also like to call me _LeiLei_.  Whenever I am not doing research, I love to read books and watch documentaries, and dramas. <!-- more -->
 
 ### Education
 
