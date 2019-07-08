@@ -9,7 +9,7 @@ public_folder: "/img" # Folder path where uploaded files will be accessed, relat
 #publish_mode: editorial_workflow
 site_url: https://dlzhang.com
 display_url: https://dlzhang.com
-logo_url: /img/logo.svg
+logo_url: /cloud/img/logo.svg
 show_preview_links: true
 # slug:
 #   encoding: "ascii" # default: unicode
