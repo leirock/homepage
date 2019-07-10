@@ -1,0 +1,3 @@
+<i class="fa fa-fw fa-pencil-square-o" ></i>&nbsp;<a href="/admin" style="border-bottom: none" rel="noopener" target="_blank">文章</a>&nbsp;&nbsp;&middot;&nbsp;&nbsp;
+<i class="fa fa-fw fa-comments"></i>&nbsp;<a href="https://lei2rock.avosapps.us" style="border-bottom: none" rel="noopener" target="_blank">评论</a>&nbsp;&nbsp;&middot;&nbsp;&nbsp;
+<i class="fa fa-fw fa-cloud"></i>&nbsp;<a href="https://console.cloud.tencent.com" style="border-bottom: none" rel="noopener" target="_blank">图床</a>
