@@ -2,10 +2,10 @@
 Thumbs.db
 db.json
 *.log
-node_modules/
-public/
+/node_modules/
+/public/
 .deploy*/
-scripts/
-admin-panel/
-source/.MWebMetaData/
-source/cloud/
+/scripts/
+/admin-panel/
+/source/.MWebMetaData/
+/source/cloud/
