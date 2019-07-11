@@ -3,6 +3,7 @@ Disallow: /js/
 Disallow: /css/
 Disallow: /lib/
 Disallow: /img/
+Disallow: /images/
 Disallow: /admin/
 
 Sitemap: https://dlzhang.com/sitemap.xml
