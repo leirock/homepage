@@ -7,7 +7,7 @@
 # If true, will fully override default configuration by options from `_data/next.yml` (override). Only for NexT settings.
 # And if true, all config from default NexT `_config.yml` must be copied into `next.yml`. Use if you know what you are doing.
 # Useful if you want to comment some options from NexT `_config.yml` by `next.yml` without editing default config.
-override: false
+override: true
 
 # Allow to cache content generation. Introduced in NexT v6.0.0.
 cache:
@@ -16,16 +16,16 @@ cache:
 # Define custom file paths.
 # Create your custom files in site directory `source/_data` and uncomment needed files below.
 custom_file_path:
-  #head: source/_data/head.swig
-  #header: source/_data/header.swig
-  #sidebar: source/_data/sidebar.swig
-  #postMeta: source/_data/post-meta.swig
-  #postBodyEnd: source/_data/post-body-end.swig
-  #footer: source/_data/footer.swig
-  #bodyEnd: source/_data/body-end.swig
-  #variable: source/_data/variables.styl
-  #mixin: source/_data/mixins.styl
-  #style: source/_data/styles.styl
+  head: source/_data/head.swig
+  header: source/_data/header.swig
+  sidebar: source/_data/sidebar.swig
+  postMeta: source/_data/post-meta.swig
+  postBodyEnd: source/_data/post-body-end.swig
+  footer: source/_data/footer.swig
+  bodyEnd: source/_data/body-end.swig
+  variable: source/_data/variables.styl
+  mixin: source/_data/mixins.styl
+  style: source/_data/styles.styl
 
 
 # ---------------------------------------------------------------
@@ -34,12 +34,12 @@ custom_file_path:
 # ---------------------------------------------------------------
 
 favicon:
-  small: /images/favicon-16x16-next.png
-  medium: /images/favicon-32x32-next.png
-  apple_touch_icon: /images/apple-touch-icon-next.png
-  safari_pinned_tab: /images/logo.svg
-  #android_manifest: /images/manifest.json
-  #ms_browserconfig: /images/browserconfig.xml
+  small: /img/favicon-16x16.png
+  medium: /img/favicon-32x32.png
+  apple_touch_icon: /img/apple-touch-icon.png
+  safari_pinned_tab: /img/safari-pinned-tab.svg
+  android_manifest: /img/site.webmanifest
+  ms_browserconfig: /img/browserconfig.xml
 
 # hexo-generator-feed required for rss support. Leave rss as blank to use site's feed link.
 # Set rss to false to disable feed link. Set rss to specific value if you have burned your feed already.
@@ -53,26 +53,26 @@ footer:
   icon:
     # Icon name in Font Awesome. See: https://fontawesome.com/v4.7.0/icons/
     # `heart` is recommended with animation in red (#ff0000).
-    name: user
+    name: heart
     # If you want to animate the icon, set it to true.
-    animated: false
+    animated: true
     # Change the color of icon, using Hex Code.
-    color: "#808080"
+    color: "#ff0000"
 
   # If not defined, `author` from Hexo `_config.yml` will be used.
   copyright:
 
   powered:
     # Hexo link (Powered by Hexo).
-    enable: true
+    enable: false
     # Version info of Hexo after Hexo link (vX.X.X).
-    version: true
+    version: false
 
   theme:
     # Theme & scheme info link (Theme - NexT.scheme).
-    enable: true
+    enable: false
     # Version info of NexT after scheme info (vX.X.X).
-    version: true
+    version: false
 
   # Beian ICP information for Chinese users. See: http://www.beian.miit.gov.cn
   beian:
@@ -102,7 +102,7 @@ github_banner:
 # ---------------------------------------------------------------
 
 # Disable Baidu transformation on mobile devices.
-disable_baidu_transformation: false
+disable_baidu_transformation: true
 
 # Set a canonical link tag in your hexo, you could use it for your SEO of blog.
 # See: https://support.google.com/webmasters/answer/139066
@@ -110,7 +110,7 @@ disable_baidu_transformation: false
 canonical: true
 
 # Change headers hierarchy on site-subtitle (will be main site description) and on all post / page titles for better SEO-optimization.
-seo: false
+seo: true
 
 # If true, will add site-subtitle to index page.
 # Remember to set up your site-subtitle in Hexo `_config.yml` (e.g. subtitle: Subtitle)
@@ -121,7 +121,7 @@ exturl: false
 
 # Google Webmaster tools verification.
 # See: https://www.google.com/webmasters
-google_site_verification:
+google_site_verification: SJUudYL5q_atXSgew2qwy69FXOnSnNB2rAmwHmcBT9U
 
 # Bing Webmaster tools verification.
 # See: https://www.bing.com/webmaster
@@ -136,7 +136,7 @@ yandex_site_verification:
 baidu_site_verification:
 
 # Enable baidu push so that the blog will push the url to baidu automatically which is very helpful for SEO.
-baidu_push: false
+baidu_push: true
 
 
 # ---------------------------------------------------------------
@@ -150,11 +150,14 @@ baidu_push: false
 # When running the site in a subdirectory (e.g. domain.tld/blog), remove the leading slash from link value (/archives -> archives).
 # External url should start with http:// or https://
 menu:
-  home: / || home
-  #about: /about/ || user
+  About: /about/ || user
+  Research: /research/ || university
+  Contact: /contact/ || envelope
+  Blog: https://blog.dlzhang.com || rss
+  #home: / || home
   #tags: /tags/ || tags
   #categories: /categories/ || th
-  archives: /archives/ || archive
+  #archives: /archives/ || archive
   #schedule: /schedule/ || calendar
   #sitemap: /sitemap.xml || sitemap
   #commonweal: /404/ || heartbeat
@@ -170,10 +173,10 @@ menu_settings:
 # ---------------------------------------------------------------
 
 # Schemes
-scheme: Muse
+#scheme: Muse
 #scheme: Mist
 #scheme: Pisces
-#scheme: Gemini
+scheme: Gemini
 
 
 # ---------------------------------------------------------------
@@ -182,7 +185,7 @@ scheme: Muse
 # ---------------------------------------------------------------
 
 # Posts / Categories / Tags in sidebar.
-site_state: true
+site_state: false
 
 # Social Links
 # Usage: `Key: permalink || icon`
@@ -190,11 +193,12 @@ site_state: true
 # Value before `||` delimiter is the target permalink.
 # Value after `||` delimiter is the name of Font Awesome icon. If icon (with or without delimiter) is not specified, globe icon will be loaded.
 social:
-  #GitHub: https://github.com/yourname || github
+  Weibo: https://weibo.com/7216640993 || weibo
+  Twitter: https://twitter.com/lei2rock || twitter
+  GitHub: https://github.com/lei2rock || github
   #E-Mail: mailto:yourname@gmail.com || envelope
   #Weibo: https://weibo.com/yourname || weibo
   #Google: https://plus.google.com/yourname || google
-  #Twitter: https://twitter.com/yourname || twitter
   #FB Page: https://www.facebook.com/yourname || facebook
   #VK Group: https://vk.com/yourname || vk
   #StackOverflow: https://stackoverflow.com/yourname || stack-overflow
@@ -220,9 +224,9 @@ avatar:
   # In theme directory (source/images): /images/avatar.gif
   # In site directory (source/uploads): /uploads/avatar.gif
   # You can also use other linking images.
-  url: #/images/avatar.gif
+  url: /cloud/img/myphoto.jpg
   # If true, the avatar would be dispalyed in circle.
-  rounded: false
+  rounded: true
   # The value of opacity should be choose from 0 to 1 to set the opacity of the avatar.
   opacity: 1
   # If true, the avatar would be rotated with the cursor.
@@ -230,9 +234,9 @@ avatar:
 
 # Table Of Contents in the Sidebar
 toc:
-  enable: true
+  enable: false
   # Automatically add list number to toc.
-  number: true
+  number: false
   # If true, all words will placed on next lines if header width longer then sidebar width.
   wrap: false
   # If true, all level of TOC in a post will be displayed, rather than the activated part of it.
@@ -260,14 +264,16 @@ sidebar:
   # Sidebar offset from top menubar in pixels (only for Pisces | Gemini).
   offset: 12
   # Enable sidebar on narrow view (only for Muse | Mist).
-  onmobile: false
+  onmobile: true
+  # Click any blank part of the page to close sidebar (only for Muse | Mist).
+  dimmer: false
 
 back2top:
   enable: true
   # Back to top in sidebar.
   sidebar: false
   # Scroll percent label in b2t button.
-  scrollpercent: false
+  scrollpercent: true
 
 # A button to open designated chat widget in sidebar.
 # Firstly, you need enable the chat service you want to activate its sidebar button.
@@ -291,7 +297,7 @@ text_align:
   mobile: justify
 
 # Automatically scroll page to section which is under <!-- more --> mark.
-scroll_to_more: true
+scroll_to_more: false
 
 # Automatically saving scroll position on each post / page in cookies.
 save_scroll: false
@@ -307,14 +313,14 @@ auto_excerpt:
 
 # Read more button
 # If true, the read more button would be displayed in excerpt section.
-read_more_btn: true
+read_more_btn: false
 
 # Post meta display settings
 post_meta:
   item_text: true
   created_at: true
   updated_at:
-    enable: true
+    enable: false
     another_day: true
   categories: true
 
@@ -329,17 +335,17 @@ symbols_count_time:
 
 codeblock:
   # Manual define the border radius in codeblock, leave it blank for the default value: 1
-  border_radius:
+  border_radius: 8
   # Add copy button on codeblock
   copy_button:
-    enable: false
+    enable: true
     # Show text copy result
-    show_result: false
+    show_result: true
     # Style: only `flat` is currently available, leave it blank if you prefer default theme
     style:
 
 # Use icon instead of the symbol # to indicate the tag at the bottom of the post
-tag_icon: false
+tag_icon: true
 
 # Wechat Subscriber
 wechat_subscriber:
@@ -353,7 +359,7 @@ reward_settings:
   # You can show or hide reward in a specific article throuth `reward: true | false` in Front-matter.
   enable: false
   animation: false
-  #comment: Donate comment here.
+  #comment: Donate comment here
 
 reward:
   #wechatpay: /images/wechatpay.png
@@ -386,7 +392,7 @@ post_edit:
 # ---------------------------------------------------------------
 
 # Reduce padding / margin indents on devices with narrow width.
-mobile_layout_economy: false
+mobile_layout_economy: true
 
 # Android Chrome header panel color ($brand-bg / $headband-bg => $black-deep).
 android_chrome_color: "#222"
@@ -408,7 +414,7 @@ custom_logo:
 highlight_theme: normal
 
 # Enable "cheers" for archive page.
-cheers: true
+cheers: false
 
 # TagCloud settings for tags page.
 tagcloud:
@@ -434,7 +440,7 @@ tagcloud:
 # ---------------------------------------------------------------
 
 font:
-  enable: false
+  enable: true
 
   # Uri of fonts host, e.g. //fonts.googleapis.com (Default).
   host:
@@ -454,7 +460,7 @@ font:
   # Fallback to `global` font settings.
   headings:
     external: true
-    family:
+    family: PT Serif
     size:
 
   # Font settings for posts.
@@ -467,13 +473,13 @@ font:
   # Fallback to `global` font settings.
   logo:
     external: true
-    family:
-    size:
+    family: Marck Script
+    size: 30
 
   # Font settings for <code> and code blocks.
   codes:
     external: true
-    family:
+    family: Source Code Pro
     size:
 
 
@@ -488,7 +494,7 @@ font:
 
 # Math Equations Render Support
 math:
-  enable: false
+  enable: true
 
   # Default (true) will load mathjax / katex script on demand.
   # That is it only render those page which has `mathjax: true` in Front-matter.
@@ -527,7 +533,7 @@ pangu: false
 # Dependencies: https://github.com/theme-next/theme-next-quicklink
 # Visit https://github.com/GoogleChromeLabs/quicklink for details.
 quicklink:
-  enable: false
+  enable: true
 
   # Quicklink (quicklink.umd.js script) is loaded on demand.
   # Add `quicklink: true` in Front-matter of the page or post you need.
@@ -725,8 +731,8 @@ growingio_analytics: # <project_id>
 
 # Google Analytics
 google_analytics:
-  #tracking_id:
-  #localhost_ignored: true
+  tracking_id: UA-141207776-2
+  localhost_ignored: true
 
 # CNZZ count
 cnzz_siteid:
@@ -775,8 +781,8 @@ rating:
 # You can visit https://leancloud.cn to get AppID and AppKey.
 leancloud_visitors:
   enable: false
-  app_id: # <app_id>
-  app_key: # <app_key>
+  app_id: #<app_id>
+  app_key: #<app_key>
   # Dependencies: https://github.com/theme-next/hexo-leancloud-counter-security
   # If you don't care about security in leancloud counter and just want to use it directly
   # (without hexo-leancloud-counter-security plugin), set `security` to `false`.
@@ -878,8 +884,8 @@ note:
   #  - modern    bs-callout new (v2-v3) alert style.
   #  - flat      flat callout style with background, like on Mozilla or StackOverflow.
   #  - disabled  disable all CSS styles import of note tag.
-  style: simple
-  icons: false
+  style: flat
+  icons: true
   border_radius: 3
   # Offset lighter of background in % for modern and flat styles (modern: -12 | 12; flat: -18 | 6).
   # Offset also applied to label tag variables. This option can work with disabled note tag.
@@ -922,7 +928,7 @@ mermaid:
 # Use velocity to animate everything.
 motion:
   enable: true
-  async: false
+  async: true
   transition:
     # Transition variants:
     # fadeIn | fadeOut | flipXIn | flipXOut | flipYIn | flipYOut | flipBounceXIn | flipBounceXOut | flipBounceYIn | flipBounceYOut
@@ -942,7 +948,7 @@ motion:
 # Choose only one variant, do not need to install both.
 # To install 2.x: https://github.com/theme-next/theme-next-fancybox
 # To install 3.x: https://github.com/theme-next/theme-next-fancybox3
-fancybox: false
+fancybox: true
 
 # Polyfill to remove click delays on browsers with touch UIs.
 # Dependencies: https://github.com/theme-next/theme-next-fastclick
@@ -1009,7 +1015,7 @@ vendors:
   # Example:
   # jquery: //cdn.jsdelivr.net/npm/jquery@3/dist/jquery.min.js
   # jquery: //cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js
-  jquery:
+  jquery: //cdn.jsdelivr.net/npm/jquery@3/dist/jquery.min.js
 
   # Internal version: 2.1.5 & 3.5.7
   # See: https://fancyapps.com/fancybox
@@ -1018,8 +1024,8 @@ vendors:
   # fancybox: //cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js
   # fancybox_css: //cdn.jsdelivr.net/gh/fancyapps/fancybox@3/dist/jquery.fancybox.min.css
   # fancybox_css: //cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css
-  fancybox:
-  fancybox_css:
+  fancybox: //cdn.jsdelivr.net/gh/fancyapps/fancybox@3/dist/jquery.fancybox.min.js
+  fancybox_css: //cdn.jsdelivr.net/gh/fancyapps/fancybox@3/dist/jquery.fancybox.min.css
 
   # Internal version: 1.0.6
   # See: https://github.com/ftlabs/fastclick
@@ -1042,15 +1048,15 @@ vendors:
   # velocity: //cdnjs.cloudflare.com/ajax/libs/velocity/1.2.1/velocity.min.js
   # velocity_ui: //cdn.jsdelivr.net/npm/velocity-animate@1/velocity.ui.min.js
   # velocity_ui: //cdnjs.cloudflare.com/ajax/libs/velocity/1.2.1/velocity.ui.min.js
-  velocity:
-  velocity_ui:
+  velocity: //cdn.jsdelivr.net/npm/velocity-animate@1/velocity.min.js
+  velocity_ui: //cdn.jsdelivr.net/npm/velocity-animate@1/velocity.ui.min.js
 
   # Internal version: 4.7.0
   # See: https://fontawesome.com
   # Example:
   # fontawesome: //cdn.jsdelivr.net/npm/font-awesome@4/css/font-awesome.min.css
   # fontawesome: //cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css
-  fontawesome:
+  fontawesome: //cdn.jsdelivr.net/npm/font-awesome@4/css/font-awesome.min.css
 
   # Internal version: 2.10.4
   # See: https://www.algolia.com
@@ -1107,7 +1113,7 @@ vendors:
   # See: https://github.com/GoogleChromeLabs/quicklink
   # Example:
   # quicklink: //cdn.jsdelivr.net/npm/quicklink@1/dist/quicklink.umd.js
-  quicklink:
+  quicklink: //cdn.jsdelivr.net/npm/quicklink@1/dist/quicklink.umd.js
 
   # Internal version: 1.0.0
   # See: https://github.com/revir/need-more-share2
@@ -1134,7 +1140,7 @@ vendors:
   # Example:
   # valine: //cdn.jsdelivr.net/npm/valine@1/dist/Valine.min.js
   # valine: //cdnjs.cloudflare.com/ajax/libs/valine/1.3.4/Valine.min.js
-  valine:
+  valine: //cdn.jsdelivr.net/npm/valine/dist/Valine.min.js
 
   # gitalk & js-md5
   # See: https://github.com/gitalk/gitalk, https://github.com/emn178/js-md5

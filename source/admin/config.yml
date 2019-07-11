@@ -39,13 +39,6 @@ collections: # A list of collections the CMS should be able to edit
         fields:
           - {label: "标题", name: "title", widget: "string"}
           - {label: "正文", name: "body", widget: "markdown"}
-      - name: "404"
-        label: "404 页面"
-        file: "/source/404/index.md"
-        fields:
-          - {label: "标题", name: "title", widget: "string"}
-          - {label: "永久链接", name: "permalink", widget: "string", default: "/404"}
-          - {label: "正文", name: "body", widget: "markdown"}
       - name: "readme_hexo"
         label: "README (hexo-source)"
         file: "/source/README.md"
