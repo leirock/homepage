@@ -1,23 +1,4 @@
-{% if page.type ==='picture' %}
-{%
-  set js_commons = [
-    'utils.js',
-    'motion.js',
-    'comment-locate.js',
-    'minigrid.min.js',
-    'photo.js'
-  ]
-%}
-{% else %}
-{%
-  set js_commons = [
-    'utils.js',
-    'motion.js',
-    'comment-locate.js'
-  ]
-%}
+<script src="{{ url_for(theme.js) }}/utils.js?v={{ version }}"></script>
+{% if theme.motion.enable %}
+  <script src="{{ url_for(theme.js) }}/motion.js?v={{ version }}"></script>
 {% endif %}
-
-{% for common in js_commons %}
-  <script src="{{ url_for(theme.js) }}/{{ common }}?v={{ version }}"></script>
-{% endfor %}
