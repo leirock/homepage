@@ -84,3 +84,6 @@ deploy:
   - type: git
     repo: https://GH_TOKEN@github.com/lei2rock/homepage.git
     branch: master
+  - type: git
+    repo: https://dldylan:CODING_TOKEN@git.dev.tencent.com/dldylan/homepage.git
+    branch: master
