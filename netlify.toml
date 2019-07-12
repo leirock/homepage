@@ -32,9 +32,3 @@ ID = "dlzhang"
   status = 301
   force = true # COMMENT: ensure that we always redirect
 
-# Redirect qcloud link
-[[redirects]]
-  from = "/cloud/*"
-  to = "https://lei2rock-1256060851.cos.ap-shanghai.myqcloud.com/:splat"
-  status = 200
-  force = true
