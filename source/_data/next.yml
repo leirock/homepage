@@ -313,7 +313,7 @@ auto_excerpt:
 
 # Read more button
 # If true, the read more button would be displayed in excerpt section.
-read_more_btn: false
+read_more_btn: true
 
 # Post meta display settings
 post_meta:
