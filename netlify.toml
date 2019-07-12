@@ -35,6 +35,6 @@ ID = "dlzhang"
 # Redirect qcloud link
 [[redirects]]
   from = "/cloud/*"
-  to = "https://lei2rock-1256060851.cos.ap-shanghai.myqcloud.com/:splat"
+  to = "https://cloud-1256060851.cos.ap-shanghai.myqcloud.com/:splat"
   status = 200
   force = true
