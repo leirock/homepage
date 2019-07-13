@@ -6,6 +6,5 @@ package-lock.json
 /node_modules/
 /public/
 .deploy*/
-/scripts/
 /source/.MWebMetaData/
 /source/cloud/
