@@ -34,12 +34,12 @@ custom_file_path:
 # ---------------------------------------------------------------
 
 favicon:
-  small: /img/favicon-16x16.png
-  medium: /img/favicon-32x32.png
-  apple_touch_icon: /img/apple-touch-icon.png
-  safari_pinned_tab: /img/safari-pinned-tab.svg
-  android_manifest: /img/site.webmanifest
-  ms_browserconfig: /img/browserconfig.xml
+  small: /images/favicon-16x16.png
+  medium: /images/favicon-32x32.png
+  apple_touch_icon: /images/apple-touch-icon.png
+  safari_pinned_tab: /images/safari-pinned-tab.svg
+  android_manifest: /images/site.webmanifest
+  ms_browserconfig: /images/browserconfig.xml
 
 # hexo-generator-feed required for rss support. Leave rss as blank to use site's feed link.
 # Set rss to false to disable feed link. Set rss to specific value if you have burned your feed already.
