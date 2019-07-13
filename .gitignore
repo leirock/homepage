@@ -2,10 +2,10 @@
 Thumbs.db
 db.json
 *.log
+package-lock.json
 /node_modules/
 /public/
 .deploy*/
 /scripts/
-/admin-panel/
 /source/.MWebMetaData/
 /source/cloud/

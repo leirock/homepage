@@ -2,7 +2,6 @@ User-agent: *
 Disallow: /js/
 Disallow: /css/
 Disallow: /lib/
-Disallow: /img/
 Disallow: /images/
 Disallow: /admin/
 
