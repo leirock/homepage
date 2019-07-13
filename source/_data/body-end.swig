@@ -1,4 +1,4 @@
-{# Netlify CMS Identity #}
+{# Netlify CMS #}
 <script>
   if (window.netlifyIdentity) {
     window.netlifyIdentity.on("init", user => {
