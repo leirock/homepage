@@ -6,15 +6,16 @@ branches:
   - hexo-source
 
 cache:
+  yarn: true
   directories:
-  - node_modules
+    - node_modules
 
 before_install:
   - export TZ='Asia/Shanghai'
 
 install:
-  - npm install hexo-cli -g
-  - npm install
+  - yarn global add hexo-cli
+  - yarn
 
 script:
 #  - hexo clean

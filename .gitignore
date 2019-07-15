@@ -2,8 +2,8 @@
 Thumbs.db
 db.json
 *.log
-package-lock.json
 /node_modules/
+yarn.lock
 /public/
 .deploy*/
 /source/.MWebMetaData/

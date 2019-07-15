@@ -18,23 +18,22 @@ ID = "dlzhang"
   # Default build command.
   command = "hexo generate"
 
-
 # Redirect default Netlify subdomain to primary domain
 [[redirects]]
   from = "https://dlzhang.netlify.com/*"
   to = "https://dlzhang.com/:splat"
   status = 301
-  force = true # COMMENT: ensure that we always redirect
+  force = true
 
 [[redirects]]
   from = "https://dlzhang.com/blog"
   to = "https://blog.dlzhang.com"
   status = 301
-  force = true # COMMENT: ensure that we always redirect
+  force = true
 
-# Redirect qcloud link
 [[redirects]]
   from = "/cloud/*"
   to = "https://cloud-1256060851.cos.ap-shanghai.myqcloud.com/:splat"
   status = 200
   force = true
+  
