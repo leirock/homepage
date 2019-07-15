@@ -21,13 +21,13 @@
 
 //导航区背景
 .site-meta {
-  background: url("//cdn.jsdelivr.net/gh/lei2rock/blog/images/header-bg.jpg");
-  background-position:72% 20%; 
+  background: url("/images/header-bg.jpg");
+  background-position:70% 20%; 
 }
 
 //页面背景
 body {
-  background-image:url("//cdn.jsdelivr.net/gh/lei2rock/blog/images/body-bg.png");
+  background-image:url("/images/body-bg.png");
   background-repeat: repeat;
   background-attachment:fixed;
   background-position:50% 50%; 
@@ -59,7 +59,9 @@ body {
 .site-title { //标题文字粗细
   font-weight: 900;
 }
-.site-subtitle { //副标题
+
+//副标题
+.site-subtitle {
   font-family: Lato, "PingFang SC", "Microsoft YaHei", Georgia, sans-serif;
 //  font-style: italic;
   color: #fff;
@@ -67,6 +69,7 @@ body {
 //.site-author-name, .site-description {
 //  font-family: 'Comic Sans MS', "PingFang SC", "Microsoft YaHei", Georgia, sans-serif;
 //}
+
 .header-inner {
   margin-top: 5px; 
   border-radius: 8px;
@@ -75,6 +78,7 @@ body {
 //  box-shadow: 0 0 14px #cacbcb;
 //  background: #fff;
 }
+
 .sidebar-inner {
   margin-top: 10px; 
   border-radius: 8px;
@@ -83,13 +87,18 @@ body {
 //  box-shadow: 0 0 14px #cacbcb;
 //  background: #fff;
 }
+
 .sidebar {
   background: transparent;
 }
-.links-of-author-item { //社交媒体按钮样式
+
+//社交媒体按钮样式
+.links-of-author-item {
   width: auto;
 }
-.sidebar-toggle, .back-to-top { //返回最上按钮
+
+//返回最上按钮
+.sidebar-toggle, .back-to-top {
   background: #3a5c6b;
 }
 
@@ -107,32 +116,10 @@ body {
     margin: 0 15px 20px;
   }
 }
-.v .vlist .vcard .vhead .vsys { //评论区设备信息隐藏
+//评论区设备信息隐藏
+.v .vlist .vcard .vhead .vsys { 
   display:none !important;
 }
-/*
-.btncomment { //Disqus加载按钮样式
-  display: inline-block;
-  padding: 0 20px;
-  font-size: 14px;
-  color: #fff;
-  background: #222;
-  border: 2px solid #222;
-  text-decoration: none;
-  border-radius: 0;
-  transition-property: background-color;
-  transition-duration: 0.2s;
-  transition-timing-function: ease-in-out;
-  transition-delay: 0s;
-  line-height: 2;
-
-  &:hover {
-  border-color: #222;
-  color: #222;
-  background: #fff;
-  }
-}
-*/
 
 //首页文章标题左侧
 .posts-expand .post-meta {
@@ -327,6 +314,7 @@ code {
   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
   }
 }
+
 //标签云样式
 .tag-cloud a {
   -webkit-box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
