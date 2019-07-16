@@ -1146,6 +1146,6 @@ vendors:
   disqusjs_css:
 
 # Assets
-css: //cdn.jsdelivr.net/gh/lei2rock/homepage@2.1/css
-js: //cdn.jsdelivr.net/gh/lei2rock/homepage@2.1/js
-images: //cdn.jsdelivr.net/gh/lei2rock/homepage@2.1/images
+css: //cdn.jsdelivr.net/gh/lei2rock/homepage@2.2/css
+js: //cdn.jsdelivr.net/gh/lei2rock/homepage@2.2/js
+images: //cdn.jsdelivr.net/gh/lei2rock/homepage@2.2/images
