@@ -21,17 +21,29 @@ script:
 #  - hexo clean
   - hexo generate
 
-after_success:
-  - git config --global user.name "lei2rock"
-  - git config --global user.email "zjpjzdl@qq.com"
-  - sed -i "s/GH_TOKEN/${GH_TOKEN}/g" ./_config.yml
- # - sed -i "s/CODING_TOKEN/${CODING_TOKEN}/g" ./_config.yml
+# after_success:
+ # - git config --global user.name "$GIT_NAME"
+ # - git config --global user.email "$GIT_EMAIL"
+ # - sed -i "s/GH_TOKEN/$GH_TOKEN/g" ./_config.yml
+ # - sed -i "s/CODING_TOKEN/$CODING_TOKEN/g" ./_config.yml
  # - cat ./_config.yml
-  - hexo deploy -m "Travis CI Build ${TRAVIS_BUILD_NUMBER}"
+ # - hexo deploy -m "Travis CI Build ${TRAVIS_BUILD_NUMBER}"
+
+deploy:
+  provider: pages
+  skip_cleanup: true # 跳过清理
+  local_dir: public # 需要推送到Github的静态文件目录 
+#  name: $GIT_NAME # 用户名变量
+#  email: $GIT_EMAIL # 用户邮箱变量
+  github_token: $GH_TOKEN # GitHub Token变量
+  keep-history: true # 保持推送记录，以增量提交的方式
+  target-branch: master # 推送的目标分支 local_dir->>master分支
+  on:
+    branch: hexo-source # 工作分支
 
 notifications:
 email:
   recipients:
-    - zjpjzdl@qq.com
+    - $GIT_EMAIL
   on_success: change # default: change
   on_failure: always # default: always
