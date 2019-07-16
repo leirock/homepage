@@ -2,9 +2,9 @@
 Thumbs.db
 db.json
 *.log
-/node_modules/
+node_modules/
 yarn.lock
-/public/
+public/
 .deploy*/
-/source/.MWebMetaData/
-/source/cloud/
+source/.MWebMetaData/
+source/cloud/
