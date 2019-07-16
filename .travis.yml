@@ -22,8 +22,8 @@ script:
   - hexo generate
 
 after_success:
-  - git config --global user.name "$GIT_NAME"
-  - git config --global user.email "$GIT_EMAIL"
+  - git config --global user.name $GIT_NAME
+  - git config --global user.email $GIT_EMAIL
   - sed -i "s/GH_TOKEN/$GH_TOKEN/g" ./_config.yml
 #  - sed -i "s/CODING_TOKEN/$CODING_TOKEN/g" ./_config.yml
   - hexo deploy -m "Travis CI Build ${TRAVIS_BUILD_NUMBER}"
