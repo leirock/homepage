@@ -197,7 +197,6 @@ social:
   Twitter: https://twitter.com/lei2rock || twitter
   GitHub: https://github.com/lei2rock || github
   #E-Mail: mailto:yourname@gmail.com || envelope
-  #Weibo: https://weibo.com/yourname || weibo
   #Google: https://plus.google.com/yourname || google
   #FB Page: https://www.facebook.com/yourname || facebook
   #VK Group: https://vk.com/yourname || vk
@@ -208,7 +207,7 @@ social:
 
 social_icons:
   enable: true
-  icons_only: false
+  icons_only: true
   transition: false
 
 # Blog rolls
