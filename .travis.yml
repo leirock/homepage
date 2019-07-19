@@ -3,7 +3,7 @@ node_js: stable
 
 branches:
   only:
-  - hexo-source
+  - src
 
 cache:
   yarn: true
