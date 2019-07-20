@@ -1,7 +1,7 @@
 backend:
   name: git-gateway
   repo: lei2rock/homepage
-  branch: hexo-source # Branch to update (master by default)
+  branch: src # Branch to update (master by default)
 
 media_folder: "source/images" # Folder path where uploaded files should be saved, relative to the base of the repo.
 public_folder: "/images" # Folder path where uploaded files will be accessed, relative to the base of the built site.
@@ -39,13 +39,8 @@ collections: # A list of collections the CMS should be able to edit
         fields:
           - {label: "标题", name: "title", widget: "string"}
           - {label: "正文", name: "body", widget: "markdown"}
-      - name: "readme_hexo"
-        label: "README (hexo-source)"
+      - name: "readme"
+        label: "README"
         file: "/source/README.md"
-        fields:
-          - {label: "正文", name: "body", widget: "markdown"}
-      - name: "readme_master"
-        label: "README (master)"
-        file: "/README.md"
         fields:
           - {label: "正文", name: "body", widget: "markdown"}
