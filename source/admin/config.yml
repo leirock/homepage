@@ -41,6 +41,6 @@ collections: # A list of collections the CMS should be able to edit
           - {label: "正文", name: "body", widget: "markdown"}
       - name: "readme"
         label: "README"
-        file: "/source/README.md"
+        file: "/README.md"
         fields:
           - {label: "正文", name: "body", widget: "markdown"}
