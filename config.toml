@@ -1,0 +1,70 @@
+baseURL = "/"
+languageCode = "en-us"
+title = "Zhang Donglei"
+theme = "LeaveIt"
+
+paginate = 12
+enableEmoji = false
+enableRobotsTXT = true
+
+preserveTaxonomyNames = true
+
+[blackfriday]
+  hrefTargetBlank = true
+  nofollowLinks = true
+  noreferrerLinks = true
+
+[Permalinks]
+ posts = "/:year/:filename/"
+
+[menu]
+  [[menu.main]]
+    name = "About"
+    url = "/about/"
+    weight = 1
+
+  [[menu.main]]
+    name = "Research"
+    url = "/research/"
+    weight = 2
+
+  [[menu.main]]
+    name = "Contact"
+    url = "/contact/"
+    weight = 3
+
+  [[menu.main]]
+    name = "Blog"
+    url = "https://blog.dlzhang.com"
+    weight = 4
+
+[params]
+    since = ""
+    author = "Zhang Donglei"          # Author's name
+    avatar = "cloud/img/myphoto.jpg"  # Author's avatar
+    subtitle = "Never say you know the essence, let alone the truth."  # Subtitle
+    cdn_url = ""                      # Base CDN URL
+    home_mode = ""                    # post or other
+
+    google_verification = "SJUudYL5q_atXSgew2qwy69FXOnSnNB2rAmwHmcBT9U"
+   
+    description = "Zhang Donglei's Homepage" # site description
+    keywords = "Donglei, Zhang Donglei, Donglei Zhang, 张栋磊, 栋磊" # site keywords
+
+    beian = ""
+    baiduAnalytics = ""
+    googleAnalytics = "UA-141207776-2"
+
+    license= '本文采用<a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/" target="_blank">知识共享署名-非商业性使用 4.0 国际许可协议</a>进行许可'
+
+[params.social]
+    Weibo = "7216640993"
+    Twitter = "lei2rock"
+    GitHub = "lei2rock"
+    #Email   = "xxoo"
+    #Instagram = "xxoo"
+    #Wechat = "/cloud/img/wx_channel_en.jpg"  # Wechat QRcode image
+    #Facebook = "xxoo"
+    #Telegram = "xxoo"
+    #Dribbble = "xxoo"
+    #Medium = "xxoo"

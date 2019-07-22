@@ -1,0 +1,9 @@
+User-agent: *
+Disallow: /images/
+Disallow: /css/
+Disallow: /font/
+Disallow: /js/
+Disallow: /categories/
+Disallow: /tags/
+
+Sitemap: https://dlzhang.com/sitemap.xml

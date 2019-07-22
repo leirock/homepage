@@ -1,36 +1,32 @@
-language: node_js
-node_js: stable
+language: go
 
 branches:
   only:
   - src
 
-cache:
-  yarn: true
-  directories:
-    - node_modules
-
-before_install:
-  - export TZ='Asia/Shanghai'
-
 install:
-  - yarn global add hexo-cli
-  - yarn
+  # install dependencies
+  - wget -q -O libstdc++6.deb http://security.ubuntu.com/ubuntu/pool/main/g/gcc-5/libstdc++6_5.4.0-6ubuntu1~16.04.10_amd64.deb
+  - sudo dpkg --force-all -i libstdc++6.deb
+  # install hugo
+  - wget -q -O hugo.deb https://github.com/gohugoio/hugo/releases/download/v0.55.6/hugo_extended_0.55.6_Linux-64bit.deb
+  - sudo dpkg -i hugo.deb
 
 script:
-#  - hexo clean
-  - hexo generate
+  - HUGO_ENV=production hugo --gc --minify
 
 after_success:
+  - cd public
   - git config --global user.name $GIT_NAME
   - git config --global user.email $GIT_EMAIL
-  - sed -i "s/GH_TOKEN/$GH_TOKEN/g" ./_config.yml
-#  - sed -i "s/CODING_TOKEN/$CODING_TOKEN/g" ./_config.yml
-  - hexo deploy -m "Travis CI Build ${TRAVIS_BUILD_NUMBER}"
+  - git init
+  - git add .
+  - git commit -m "Travis CI Build ${TRAVIS_BUILD_NUMBER}"
+  - git push --force "https://${GH_TOKEN}@github.com/lei2rock/test.git" master:master
 
 notifications:
-email:
-  recipients:
-    - $GIT_EMAIL
-  on_success: change # default: change
-  on_failure: always # default: always
+  email:
+    recipients:
+      - $GIT_EMAIL
+    on_success: change # default: change
+    on_failure: always # default: always
