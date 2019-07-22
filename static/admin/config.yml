@@ -1,0 +1,47 @@
+backend:
+  name: git-gateway
+  repo: lei2rock/homepage
+  branch: src # Branch to update (master by default)
+
+media_folder: "static/images" # Folder path where uploaded files should be saved, relative to the base of the repo.
+public_folder: "/images" # Folder path where uploaded files will be accessed, relative to the base of the built site.
+
+publish_mode: editorial_workflow
+site_url: https://dlzhang.com
+display_url: https://dlzhang.com
+logo_url: /cloud/img/cms-logo.svg
+show_preview_links: true
+# slug:
+#   encoding: "ascii" # default: unicode
+#   clean_accents: true
+#   sanitize_replacement: "_"  # default: "-"
+
+
+collections: # A list of collections the CMS should be able to edit
+  - name: "pages"
+    label: "页面设置"
+    files:
+      - name: "about"
+        label: "About"
+        file: "/content/about.md"
+        fields:
+          - {label: "标题", name: "title", widget: "string"}
+          - {label: "正文", name: "body", widget: "markdown"}
+      - name: "research"
+        label: "Research"
+        file: "/content/research.md"
+        fields:
+          - {label: "标题", name: "title", widget: "string"}
+          - {label: "正文", name: "body", widget: "markdown"}
+      - name: "contact"
+        label: "Contact"
+        file: "/content/contact.md"
+        fields:
+          - {label: "标题", name: "title", widget: "string"}
+          - {label: "正文", name: "body", widget: "markdown"}
+      - name: "readme"
+        label: "README"
+        file: "/README.md"
+        fields:
+          - {label: "正文", name: "body", widget: "markdown"}
+          

@@ -16,7 +16,7 @@ ID = "lei2rock"
   publish = "/public"
 
   # Default build command.
-  command = "hexo generate"
+  command = "HUGO_ENV=production hugo --gc --minify"
 
 # Redirect default Netlify subdomain to primary domain
 [[redirects]]
