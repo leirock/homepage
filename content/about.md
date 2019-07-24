@@ -5,7 +5,7 @@ title: About
 
 　　My research interests span the fields of applied microeconometrics, and I am recently interested in the topic about pollution regulation, carbon emission allowance trading and social welfare.
 
-　　I come from [Pujiang](https://en.wikipedia.org/wiki/Pujiang_County,_Zhejiang), a beautiful county in Zhejiang Province of China. My nickname is _BanBan_, and my friends also like to call me _LeiLei_.  Whenever I am not doing research, I love to read books and watch documentaries, and dramas. <!-- more -->
+　　I come from [Pujiang](https://en.wikipedia.org/wiki/Pujiang_County,_Zhejiang), a beautiful county in Zhejiang Province of China. My nickname is _BanBan_, and my friends also like to call me _LeiLei_. Whenever I am not doing research, I love to read books and watch documentaries, and dramas.
 
 ### Education
 
@@ -15,4 +15,4 @@ title: About
 
 ### CV
 
-　<i class="fa fa-fw fa-file-pdf-o"></i>&nbsp;&nbsp;[Download CV](/cloud/file/cv_donglei_zhang.pdf)
+　<i class="iconfont icon-right"></i> [Download](/cloud/file/cv_donglei_zhang.pdf)
