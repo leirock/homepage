@@ -1,22 +1,19 @@
-language: python
-python: 3.7
+language: go
 
 branches:
   only:
   - src
-before_install:
-  - sudo apt-get update -qq
-  - sudo apt-get -yq install apt-transport-https
 
-  # install - install any dependencies required
 install:
-  # install latest hugo release version
-  - wget -qO- https://api.github.com/repos/gohugoio/hugo/releases/latest | sed -r -n '/browser_download_url/{/Linux-64bit.deb/{s@[^:]*:[[:space:]]*"([^"]*)".*@\1@g;p;q}}' | xargs wget
-  - sudo dpkg -i hugo*.deb
-  - rm -rf public 2> /dev/null
+  # install dependencies
+  - wget -q -O libstdc++6.deb http://security.ubuntu.com/ubuntu/pool/main/g/gcc-5/libstdc++6_5.4.0-6ubuntu1~16.04.10_amd64.deb
+  - sudo dpkg --force-all -i libstdc++6.deb
+  # install hugo
+  - wget -q -O hugo.deb https://github.com/gohugoio/hugo/releases/download/v0.55.6/hugo_extended_0.55.6_Linux-64bit.deb
+  - sudo dpkg -i hugo.deb
 
 script:
-  - hugo
+  - HUGO_ENV=production hugo --gc --minify
 
 after_success:
   - cd public
