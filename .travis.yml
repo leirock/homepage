@@ -4,11 +4,18 @@ branches:
   only:
   - src
 
-install:
-  - snap install hugo --channel=extended
+env:
+  - HUGO_VERSION=0.65.3
+
+install: true
+
+before_script:
+  - wget https://github.com/gohugoio/hugo/releases/download/v${HUGO_VERSION}/hugo_extended_${HUGO_VERSION}_Linux-64bit.deb
+  - sudo dpkg -i hugo_extended_${HUGO_VERSION}_Linux-64bit.deb
+  - rm -rf public || exit 0
 
 script:
-  - HUGO_ENV=production hugo --minify
+  - HUGO_ENV=production hugo --gc --minify
 
 after_success:
   - cd public
