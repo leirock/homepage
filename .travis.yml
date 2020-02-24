@@ -16,7 +16,7 @@ install:
   - rm -rf public 2> /dev/null
 
 script:
-  - hugo --g --minify
+  - hugo --minify
 
 after_success:
   - cd public
