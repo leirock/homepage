@@ -8,7 +8,7 @@ install:
   - sudo apt-get install hugo
 
 script:
-  - HUGO_ENV=production hugo --gc --minify
+  - HUGO_ENV=production hugo --minify
 
 after_success:
   - cd public
