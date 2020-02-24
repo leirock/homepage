@@ -5,7 +5,7 @@ branches:
   - src
 
 install:
-  - go get https://github.com/gohugoio/hugo.git
+  - sudo apt-get install hugo
 
 script:
   - HUGO_ENV=production hugo --gc --minify
