@@ -5,7 +5,7 @@ branches:
   - src
 
 install:
-  - sudo apt-get install hugo
+  - snap install hugo --channel=extended
 
 script:
   - HUGO_ENV=production hugo --minify
