@@ -2,7 +2,7 @@
 title: About
 comments: false
 ---
-　　Hi, I’m Donglei, Ph.D. candidate in Decision Sciences and Managerial Economics at CUHK Business School, advised by [Prof. Xiaoquan Zhang](http://mikezhang.com/) and [Prof. Xiaoyu Xia](https://sites.google.com/site/xiaoyuxia2014/). I am an alumnus of Zhejiang University and The Hong Kong University of Science and Technology.
+　　Hi, I’m Donglei, Ph.D. candidate in Decision Sciences and Managerial Economics at CUHK Business School, advised by [Prof. Zhang Xiaoquan](http://mikezhang.com/) and [Prof. Xia Xiaoyu](https://sites.google.com/site/xiaoyuxia2014/). I am an alumnus of Zhejiang University and The Hong Kong University of Science and Technology.
 
 　　My research interests span the fields of applied microeconometrics, and I am recently interested in the topic about pollution regulation, carbon emission allowance trading and social welfare.
 
