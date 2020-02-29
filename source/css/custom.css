@@ -1,0 +1,25 @@
+.v .vlist .vcard .vhead .vsys { 
+  display: none !important;
+}
+
+body {
+  font-family: "EB Garamond", "Georgia", "STZhongsong", "Microsoft YaHei", serif;
+  font-size: 0.9rem;
+}
+
+#site-title, #site-sub-title, #site-name {
+  font-family: "Fondamento";
+}
+
+@media screen and (min-width: 768px) #site-sub-title {
+  font-size: 1rem;
+}
+
+a {
+  color: #0477ab;
+  text-decoration: none;
+}
+
+#page-header .site-page, .post-meta__tags {
+  font-size: 0.8rem;
+}

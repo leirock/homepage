@@ -1,0 +1,3 @@
+[submodule "themes/melody"]
+	path = themes/melody
+	url = https://github.com/Molunerfinn/hexo-theme-melody
