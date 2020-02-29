@@ -16,7 +16,7 @@ ID = "lei2rock"
   publish = "/public"
 
   # Default build command.
-  command = "HUGO_ENV=production hugo --gc --minify"
+  command = "hexo generate"
 
 # Redirect default Netlify subdomain to primary domain
 [[redirects]]
@@ -26,7 +26,7 @@ ID = "lei2rock"
   force = true
 
 [[redirects]]
-  from = "https://dlzhang.com/blog"
+  from = "/blog"
   to = "https://blog.dlzhang.com"
   status = 301
   force = true
@@ -36,4 +36,3 @@ ID = "lei2rock"
   to = "https://cloud-1256060851.cos.ap-shanghai.myqcloud.com/:splat"
   status = 200
   force = true
-  

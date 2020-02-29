@@ -1,6 +1,0 @@
-User-agent: *
-Disallow: /images/
-Disallow: /categories/
-Disallow: /tags/
-
-Sitemap: https://dlzhang.com/sitemap.xml

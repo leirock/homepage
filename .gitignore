@@ -1,5 +1,10 @@
 .DS_Store
 Thumbs.db
+db.json
+*.log
+node_modules/
+yarn.lock
 public/
-static/cloud/
-resources/
+.deploy*/
+source/cloud/
+hexo.sh

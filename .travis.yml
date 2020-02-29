@@ -1,34 +1,35 @@
-language: go
+language: node_js
+node_js: stable
 
 branches:
   only:
   - src
 
-env:
-  - HUGO_VERSION=0.65.3
+cache:
+  yarn: true
+  directories:
+    - node_modules
 
-install: true
+before_install:
+  - export TZ='Asia/Shanghai'
 
-before_script:
-  - wget https://github.com/gohugoio/hugo/releases/download/v${HUGO_VERSION}/hugo_extended_${HUGO_VERSION}_Linux-64bit.deb
-  - sudo dpkg -i hugo_extended_${HUGO_VERSION}_Linux-64bit.deb
-  - rm -rf public || exit 0
+install:
+  - yarn global add hexo-cli
+  - yarn
 
 script:
-  - HUGO_ENV=production hugo --gc --minify
+#  - hexo clean
+  - hexo generate
 
 after_success:
-  - cd public
   - git config --global user.name $GIT_NAME
   - git config --global user.email $GIT_EMAIL
-  - git init
-  - git add .
-  - git commit -m "Travis CI Build ${TRAVIS_BUILD_NUMBER}"
-  - git push --force "https://${GH_TOKEN}@github.com/lei2rock/homepage.git" master:master
+  - sed -i "s/GH_TOKEN/$GH_TOKEN/g" ./_config.yml
+  - hexo deploy -m "Travis CI Build ${TRAVIS_BUILD_NUMBER}"
 
 notifications:
   email:
     recipients:
       - $GIT_EMAIL
-    on_success: change
-    on_failure: always
+    on_success: change # default: change
+    on_failure: always # default: always

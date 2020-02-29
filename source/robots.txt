@@ -1,0 +1,4 @@
+User-agent: *
+Disallow: /images/
+
+Sitemap: https://dlzhang.com/sitemap.xml
