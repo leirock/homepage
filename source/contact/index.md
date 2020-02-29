@@ -7,5 +7,6 @@ title: Contact
 
 **Office:** 
 　Room 951, Cheng Yu Tung Building,
-　No. 12 Chak Cheung Street,
-　Shatin, N.T., Hong Kong SAR
+　The Chinese University of Hong Kong,
+　Shatin, New Territories,
+　Hong Kong SAR, China
