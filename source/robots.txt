@@ -1,4 +1,5 @@
 User-agent: *
-Disallow: /images/
+Disallow: /img/
+Disallow: /contact/
 
 Sitemap: https://dlzhang.com/sitemap.xml

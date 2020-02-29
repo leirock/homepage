@@ -101,4 +101,6 @@ theme: melody
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
-  type: ''
+  - type: git
+    repo: https://GH_TOKEN@github.com/lei2rock/homepage.git
+    branch: master

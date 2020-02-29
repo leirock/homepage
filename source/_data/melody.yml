@@ -24,7 +24,7 @@ menu:
 
 # Favicon
 # ---------------
-favicon: images/favicon.ico
+favicon: /favicon.ico
 
 # PWA
 # See https://github.com/JLHwung/hexo-offline
@@ -135,7 +135,7 @@ cdn:
 # ---------------
 avatar: /cloud/img/myphoto.jpg
 
-top_img: /images/blog-bg.jpg # false or url of img
+top_img: /img/blog-bg.jpg # false or url of img
 
 top_img_height: 60 # best range: 60 - 100
 
