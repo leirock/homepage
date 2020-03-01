@@ -19,3 +19,7 @@ a {
 #page-header .site-page, .post-meta__tags {
   font-size: 0.8rem;
 }
+
+.recent-post-item .more {
+  display: none;
+}
