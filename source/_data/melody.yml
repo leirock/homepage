@@ -103,8 +103,7 @@ tencent_analytics:
 stylesheets:
   - /css/index.css
   - /css/custom.css
-  - https://fonts.googleapis.com/css?family=EB+Garamond&display=swap
-  - https://fonts.googleapis.com/css?family=Fondamento&display=swap
+  - https://fonts.googleapis.com/css?family=Fondamento|EB+Garamond|Noto+Serif+SC&display=swap
 
 # scripts loaded in the end of the body
 # ---------------
