@@ -8,7 +8,7 @@ comments: false
 
 　　My research interests span the fields of applied microeconometrics, and I am recently interested in the topic about pollution regulation, carbon emission allowance trading and social welfare. Whenever I am not doing research, I love to read books, and watch documentaries and dramas.
 
->　　The sentence "Never say you know the essence, let alone the truth" (无曰已是，无曰遂真) is from the anthem of Zhejiang University. During World War II, the University evacuated from Hangzhou to Guizhou due to the invading Imperial Japanese Army. To motivate teachers and students in distress, Prof. Ma Yifu, master of Chinese studies, wrote this University Anthem with classical Chinese.
+>　　The sentence "Never say you know the essence, let alone the truth" (无曰已是，无曰遂真) is from the [anthem of Zhejiang University](https://www.bilibili.com/video/av15024170). During World War II, the University evacuated from Hangzhou to Guizhou due to the invading Imperial Japanese Army. To motivate teachers and students in distress, Prof. Ma Yifu, master of Chinese studies, wrote this University Anthem with classical Chinese.
 
 ### More about me
 　　Welcome to follow me on [Twitter](https://twitter.com/lei2rock) and [Weibo](https://weibo.com/1156774800)! If you read Chinese, you can also learn more about me through my [blog](https://blog.dlzhang.com). 
