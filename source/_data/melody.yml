@@ -132,7 +132,7 @@ cdn:
 
 # Post info settings
 # ---------------
-avatar: /cloud/img/myphoto.jpg
+avatar: /cloud/images/myphoto.jpg
 
 top_img: /img/blog-bg.jpg # false or url of img
 
