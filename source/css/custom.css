@@ -2,6 +2,10 @@
   display: none !important;
 }
 
+div.framework-info {
+  display: none !important;
+}
+
 body {
   font-family: "EB Garamond", "Georgia", "Noto Serif SC", "STZhongsong";
   font-size: 0.875rem;
@@ -18,8 +22,4 @@ a {
 
 #page-header .site-page, .post-meta__tags {
   font-size: 0.8rem;
-}
-
-.recent-post-item .more {
-  display: none;
 }

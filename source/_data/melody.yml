@@ -17,7 +17,7 @@
 
 # Main menu navigation
 menu:
-  About: /about
+  Home: /
   Research: /research
   Articles: /articles
   Contact: /contact
