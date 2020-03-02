@@ -1,8 +1,8 @@
 ---
-title: About
+title: Hello!
 comments: false
 ---
-　　Hi, I’m Zhang Donglei (张栋磊) and use Banban as my online handle. My hometown [Pujiang](https://en.wikipedia.org/wiki/Pujiang_County,_Zhejiang) is a very beautiful city in Zhejiang Province, China. 
+　　I’m Zhang Donglei (张栋磊), and use Banban as my online handle. My hometown [Pujiang](https://en.wikipedia.org/wiki/Pujiang_County,_Zhejiang) is a very beautiful city in Zhejiang Province, China. 
 
 　　I am now a Ph.D. candidate in Decision Sciences and Managerial Economics at CUHK Business School advised by [Prof. Zhang Xiaoquan](http://mikezhang.com/) and [Prof. Xia Xiaoyu](https://sites.google.com/site/xiaoyuxia2014/). I am also an alumnus of Zhejiang University and The Hong Kong University of Science and Technology. 
 
