@@ -232,7 +232,7 @@ valine:
   pageSize: 10 # comment list page size
   avatar: wavatar # gravatar style https://valine.js.org/#/avatar
   lang: en # i18n: zh-cn/en
-  placeholder: Please leave your footprints # valine comment input placeholder(like: Please leave your footprints )
+  placeholder: To receive reply notify ASAP, please provide email. # valine comment input placeholder(like: Please leave your footprints )
   guest_info: nick,mail #valine comment header inf
 
 # Footer Settings
