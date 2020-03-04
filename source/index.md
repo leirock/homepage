@@ -13,4 +13,4 @@ comments: false
 ### More about me
 　　Welcome to follow me on [Twitter](https://twitter.com/lei2rock) and [Weibo](https://weibo.com/1156774800)! If you read Chinese, you can also learn more about me through my [blog](https://blog.dlzhang.com). 
 
-　　[<i class="far fa-file-pdf"></i> [Download CV]](/cloud/file/cv_donglei_zhang.pdf)
+　　[<i class="fa fa-file-pdf-o"></i> Download CV](/cloud/file/cv_donglei_zhang.pdf)
