@@ -1,9 +1,5 @@
-.v .vlist .vcard .vhead .vsys { 
-  display: none !important;
-}
-
-div.framework-info {
-  display: none !important;
+div.framework-info, #sidebar, #toggle-sidebar {
+  display: none;
 }
 
 body {
@@ -20,6 +16,6 @@ a {
   text-decoration: none;
 }
 
-#page-header .site-page, .post-meta__tags {
+#page-header .site-page {
   font-size: 0.8rem;
 }
