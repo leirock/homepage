@@ -103,7 +103,7 @@ tencent_analytics:
 stylesheets:
   - /css/index.css
   - /css/custom.css
-  - https://fonts.googleapis.com/css?family=Fondamento|EB+Garamond|Noto+Serif+SC&display=swap
+  - https://fonts.loli.net/css?family=Fondamento|EB+Garamond|Noto+Serif+SC&display=swap
 
 # scripts loaded in the end of the body
 # ---------------
@@ -122,7 +122,7 @@ scripts:
 cdn:
   css:
     fontawesome: https://cdn.jsdelivr.net/npm/font-awesome@latest/css/font-awesome.min.css
-    fontawesomeV5: https://use.fontawesome.com/releases/v5.6.0/css/all.css
+    fontawesomeV5: https://cdn.jsdelivr.net/gh/FortAwesome/Font-Awesome@latest/css/all.min.css
   js:
     anime: https://cdn.jsdelivr.net/npm/animejs@latest/anime.min.js
     jquery: https://cdn.jsdelivr.net/npm/jquery@latest/dist/jquery.min.js
