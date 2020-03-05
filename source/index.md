@@ -12,14 +12,5 @@ comments: false
 
 　　[<i class="fa fa-file-pdf-o"></i> Download CV](/cloud/file/cv_donglei_zhang.pdf)
 
-## Contact
-　**Email:** zhangdonglei (at) link.cuhk.edu.hk
-　**Phone:** +852 3943 1588
-　**Office:** 
-　　　Room 951, Cheng Yu Tung Building,
-　　　The Chinese University of Hong Kong,
-　　　Shatin, New Territories,
-　　　Hong Kong SAR, China
-
 ---
 >　　The sentence "Never say you know the essence, let alone the truth" (无曰已是，无曰遂真) is from the [anthem of Zhejiang University](https://www.bilibili.com/video/av15024170). During World War II, the University evacuated from Hangzhou to Guizhou due to the invading Imperial Japanese Army. To motivate teachers and students in distress, Prof. Ma Yifu, master of Chinese studies, wrote this University Anthem with classical Chinese.
