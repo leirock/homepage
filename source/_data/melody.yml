@@ -103,7 +103,7 @@ tencent_analytics:
 stylesheets:
   - /css/index.css
   - /css/custom.css
-  - https://fonts.loli.net/css?family=Fondamento|EB+Garamond|Noto+Serif+SC&display=swap
+  - //fonts.loli.net/css?family=Fondamento:300,300italic,400,400italic,700,700italic|EB+Garamond:300,300italic,400,400italic,700,700italic|Noto+Serif+SC:300,300italic,400,400italic,700,700italic&display=swap
 
 # scripts loaded in the end of the body
 # ---------------
