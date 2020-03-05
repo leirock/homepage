@@ -21,6 +21,7 @@ menu:
   Research: /research
   Articles: /articles
   Tags: /tags
+  Contact: /contact
 
 # Favicon
 # ---------------
@@ -131,7 +132,7 @@ cdn:
 
 # Post info settings
 # ---------------
-avatar: /cloud/images/myphoto.jpg
+avatar:
 
 top_img: /img/blog-bg.jpg # false or url of img
 
