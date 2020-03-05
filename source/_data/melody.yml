@@ -19,9 +19,8 @@
 menu:
   Home: /
   Research: /research
-  Articles: /articles
-  Tags: /tags
   Contact: /contact
+  Articles: https://blog.dlzhang.com/en
 
 # Favicon
 # ---------------

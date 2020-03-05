@@ -8,7 +8,7 @@ comments: false
 
 　　My research interests span the fields of applied microeconometrics, and I am recently interested in the topic about pollution regulation, carbon emission allowance trading and social welfare. Whenever I am not doing research, I love to read books, and watch documentaries and dramas.
 
-　　Welcome to follow me on [Twitter](https://twitter.com/lei2rock) and [Weibo](https://weibo.com/1156774800)! If you read Chinese, you can also learn more about me through my [blog](https://blog.dlzhang.com). 
+　　Welcome to follow me on [Twitter](https://twitter.com/lei2rock) and [Weibo](https://weibo.com/1156774800)! If you read Chinese, you can also learn more about me through my [blog](https://blog.dlzhang.com) in Chinese. 
 
 　　[<i class="fa fa-file-pdf-o"></i> Download CV](/cloud/file/cv_donglei_zhang.pdf)
 

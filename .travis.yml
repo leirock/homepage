@@ -20,7 +20,7 @@ install:
 script:
 #  - hexo clean
   - hexo generate
-  - rm -rf public/melody-favicon.ico public/index.md/ public/blog.dlzhang.com/
+  - rm -rf public/melody-favicon.ico public/index.md/
 
 after_success:
   - git config --global user.name $GIT_NAME
