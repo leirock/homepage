@@ -3,12 +3,12 @@ div.framework-info, #sidebar, #toggle-sidebar {
 }
 
 body {
-  font-family: "EB Garamond", "Georgia", "Noto Serif SC", "STZhongsong";
+  font-family: "EB Garamond", "Georgia", "Noto Serif SC", "STZhongsong", "PingFang SC", "Microsoft YaHei", sans-serif;
   font-size: 0.875rem;
 }
 
 #site-title, #site-sub-title, #site-name {
-  font-family: "Fondamento";
+  font-family: "Fondamento", "PingFang SC", "Microsoft YaHei", sans-serif;
 }
 
 a {
