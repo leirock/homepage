@@ -27,7 +27,7 @@ ID = "lei2rock"
 
 [[redirects]]
   from = "/blog"
-  to = "https://blog.dlzhang.com"
+  to = "https://blog.dlzhang.com/en"
   status = 301
   force = true
 
