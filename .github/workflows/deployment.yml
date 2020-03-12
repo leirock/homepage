@@ -39,7 +39,6 @@ jobs:
       run: |
         export PATH="$PATH:$(yarn global bin)"
         yarn build 
-    #hexo generate && rm -rf public/melody-favicon.ico public/index.md/
 
     - name: Deploy to Github
       env:
