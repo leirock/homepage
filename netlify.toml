@@ -16,7 +16,7 @@ ID = "lei2rock"
   publish = "/public"
 
   # Default build command.
-  command = "hexo generate && rm -rf public/melody-favicon.ico public/index.md/"
+  command = "hexo generate --silent && rm -rf public/melody-favicon.ico public/index/"
 
 # Redirect default Netlify subdomain to primary domain
 [[redirects]]
