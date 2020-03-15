@@ -18,8 +18,8 @@
 # Main menu navigation
 menu:
   Home: /
-  Research: /research
-  Contact: /contact
+  Research: /research/
+  Contact: /contact/
   Articles: https://blog.dlzhang.com/en
 
 # Favicon
