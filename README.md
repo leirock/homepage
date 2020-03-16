@@ -3,9 +3,8 @@
 [![Genertor](https://img.shields.io/badge/Generator-Hexo-0e83cd?&logo=hexo&style=flat-square)](https://hexo.io)
 [![Theme](https://img.shields.io/badge/Theme-Melody-49b1f5.svg?&style=flat-square)](https://molunerfinn.com/hexo-theme-melody-doc/)
 [![Source](https://img.shields.io/badge/Source-GitHub-181717?&logo=github&style=flat-square)](https://github.com/lei2rock/homepage)
-[![Deploy](https://img.shields.io/github/workflow/status/lei2rock/homepage/Deployment?label=Deploy&logo=github&style=flat-square)](https://github.com/lei2rock/homepage/actions)
-[![Host](https://img.shields.io/badge/Host-Netlify-009387?&logo=netlify&style=flat-square)](https://www.netlify.com/)
-[![Netlify Status](https://img.shields.io/netlify/2be6b322-5b8e-4fee-adca-00bb2709fbd2?color=009387&label=Netlify+Status&logo=Netlify&style=flat-square)](https://app.netlify.com/sites/lei2rock/deploys)
+[![Deploy](https://img.shields.io/github/workflow/status/lei2rock/homepage/Deployment?label=Deploy&logo=Github&style=flat-square)](https://github.com/lei2rock/homepage/actions)
+[![Host](https://img.shields.io/badge/Host-AliyunOSS-orange?&style=flat-square)](https://oss.console.aliyun.com)
 
 This repo contains all contents of my homepage. `src` branch contains source files and `master` branch includes static web files deployed by GitHub Actions.
 
