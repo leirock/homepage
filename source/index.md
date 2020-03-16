@@ -11,7 +11,7 @@ comments: false
 
 　　Welcome to follow me on [Twitter](https://twitter.com/lei2rock) and [Weibo](https://weibo.com/1156774800)! If you read Chinese, you can also learn more about me through my [blog](https://blog.dlzhang.com) in Chinese. 
 
-　　[<i class="fa fa-file-pdf-o"></i> Download CV](/cloud/file/cv_donglei_zhang.pdf)
+　　[<i class="fa fa-file-pdf-o"></i> Download CV](https://yun-1256060851.file.myqcloud.com/file/cv_donglei_zhang.pdf)
 
 ---
 >　　The sentence "Never say you know the essence, let alone the truth" (无曰已是，无曰遂真) is from the [anthem of Zhejiang University](https://www.zju.edu.cn/english/2018/0519/c19948a812253/page.htm). During World War II, the University evacuated from Hangzhou to Guizhou due to the invading Imperial Japanese Army. To motivate teachers and students in distress, Prof. Ma Yifu, master of Chinese studies, wrote this University Anthem with classical Chinese.
