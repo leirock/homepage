@@ -19,7 +19,7 @@ echo "[3] 新主题提交 GitHub";
 echo " "
 printf "请选择：";
 read answer
-if [ "$answer" == "1" ]; then
+if [ "$answer" == "1" ] || [ "$answer" == "" ]; then
 	echo " "
 	printf "\033[32mINFO \033[0m 启动本地预览...\n";
 	echo " "
@@ -34,7 +34,6 @@ else
 		git submodule update --remote
 		echo " "
 		printf "\033[32mINFO \033[0m 主题更新完毕！\n";
-		sleep 1
 		exec ${HexoPath}/hexo.sh
 	else
 		if [ "$answer" == "3" ]; then
@@ -46,12 +45,10 @@ else
 			git push origin src
 			echo " "
 			printf "\033[32mINFO \033[0m 提交 GitHub 完毕！\n";
-			sleep 1
 			exec ${HexoPath}/hexo.sh
 		else
 			echo " "
 			printf "\033[31mERROR \033[0m 输入错误，请返回重新选择...\n";
-			sleep 1
 			exec ${HexoPath}/hexo.sh
 		fi
 	fi
