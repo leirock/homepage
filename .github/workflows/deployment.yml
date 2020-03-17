@@ -73,7 +73,7 @@ jobs:
         git commit -m "Site deployed by GitHub Actions"
         git push --force --quiet "https://${GH_TOKEN}@${REPO}" master:master
 
-    - name: notification
+    - name: Telegram Notification
       if: cancelled() == false
       uses: xinthink/action-telegram@v1.1
       with:
