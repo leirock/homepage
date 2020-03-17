@@ -7,5 +7,5 @@ comments: false
 
 ## Policy Discussion
 
-- [Antimonopoly Law Legislation in China and USA](/posts/fdbd388d/)
+- [Antimonopoly Law Legislation in China and USA](/posts/2016/Antimonopoly-Law-Legislation-in-China-and-USA/)
 
