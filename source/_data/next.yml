@@ -523,7 +523,7 @@ math:
 
 # Easily enable fast Ajax navigation on your website.
 # Dependencies: https://github.com/theme-next/theme-next-pjax
-pjax: true
+pjax: false
 
 # FancyBox is a tool that offers a nice and elegant way to add zooming functionality for images.
 # For more information: https://fancyapps.com/fancybox
@@ -631,7 +631,7 @@ valine:
   guest_info: nick,mail # Custom comment header, nick,mail,link 
   pageSize: 10 # Pagination size
   language: en # Language, available values: en, zh-cn
-  visitor: false # Article reading statistic
+  visitor: true # Article reading statistic
   comment_count: true # If false, comment count will only be displayed in post page, not in home page
   recordIP: true # Whether to record the commenter IP
   serverURLs: # When the custom domain name is enabled, fill it in here (it will be detected automatically by default, no need to fill in)
@@ -700,7 +700,7 @@ cnzz_siteid:
 # AppID and AppKey are recommended to be the same as valine's for counter compatibility.
 # Do not enable both `valine.visitor` and `leancloud_visitors`.
 leancloud_visitors:
-  enable: true
+  enable: false
   app_id: wJ0VIzaJuejbJjolt42SBxtF-MdYXbMMI
   app_key: 3od00D4hXsNwfgFWIbtMvLVO
   # Dependencies: https://github.com/theme-next/hexo-leancloud-counter-security
