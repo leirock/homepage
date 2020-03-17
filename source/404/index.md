@@ -1,5 +1,0 @@
----
-title: 404
-layout: 404
-permalink: /404
----

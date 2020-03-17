@@ -1,0 +1,17 @@
+en:
+  menu:
+    articles: Articles
+    overview: Overview
+    series: Series
+    research: Research
+    contact: Contact
+  post:
+    posted: " "
+    comments:
+      valine: Comments
+  counter:
+    tag_cloud:
+      other: '<i class="fa fa-fw fa-tags"></i> %d tags in total'
+    categories:
+      one: '<i class="fa fa-fw fa-th"></i> 1 category in total'
+      other: '<i class="fa fa-fw fa-th"></i> %d categories in total'

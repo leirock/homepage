@@ -1,3 +1,3 @@
-[submodule "themes/melody"]
-	path = themes/melody
-	url = https://github.com/Molunerfinn/hexo-theme-melody
+[submodule "themes/next"]
+	path = themes/next
+	url = https://github.com/theme-next/hexo-theme-next

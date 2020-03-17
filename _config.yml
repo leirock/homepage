@@ -4,8 +4,8 @@
 
 # Site
 title: Zhang Donglei
-subtitle: 'Never say you know the essence, let alone the truth.'
-description: ''
+subtitle:
+description: <div>Never say you know the essence,</div><div>let alone the truth.</div><div>无曰已是，无曰遂真。</div><div>― Zhejiang University Anthem</div>
 keywords: [Zhang Donglei, 张栋磊]
 author: Zhang Donglei
 language: en
@@ -15,7 +15,7 @@ timezone: Asia/Shanghai
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
 url: https://dlzhang.com
 root: /
-permalink: /posts/:title
+permalink: /posts/:year/:title/
 permalink_defaults:
 pretty_urls:
   trailing_index: true # Set to false to remove trailing 'index.html' from permalinks
@@ -30,9 +30,11 @@ category_dir: categories
 code_dir: downloads/code
 i18n_dir: :lang
 skip_render:
+  - README.md
+  - 404.html
 
 # Writing
-new_post_name: :title.md # File name of new posts
+new_post_name: :year/:title.md # File name of new posts
 default_layout: post
 titlecase: false # Transform title into titlecase
 external_link:
@@ -81,7 +83,7 @@ use_date_for_updated: false
 
 # Pagination
 ## Set per_page to 0 to disable pagination
-per_page: 0
+per_page: 15
 pagination_dir: page
 
 # Include / Exclude file(s)
@@ -93,7 +95,20 @@ ignore:
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
-theme: melody
+theme: next
+
+# share.js
+# See: https://github.com/overtrue/share.js
+# networks: weibo,qq,wechat,tencent,douban,qzone,linkedin,diandian,facebook,twitter,google
+sharejs:
+  enable: true
+  cdn:
+    js: //cdn.jsdelivr.net/npm/social-share.js@1/dist/js/social-share.min.js
+    css: //cdn.jsdelivr.net/npm/social-share.js@1/dist/css/share.min.css
+  networks: twitter,facebook,weibo,wechat
+  wechat_qrcode:
+    title: 'Share to WeChat'
+    prompt: '<p>To share with friends,</p><p>open WeChat & scan QRcode</p>'
 
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
