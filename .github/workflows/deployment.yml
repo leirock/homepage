@@ -72,3 +72,12 @@ jobs:
         git config --global user.email $GIT_EMAIL
         git commit -m "Site deployed by GitHub Actions"
         git push --force --quiet "https://${GH_TOKEN}@${REPO}" master:master
+
+    - name: notification
+      if: cancelled() == false
+      uses: xinthink/action-telegram@v1.1
+      with:
+        botToken: ${{ secrets.TG_BOT_TOKEN }}
+        chatId: ${{ secrets.TG_CHAT_ID }}
+        jobStatus: ${{ job.status }}
+        skipSuccess: false
