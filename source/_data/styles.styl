@@ -18,23 +18,12 @@ body {
   background-position: 50% 50%; 
 }
 
-//文章页卡片
-.post-block, #posts > article + article .post-block {
-  margin-top: $site-top-margin;
-  margin-left: 3px; 
-  border-radius: $site-card-radius;
-  border-radius: 8px;
-  
-  @media (max-width: 767px) {
-    padding: 25px 0 15px !important;
-    margin: 8px 15px 20px !important;
-  }
+//评论框背景
+textarea#veditor.veditor.vinput  {
+  background: url("https://yun-1256060851.file.myqcloud.com/images/comment-bg.png") 100% 100% no-repeat
 }
 
-.post-block + .post-block {
-  border-radius: 8px;
-}
-
+//二级菜单
 .sub-menu {
   margin-top: $site-top-margin; 
   border-radius: $site-card-radius;
@@ -83,6 +72,7 @@ ul.breadcrumb {
   }
 }
 
+//侧边栏
 .sidebar-inner {
   margin-top: 12px; 
   border-radius: $site-card-radius;
@@ -96,28 +86,21 @@ ul.breadcrumb {
   font-size: 1em;
 }
 
-//返回最上按钮
-.sidebar-toggle, .back-to-top {
-  background: #3a5c6b;
-}
-
-//评论区
-.comments{
-  margin-left: 5px;
+//文章页
+.post-block, #posts > article + article .post-block {
+  margin-top: $site-top-margin;
+  margin-left: 3px; 
   border-radius: $site-card-radius;
+  border-radius: 8px;
   
   @media (max-width: 767px) {
-    padding: 15px;
-    margin: 0 15px 20px;
+    padding: 25px 0 15px !important;
+    margin: 8px 15px 20px !important;
   }
 }
-//评论区设备信息隐藏
-.v .vlist .vcard .vhead .vsys { 
-  display: none !important;
-}
 
-textarea#veditor.veditor.vinput  {
-  background: url("https://yun-1256060851.file.myqcloud.com/images/comment-bg.png") 100% 100% no-repeat
+.post-block + .post-block {
+  border-radius: 8px;
 }
 
 //文章标题与标题下信息
@@ -178,6 +161,14 @@ textarea#veditor.veditor.vinput  {
 //段落中代码
 code {
   font-size: 85%;
+}
+
+//代码框
+.highlight-container {
+  background: #008b8b;
+}
+.highlight figcaption {
+  font-family: $font-family-monospace;
 }
 
 //引用文字字体
@@ -245,22 +236,72 @@ blockquote p, .post-body .note {
   }
 }
 
-//标签标题
+//标签页标题
 .posts-collapse .collection-header {
   width: -webkit-fill-available;
 }
 
-//页码栏
-.pagination, .pagination .prev, .pagination .next, .pagination .page-number {
-  border:none;
+//标签云
+.tag-cloud a {
+  -webkit-box-shadow: $site-buttom-shadow;
+  -moz-box-shadow: $site-buttom-shadow;
+  box-shadow: $site-buttom-shadow;
+  transition: 0.2s ease-out;
+  padding: 2px 10px;
+  margin: 8px;
+  background: #f5f5f5;
+  border-bottom: none;
+  border-radius: 12px;
+
+  &:hover {
+  text-decoration: none;
+  background: $site-buttom-background-hover;
+  color: #fff !important;
+  -webkit-box-shadow: $site-buttom-shadow-hover;
+  -moz-box-shadow: $site-buttom-shadow-hover;
+  box-shadow: $site-buttom-shadow-hover;
+  }
 }
-.pagination .page-number.current {
-  border-radius: 100%;
-  background: #34495e;
+
+//文章页内标签
+.posts-expand .post-tags a {
+  -webkit-box-shadow: $site-buttom-shadow;
+  -moz-box-shadow: $site-buttom-shadow;
+  box-shadow: $site-buttom-shadow;
+  transition: 0.2s ease-out;
+  padding: 3px 5px;
+  margin: 5px;
+  background: #f5f5f5;
+  border-bottom: none;
+  border-radius: 15px;
+
+  &:hover {
+  background: $site-buttom-background-hover;
+  color: #fff;
+  -webkit-box-shadow: $site-buttom-shadow-hover;
+  -moz-box-shadow: $site-buttom-shadow-hover;
+  box-shadow: $site-buttom-shadow-hover;
+  }
 }
-.pagination {
-  background: none;
-  box-shadow: none;
+
+//评论区
+.comments{
+  margin-left: 5px;
+  border-radius: $site-card-radius;
+  
+  @media (max-width: 767px) {
+    padding: 15px;
+    margin: 0 15px 20px;
+  }
+}
+
+.v .vlist .vcard .vhead .vsys { 
+  display: none !important;
+}
+
+//返回最上按钮
+.sidebar-toggle, .back-to-top {
+  background: #3a5c6b;
 }
 
 //阅读全文按钮
@@ -306,63 +347,25 @@ blockquote p, .post-body .note {
   }
 }
 
-//文章页内标签
-.posts-expand .post-tags a {
-  -webkit-box-shadow: $site-buttom-shadow;
-  -moz-box-shadow: $site-buttom-shadow;
-  box-shadow: $site-buttom-shadow;
-  transition: 0.2s ease-out;
-  padding: 3px 5px;
-  margin: 5px;
-  background: #f5f5f5;
-  border-bottom: none;
-  border-radius: 15px;
-
-  &:hover {
-  background: $site-buttom-background-hover;
-  color: #fff;
-  -webkit-box-shadow: $site-buttom-shadow-hover;
-  -moz-box-shadow: $site-buttom-shadow-hover;
-  box-shadow: $site-buttom-shadow-hover;
-  }
+//分享按钮
+.post-widgets {
+  padding-top: 10px;
 }
 
-//标签云
-.tag-cloud a {
-  -webkit-box-shadow: $site-buttom-shadow;
-  -moz-box-shadow: $site-buttom-shadow;
-  box-shadow: $site-buttom-shadow;
-  transition: 0.2s ease-out;
-  padding: 2px 10px;
-  margin: 8px;
-  background: #f5f5f5;
-  border-bottom: none;
-  border-radius: 12px;
-
-  &:hover {
-  text-decoration: none;
-  background: $site-buttom-background-hover;
-  color: #fff !important;
-  -webkit-box-shadow: $site-buttom-shadow-hover;
-  -moz-box-shadow: $site-buttom-shadow-hover;
-  box-shadow: $site-buttom-shadow-hover;
-  }
+//页码栏
+.pagination, .pagination .prev, .pagination .next, .pagination .page-number {
+  border:none;
 }
-
-//代码框
-.highlight-container {
-  background: #008b8b;
+.pagination .page-number.current {
+  border-radius: 100%;
+  background: #34495e;
 }
-.highlight figcaption {
-  font-family: $font-family-monospace;
+.pagination {
+  background: none;
+  box-shadow: none;
 }
 
 //页脚
 .footer, .footer a{
   color: #666;
-}
-
-//分享按钮
-.post-widgets {
-  padding-top: 10px;
 }
