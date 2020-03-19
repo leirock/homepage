@@ -1,18 +1,13 @@
-//隐藏名字照片
-.site-author-image, .site-author-name, .sidebar-nav li.sidebar-nav-overview {
-  display: none;
-}
-
 //导航区背景
 .site-brand-container {
-  background: url("https://yun-1256060851.file.myqcloud.com/images/header-bg.jpg");
+  background: url($site-brand-background);
   background-position: 70% 20%;
   background-size: cover;
 }
 
 //页面背景
 body {
-  background-image: url("https://yun-1256060851.file.myqcloud.com/images/body-bg.png");
+  background-image: url($body-background);
   background-repeat: repeat;
   background-attachment: fixed;
   background-position: 50% 50%; 
@@ -20,7 +15,7 @@ body {
 
 //评论框背景
 textarea#veditor.veditor.vinput  {
-  background: url("https://yun-1256060851.file.myqcloud.com/images/comment-bg.png") 100% 100% no-repeat
+  background: url($comment-background) 100% 100% no-repeat
 }
 
 //二级菜单
