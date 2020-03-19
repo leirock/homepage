@@ -29,6 +29,7 @@ jobs:
     - name: Get Yarn Cache Directory
       id: yarn-cache
       run: echo "::set-output name=dir::$(yarn cache dir)"
+
     - name: Cache Yarn
       uses: actions/cache@v1
       with:
@@ -47,6 +48,15 @@ jobs:
       run: |
         yarn build 
 
+    - name: Upload css/js to COS
+      uses: zkqiang/tencent-cos-action@master
+      with:
+        args: upload -rs --delete public/css/ assets/homepage/css/ && upload -rs --delete public/js/ assets/homepage/js/
+        secret_id: ${{ secrets.COS_SECRET_ID }}
+        secret_key: ${{ secrets.COS_SECRET_KEY }}
+        bucket: ${{ secrets.COS_BUCKET }} #bucket name with id
+        region: ap-shanghai
+
     - name: Setup OSS Util
       uses: manyuanrong/setup-ossutil@v1.0
       with:
@@ -54,30 +64,32 @@ jobs:
         access-key-id: "${{ secrets.OSS_KEY_ID }}"
         access-key-secret: "${{ secrets.OSS_KEY_SECRET }}"
 
-    - name: Clean Bucket
-      run: ossutil rm oss://dlzhang/ -rf
-
-    - name: Deploy to OSS
-      run: ossutil cp public/ oss://dlzhang/ -rf
-
-    - name: Deploy to Github for Backup
+    - name: Clean Bucket & Deploy to Bucket
       env:
-        GIT_NAME: lei2rock
-        GIT_EMAIL: ${{ secrets.GIT_EMAIL }}
-        REPO: github.com/lei2rock/homepage
-        GH_TOKEN: ${{ secrets.GH_TOKEN }}
+        OSS_BUCKET: "${{ secrets.OSS_BUCKET }}" #bucket name without endpoint domain
       run: |
-        cd ./public && git init && git add .
-        git config --global user.name $GIT_NAME
-        git config --global user.email $GIT_EMAIL
-        git commit -m "Site deployed by GitHub Actions"
-        git push --force --quiet "https://${GH_TOKEN}@${REPO}" master:master
+        rm -rf public/css/ public/js/
+        ossutil rm oss://${OSS_BUCKET}/ -rf
+        ossutil cp public/ oss://${OSS_BUCKET}/ -rf
+
+#    - name: Deploy to Github for Backup
+#      env:
+#        GIT_NAME: lei2rock
+#        GIT_EMAIL: ${{ secrets.GIT_EMAIL }}
+#        REPO: github.com/lei2rock/homepage
+#        GH_TOKEN: ${{ secrets.GH_TOKEN }}
+#      run: |
+#        cd ./public && git init && git add .
+#        git config --global user.name ${GIT_NAME}
+#        git config --global user.email ${GIT_EMAIL}
+#        git commit -m "Site deployed by GitHub Actions"
+#        git push --force --quiet "https://${GH_TOKEN}@${REPO}" master:master
 
     - name: Telegram Notification
       if: cancelled() == false
       uses: xinthink/action-telegram@v1.1
       with:
-        botToken: ${{ secrets.TG_BOT_TOKEN }}
-        chatId: ${{ secrets.TG_CHAT_ID }}
+        botToken: ${{ secrets.TG_BOT_TOKEN }} #use telegram bot @BotFather
+        chatId: ${{ secrets.TG_CHAT_ID }} #use telegram bot @userinfobot
         jobStatus: ${{ job.status }}
         skipSuccess: false

@@ -1,12 +1,10 @@
-# <div align="center"><a title="Donglei's personal website repository" href="https://github.com/lei2rock/homepage"><img align="center" width="75" height="75" src="https://raw.githubusercontent.com/lei2rock/blog/src/source/images/android-chrome-192x192.png"></a> My Personal Website</div>
+# <div align="center"><a title="Donglei's personal website repository" href="https://github.com/lei2rock/homepage"><img align="center" width="75" height="75" src="https://raw.githubusercontent.com/lei2rock/blog/src/source/images/android-chrome-192x192.png"></a> Personal Website</div>
 
 [![Genertor](https://img.shields.io/badge/Generator-Hexo-0e83cd?&logo=hexo&style=flat-square)](https://hexo.io)
 [![Theme](https://img.shields.io/badge/Theme-NexT-181717.svg?&style=flat-square)](https://theme-next.org)
-[![Source](https://img.shields.io/badge/Source-GitHub-181717?&logo=github&style=flat-square)](https://github.com/lei2rock/homepage)
-[![Deploy](https://img.shields.io/github/workflow/status/lei2rock/homepage/Deployment?label=Deploy&logo=Github&style=flat-square)](https://github.com/lei2rock/homepage/actions)
-[![Host](https://img.shields.io/badge/Host-AliyunOSS-orange?&style=flat-square)](https://oss.console.aliyun.com)
+[![Deploy](https://img.shields.io/github/workflow/status/lei2rock/homepage/Deployment?label=GitHub+Actions&logo=GitHub+Actions&style=flat-square)](https://github.com/lei2rock/homepage/actions)
 
-This repo contains all contents of my personal website. `src` branch contains source files and `master` branch includes static web files deployed by GitHub Actions.
+The `src` branch of this repo contains all source files of my personal website.
 
 ## Copyright
 
