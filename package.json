@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "build": "hexo generate --silent && rm -rf public/index/",
+    "build": "hexo generate --silent",
     "clean": "hexo clean",
     "server": "hexo server"
   },

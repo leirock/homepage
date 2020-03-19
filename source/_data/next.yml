@@ -47,6 +47,9 @@ favicon:
   android_manifest: /images/site.webmanifest
   ms_browserconfig: /images/browserconfig.xml
 
+# Show multilingual switcher in footer.
+language_switcher: false
+
 footer:
   # Specify the date when the site was setup. If not defined, current year will be used.
   #since: 2015
@@ -1002,6 +1005,6 @@ vendors:
   canvas_ribbon:
 
 # Assets
-css: css
-js: js
+css: https://yun-1256060851.file.myqcloud.com/assets/homepage/css
+js: https://yun-1256060851.file.myqcloud.com/assets/homepage/js
 images: images
