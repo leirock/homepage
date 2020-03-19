@@ -21,7 +21,7 @@ textarea#veditor.veditor.vinput  {
 //二级菜单
 .sub-menu {
   margin-top: $site-top-margin; 
-  border-radius: $site-card-radius;
+  border-radius: $border-radius;
   margin-left: 3px; 
   
   @media (max-width: 767px) {
@@ -33,44 +33,36 @@ textarea#veditor.veditor.vinput  {
   background-color: transparent;
 }
 
-ul.breadcrumb {
-  display: none;
-}
-
 //页面最上面黑细条
 .headband {
   display: none;
 }
 
-//左侧卡片
+//侧边栏
 .site-title {
-  font-weight: 900;
+  font-weight: bold;
 }
 
-//副标题
 .site-subtitle {
   font-family: $font-family-kaiti;
   font-weight: bold;
-  color: #fff;
+  color: white;
 }
 
 .header-inner {
   margin-top: $site-top-margin; 
-  border-radius: $site-card-radius;
     
   @media (max-width: 767px) {
     margin-top: 0; 
     border-top-left-radius: 0;
     border-top-right-radius: 0;
-    border-bottom-right-radius: $site-card-radius;
-    border-bottom-left-radius: $site-card-radius;
+    border-bottom-right-radius: $border-radius;
+    border-bottom-left-radius: $border-radius;
   }
 }
 
-//侧边栏
 .sidebar-inner {
   margin-top: 12px; 
-  border-radius: $site-card-radius;
 }
 
 .sidebar {
@@ -85,8 +77,6 @@ ul.breadcrumb {
 .post-block, #posts > article + article .post-block {
   margin-top: $site-top-margin;
   margin-left: 3px; 
-  border-radius: $site-card-radius;
-  border-radius: 8px;
   
   @media (max-width: 767px) {
     padding: 25px 0 15px !important;
@@ -94,20 +84,12 @@ ul.breadcrumb {
   }
 }
 
-.post-block + .post-block {
-  border-radius: 8px;
-}
-
 //文章标题与标题下信息
 .posts-expand .post-title {
-  font-weight: 900;
+  font-weight: bold;
 }
 .posts-expand .post-meta {
   margin: 3px 0 40px 0;
-}
-.posts-expand .post-meta time {
-  border-bottom: none;
-  cursor: initial;
 }
 
 //首页文章标题
@@ -212,8 +194,8 @@ blockquote p, .post-body .note {
     box-shadow: $site-buttom-shadow;
     transition: 0.2s ease-out;
     padding: 10px 15px;
-    background: #649ab6;
-    color: #fff
+    background: $site-blue-light;
+    color: white
     border-bottom: none;
     border-radius: 15px;
     line-height: 4;
@@ -251,7 +233,7 @@ blockquote p, .post-body .note {
   &:hover {
   text-decoration: none;
   background: $site-buttom-background-hover;
-  color: #fff !important;
+  color: white !important;
   -webkit-box-shadow: $site-buttom-shadow-hover;
   -moz-box-shadow: $site-buttom-shadow-hover;
   box-shadow: $site-buttom-shadow-hover;
@@ -272,7 +254,7 @@ blockquote p, .post-body .note {
 
   &:hover {
   background: $site-buttom-background-hover;
-  color: #fff;
+  color: white;
   -webkit-box-shadow: $site-buttom-shadow-hover;
   -moz-box-shadow: $site-buttom-shadow-hover;
   box-shadow: $site-buttom-shadow-hover;
@@ -281,8 +263,7 @@ blockquote p, .post-body .note {
 
 //评论区
 .comments{
-  margin-left: 5px;
-  border-radius: $site-card-radius;
+  margin-left: 3px;
   
   @media (max-width: 767px) {
     padding: 15px;
@@ -295,9 +276,9 @@ blockquote p, .post-body .note {
 }
 
 //返回最上按钮
-.sidebar-toggle, .back-to-top {
-  background: #3a5c6b;
-}
+//.sidebar-toggle, .back-to-top {
+//  background: $site-blue;
+//}
 
 //阅读全文按钮
 .post-button {
@@ -310,13 +291,13 @@ blockquote p, .post-body .note {
 }
 .btn {
   padding: 3px 15px
-  color: #fff !important;
+  color: white !important;
   background-color: #bdc3c7;
   border: 0px;
   border-radius: 15px;
 
   &:hover {
-    color: #fff !important;
+    color: white !important;
     background: $site-blue;
     text-decoration: none !important;
   }
@@ -335,7 +316,7 @@ blockquote p, .post-body .note {
   transition: 0.2s ease-out;
 
   &:hover {
-  background: #649ab6;
+  background: $site-blue-light;
   -webkit-box-shadow: $site-buttom-shadow-hover;
   -moz-box-shadow: $site-buttom-shadow-hover;
   box-shadow: $site-buttom-shadow-hover;

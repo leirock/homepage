@@ -12,6 +12,7 @@
   },
   "dependencies": {
     "hexo": "^4.2.0",
+    "hexo-cake-moon-menu": "^2.0.0",
     "hexo-generator-archive": "^1.0.0",
     "hexo-generator-category": "^1.0.0",
     "hexo-generator-feed": "^2.2.0",
