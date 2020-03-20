@@ -5,10 +5,13 @@ on:
     braches: [src] # only push events on source branch trigger deployment
 
 jobs:
-  build:
+  hexo-deployment:
     runs-on: ubuntu-latest
+    env:
+      TZ: Asia/Shanghai
+
     steps:
-    - name: Checkout
+    - name: Checkout Source
       uses: actions/checkout@v1
       with:
           submodules: true
@@ -18,12 +21,12 @@ jobs:
 #      with:
 #          node-version: "10.x"
 
-    - name: Fix Wrong Update Time
-      run: |
-        git config core.quotepath false
-        git ls-files | while read file
-        do touch -d "$(git log -1 --format="@%ct" "$file")" "$file"
-        done
+#    - name: Fix Wrong Update Time
+#      run: |
+#        git config core.quotepath false
+#        git ls-files | while read file
+#        do touch -d "$(git log -1 --format="@%ct" "$file")" "$file"
+#        done
 
     # https://github.com/actions/cache/blob/master/examples.md#node---yarn
     - name: Get Yarn Cache Directory
@@ -38,17 +41,14 @@ jobs:
         restore-keys: |
           ${{ runner.os }}-yarn-
 
-    - name: Install Dependencies
+    - name: Install Dependencies & Generate Static Files
       run: |
         export PATH="$PATH:$(yarn global bin)"
         yarn global add hexo-cli
         yarn install
-
-    - name: Generate Static Files
-      run: |
         yarn build 
 
-    - name: Upload css to COS
+    - name: Deploy public/css to COS
       uses: TencentCloud/cos-action@v1
       with:
         secret_id: ${{ secrets.COS_SECRET_ID }}

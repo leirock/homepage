@@ -98,8 +98,8 @@ ignore:
 theme: next
 
 # share.js
-# See: https://github.com/overtrue/share.js
-# networks: weibo,qq,wechat,tencent,douban,qzone,linkedin,diandian,facebook,twitter,google
+## See: https://github.com/overtrue/share.js
+## Networks: weibo,qq,wechat,tencent,douban,qzone,linkedin,diandian,facebook,twitter,google
 sharejs:
   enable: true
   cdn:
@@ -109,6 +109,12 @@ sharejs:
   wechat_qrcode:
     title: 'Share to WeChat'
     prompt: '<p>To share with friends,</p><p>open WeChat & scan QRcode</p>'
+
+# Hexo server module
+## Use `hexo server`
+server:
+  port: 4000
+  ip: 127.0.0.1
 
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
