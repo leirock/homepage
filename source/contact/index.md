@@ -1,5 +1,6 @@
 ---
 title: Contact
+comments: false
 ---
 
 　**Email:** zhangdonglei (at) link.cuhk.edu.hk
