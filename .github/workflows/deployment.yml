@@ -46,6 +46,7 @@ jobs:
         export PATH="$PATH:$(yarn global bin)"
         yarn global add hexo-cli
         yarn install
+        sed -i '18s/imageLink/imageLink.replace(\/\![0-9]{3,}x\/,"")/' themes/next/source/js/utils.js
         yarn build 
 
     - name: Deploy public/css to COS

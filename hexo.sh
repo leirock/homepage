@@ -24,7 +24,9 @@ if [ "$answer" == "1" ] || [ "$answer" == "" ]; then
 	printf "\033[32mINFO \033[0m 启动本地预览...\n";
 	echo " "
 	hexo clean
+	sed -i "" '18s/imageLink/imageLink.replace(\/\![0-9]{3,}x\/,"")/' themes/next/source/js/utils.js
 	hexo s
+	sed -i "" '18s/.replace(\/\!\[0-9\]{3,}x\/,\"\")//' themes/next/source/js/utils.js
 	exec ${HexoPath}/hexo.sh
 else
 	if [ "$answer" == "2" ]; then
