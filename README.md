@@ -1,4 +1,4 @@
-# <div align="center"><a title="Donglei's personal website repository" href="https://github.com/lei2rock/homepage"><img align="center" width="75" height="75" src="https://raw.githubusercontent.com/lei2rock/blog/src/source/images/android-chrome-192x192.png"></a> Personal Website</div>
+# <div align="center">Personal Website</div>
 
 [![Genertor](https://img.shields.io/badge/Generator-Hexo-0e83cd?&logo=hexo&style=flat-square)](https://hexo.io)
 [![Theme](https://img.shields.io/badge/Theme-NexT-181717.svg?&style=flat-square)](https://theme-next.org)
