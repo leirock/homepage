@@ -44,8 +44,8 @@ favicon:
   medium: https://yun-1256060851.file.myqcloud.com/assets/img/favicon-32x32.png
   apple_touch_icon: https://yun-1256060851.file.myqcloud.com/assets/img/apple-touch-icon.png
   safari_pinned_tab: https://yun-1256060851.file.myqcloud.com/assets/img/safari-pinned-tab.svg
-  android_manifest: https://yun-1256060851.file.myqcloud.com/assets/img/site.webmanifest
-  ms_browserconfig: https://yun-1256060851.file.myqcloud.com/assets/img/browserconfig.xml
+  #android_manifest: /images/manifest.json
+  #ms_browserconfig: /images/browserconfig.xml
 
 # Show multilingual switcher in footer.
 language_switcher: false
