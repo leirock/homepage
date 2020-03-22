@@ -22,7 +22,7 @@ minify: true
 # Define custom file paths.
 # Create your custom files in site directory `source/_data` and uncomment needed files below.
 custom_file_path:
-#  head: source/_data/head.swig
+  head: source/_data/head.swig
 #  header: source/_data/header.swig
 #  sidebar: source/_data/sidebar.swig
 #  postMeta: source/_data/post-meta.swig
@@ -67,17 +67,8 @@ footer:
   # If not defined, `author` from Hexo `_config.yml` will be used.
   copyright: Zhang Donglei
 
-  powered:
-    # Hexo link (Powered by Hexo).
-    enable: false
-    # Version info of Hexo after Hexo link (vX.X.X).
-    version: true
-
-  theme:
-    # Theme & scheme info link (Theme - NexT.scheme).
-    enable: false
-    # Version info of NexT after scheme info (vX.X.X).
-    version: true
+  # Powered by Hexo & NexT
+  powered: false
 
   # Beian ICP and gongan information for Chinese users. See: http://www.beian.miit.gov.cn, http://www.beian.gov.cn
   beian:
@@ -464,9 +455,6 @@ font:
 
 # Disable Baidu transformation on mobile devices.
 disable_baidu_transformation: true
-
-# Change headers hierarchy on site-subtitle (will be main site description) and on all post / page titles for better SEO-optimization.
-seo: false
 
 # If true, site-subtitle will be added to index page.
 # Remember to set up your site-subtitle in Hexo `_config.yml` (e.g. subtitle: Subtitle)

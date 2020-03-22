@@ -3,7 +3,7 @@ title: Contact
 comments: false
 ---
 
-![Pavilion of Harmony, CUHK](https://yun-1256060851.file.myqcloud.com/images/photos/香港：港中文天人合一亭.jpg!500x)
+![Big Wave Bay, Hong Kong](https://yun-1256060851.file.myqcloud.com/images/photos/香港：大浪湾.jpg!600x)
 
 　**Email:** zhangdonglei (at) link.cuhk.edu.hk
 　**Phone:** +852 3943 1588

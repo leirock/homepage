@@ -22,11 +22,7 @@ jobs:
 #          node-version: "10.x"
 
 #    - name: Fix Wrong Update Time
-#      run: |
-#        git config core.quotepath false
-#        git ls-files | while read file
-#        do touch -d "$(git log -1 --format="@%ct" "$file")" "$file"
-#        done
+#      run: find source/_posts -name '*.md' | while read file; do touch -d "$(git log -1 --format="@%ct" "$file")" "$file"; done
 
     # https://github.com/actions/cache/blob/master/examples.md#node---yarn
     - name: Get Yarn Cache Directory
