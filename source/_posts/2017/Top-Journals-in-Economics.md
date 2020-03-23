@@ -1,13 +1,11 @@
 ---
 title: Top Journals in Economics
-categories:
-  - List
-tags:
-  - econ
-date: '2017-02-20 09:30:00'
+categories: [List]
+tags: [econ]
 sticky: 0
 mathjax: false
 comments: true
+date: 2017-02-20 09:30:00
 ---
 
 The rank of this list is based on [SUFE journal list](http://econ.shufe.edu.cn/se/kxyj_con/87/1489).

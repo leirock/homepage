@@ -1,9 +1,7 @@
 ---
 title: {{ title }}
-categories:
-  - 
-tags:
-  - 
+categories: []
+tags: []
 sticky: 0
 mathjax: false
 comments: true
