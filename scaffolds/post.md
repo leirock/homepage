@@ -1,13 +1,11 @@
 ---
 title: {{ title }}
-categories:
-  - 
-tags:
-  - 
-date: '{{ date }}'
+categories: []
+tags: []
 sticky: 0
 mathjax: false
 comments: true
+date: {{ date }}
 ---
 
 <!-- more -->

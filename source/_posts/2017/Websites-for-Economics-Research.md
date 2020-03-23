@@ -1,13 +1,11 @@
 ---
 title: Websites for Economics Research
-categories:
-  - List
-tags:
-  - econ
-date: '2017-02-21 18:30:00'
+categories: [List]
+tags: [econ]
 sticky: 0
 mathjax: false
 comments: true
+date: 2017-02-21 18:30:00
 ---
 
 ## 1. Papers and Journals

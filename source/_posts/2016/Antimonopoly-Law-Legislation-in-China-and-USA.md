@@ -1,14 +1,11 @@
 ---
 title: Antimonopoly Law Legislation in China and USA
-categories:
-  - Essay
-tags:
-  - antitrust
-  - law
-date: '2016-12-16 18:31:22'
+categories: [Essay]
+tags: [antitrust, law]
 sticky: 0
 mathjax: false
 comments: true
+date: 2016-12-16 18:31:22
 ---
 
 {% note success %}
