@@ -120,5 +120,5 @@ server:
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
   - type: git
-    repo:
-    branch:
+    repo: https://GH_TOKEN@github.com/lei2rock/homepage.git
+    branch: master
