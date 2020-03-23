@@ -1,12 +1,13 @@
-# <div align="center">Personal Website</div>
+# <div align="center"><a title="My personal website repository" href="https://github.com/lei2rock/homepage"><img align="center" width="75" height="75" src="https://user-images.githubusercontent.com/19180725/77293471-5a9ded80-6d1d-11ea-9e96-4d364f31e84f.png"></a> Personal Website</div>
 
-[![Genertor](https://img.shields.io/badge/Generator-Hexo-0e83cd?&logo=hexo&style=flat-square)](https://hexo.io)
-[![Theme](https://img.shields.io/badge/Theme-NexT-181717.svg?&style=flat-square)](https://theme-next.org)
-[![Deploy](https://img.shields.io/github/workflow/status/lei2rock/homepage/Deployment?label=GitHub+Actions&logo=GitHub+Actions&style=flat-square)](https://github.com/lei2rock/homepage/actions)
+<p align="center">
+<br>
+<a href="https://hexo.io"><img src="https://img.shields.io/badge/Generator-Hexo-0e83cd?&logo=hexo&style=flat-square"></a>
+<a href="https://theme-next.org"><img src="https://img.shields.io/badge/Theme-NexT-181717.svg?&style=flat-square"></a>
+<a href="https://github.com/lei2rock/homepage/actions"><img src="https://img.shields.io/github/workflow/status/lei2rock/homepage/Deployment?label=GitHub+Actions&logo=GitHub+Actions&style=flat-square"></a>
+</p>
 
-The `src` branch of this repo contains all source files of my personal website.
-
-## Copyright
+The `src` branch of this repository contains all source files of my personal website.
 
 All articles and photos provided in this repository are licensed under a [Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License](http://creativecommons.org/licenses/by-nc-sa/4.0/). For commercial use, please contact me by email first.
 
