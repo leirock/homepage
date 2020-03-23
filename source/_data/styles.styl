@@ -1,3 +1,8 @@
+//页面最上面黑细条
+.headband {
+  display: none;
+}
+
 //导航区背景
 .site-brand-container {
   background: url($site-brand-background);
@@ -13,11 +18,6 @@ body {
   background-position: 50% 50%; 
 }
 
-//评论框背景
-textarea#veditor.veditor.vinput  {
-  background: url($comment-background) 100% 100% no-repeat
-}
-
 //二级菜单
 .sub-menu {
   margin-top: $site-top-margin; 
@@ -31,11 +31,6 @@ textarea#veditor.veditor.vinput  {
 
 #sub-menu.menu .menu-item a:hover::after {
   background-color: transparent;
-}
-
-//页面最上面黑细条
-.headband {
-  display: none;
 }
 
 //侧边栏
@@ -88,12 +83,12 @@ textarea#veditor.veditor.vinput  {
 }
 
 //首页文章标题
-.posts-expand article.post-block.home .post-title {
+.index .post-title {
   text-align: left;
   border-left: $site-blue 8px solid;
   padding-left: 10px;
 }
-.posts-expand article.post-block.home .post-meta {
+.index .post-meta {
   text-align: left;
 }
 
@@ -119,11 +114,7 @@ textarea#veditor.veditor.vinput  {
 
 //文章图片标题
 .post-body .image-caption {
-  margin: -10px auto 15px;
-  
-  @media (max-width: 767px) {
-    margin: 0 auto 15px;
-  }
+  margin: 0px auto 15px;
 }
 .post-body a:hover {
   text-decoration: none;
@@ -162,6 +153,11 @@ blockquote p, .post-body .note {
 }
 .popular-posts-header {
   font-weight: bold;
+}
+
+//归档页
+.archive .collection-title {
+  display: none !important;
 }
 
 //分类页
@@ -203,11 +199,6 @@ blockquote p, .post-body .note {
   .category-all-page .category-list {
     padding-top: 10px;
   }
-}
-
-//标签页标题
-.posts-collapse .collection-header {
-  width: -webkit-fill-available;
 }
 
 //标签云
@@ -264,6 +255,10 @@ blockquote p, .post-body .note {
 }
 .v .vlist .vcard .vhead .vsys { 
   display: none !important;
+}
+//评论框背景
+textarea#veditor.veditor.vinput  {
+  background: url($comment-background) 100% 100% no-repeat
 }
 
 //返回最上按钮
