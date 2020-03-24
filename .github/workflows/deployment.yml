@@ -16,10 +16,10 @@ jobs:
       with:
           submodules: true
 
-#    - name: Setup Node.js
-#      uses: actions/setup-node@v1.1.0
-#      with:
-#          node-version: '12.x'
+    - name: Setup Node.js
+      uses: actions/setup-node@v1.1.0
+      with:
+          node-version: '12.x'
 
     - name: Setup Python
       uses: actions/setup-python@v1
