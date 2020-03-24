@@ -40,10 +40,10 @@ custom_file_path:
 # ---------------------------------------------------------------
 
 favicon:
-  small: https://yun-1256060851.file.myqcloud.com/assets/img/favicon-16x16.png
-  medium: https://yun-1256060851.file.myqcloud.com/assets/img/favicon-32x32.png
-  apple_touch_icon: https://yun-1256060851.file.myqcloud.com/assets/img/apple-touch-icon.png
-  safari_pinned_tab: https://yun-1256060851.file.myqcloud.com/assets/img/safari-pinned-tab.svg
+  small: https://site-1256060851.file.myqcloud.com/assets/img/favicon-16x16.png
+  medium: https://site-1256060851.file.myqcloud.com/assets/img/favicon-32x32.png
+  apple_touch_icon: https://site-1256060851.file.myqcloud.com/assets/img/apple-touch-icon.png
+  safari_pinned_tab: https://site-1256060851.file.myqcloud.com/assets/img/safari-pinned-tab.svg
   #android_manifest: /images/manifest.json
   #ms_browserconfig: /images/browserconfig.xml
 
@@ -58,11 +58,11 @@ footer:
   icon:
     # Icon name in Font Awesome. See: https://fontawesome.com/v4.7.0/icons/
     # `heart` is recommended with animation in red (#ff0000).
-    name: paper-plane
+    name: heart
     # If you want to animate the icon, set it to true.
-    animated: false
+    animated: true
     # Change the color of icon, using Hex Code.
-    color: ''
+    color: '#f06292'
 
   # If not defined, `author` from Hexo `_config.yml` will be used.
   copyright: Zhang Donglei
@@ -413,7 +413,7 @@ font:
   enable: true
 
   # Uri of fonts host, e.g. https://fonts.googleapis.com (Default).
-  host: //fonts.loli.net
+  host:
 
   # Font options:
   # `external: true` will load this font family from `host` above.
@@ -994,6 +994,6 @@ vendors:
   canvas_ribbon:
 
 # Assets
-css: https://yun-1256060851.file.myqcloud.com/assets/homepage-css
-js: https://yun-1256060851.file.myqcloud.com/assets/js
-images: https://yun-1256060851.file.myqcloud.com/assets/img
+css: https://site-1256060851.file.myqcloud.com/assets/homepage-css
+js: https://site-1256060851.file.myqcloud.com/assets/js
+images: https://site-1256060851.file.myqcloud.com/assets/img

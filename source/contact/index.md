@@ -3,7 +3,7 @@ title: Contact
 comments: false
 ---
 
-![Big Wave Bay, Hong Kong](https://yun-1256060851.file.myqcloud.com/images/photos/香港：大浪湾.jpg!600x)
+![Big Wave Bay, Hong Kong](https://site-1256060851.file.myqcloud.com/images/photos/香港：大浪湾.jpg!600x)
 
 　**Email:** zhangdonglei (at) link.cuhk.edu.hk
 　**Phone:** +852 3943 1588
