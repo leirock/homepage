@@ -65,6 +65,7 @@ jobs:
         yarn install
         sed -i '18s/imageLink/imageLink.replace(\/\![0-9]{3,}x\/,"")/' themes/next/source/js/utils.js
         yarn build
+        sed -i '60s/Hello\! | //' public/index.html
 
     - name: Setup Tencent COSCMD
       env:
@@ -94,8 +95,8 @@ jobs:
         OSS_BUCKET: ${{ secrets.OSS_BUCKET }} #bucket name without endpoint domain
       run: |
         rm -rf public/css/ public/js/ public/images/ public/index/
-        ossutil rm oss://$OSS_BUCKET/ -rf
-        ossutil cp public/ oss://$OSS_BUCKET/ -rf
+        ossutil rm -rf oss://$OSS_BUCKET/
+        ossutil cp -rf public/ oss://$OSS_BUCKET/
 
 #    - name: Deploy to Github for Backup
 #      env:
