@@ -65,6 +65,7 @@ jobs:
         yarn install
         sed -i '18s/imageLink/imageLink.replace(\/\![0-9]{3,}x\/,"")/' themes/next/source/js/utils.js
         yarn build
+        sed -i '30s/Hello!/Zhang Donglei/' public/index.html
         sed -i '60s/Hello\! | //' public/index.html
 
     - name: Setup Tencent COSCMD
