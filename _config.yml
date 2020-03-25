@@ -116,12 +116,6 @@ server:
   port: 4000
   ip: 127.0.0.1
 
-# hexo-extend-injector2 (for hexo-cake-moon-menu)
-## See: https://github.com/jiangtj/hexo-extend-injector2
-injector2:
-  terser:
-    path: https://site-1256060851.file.myqcloud.com/assets/js/injector.js
-
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
