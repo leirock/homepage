@@ -1518,12 +1518,6 @@ hexo-log@^1.0.0:
     chalk "^2.4.1"
     hexo-bunyan "^2.0.0"
 
-hexo-next-share@theme-next/hexo-next-share:
-  version "1.1.0"
-  resolved "https://codeload.github.com/theme-next/hexo-next-share/tar.gz/a0cfd32ade7bd25b8d282366fa177afb7644d321"
-  dependencies:
-    next-util "^1.0.1"
-
 hexo-pagination@1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/hexo-pagination/-/hexo-pagination-1.0.0.tgz#c9c0ca3665267b9e9d0a89fc3edcaf3276907dc1"
@@ -2330,14 +2324,6 @@ negotiator@0.6.2:
   version "0.6.2"
   resolved "https://registry.yarnpkg.com/negotiator/-/negotiator-0.6.2.tgz#feacf7ccf525a77ae9634436a64883ffeca346fb"
   integrity sha512-hZXc7K2e+PgeI1eDBe/10Ard4ekbfrrqG8Ep+8Jmf4JID2bNg7NvCPOZN+kfF574pFQI7mum2AUqDidoKqcTOw==
-
-next-util@^1.0.1:
-  version "1.0.1"
-  resolved "https://registry.yarnpkg.com/next-util/-/next-util-1.0.1.tgz#bba5566da15f7e18252fb7ca439950c9e4c74c01"
-  integrity sha512-8vaUTbFJHeITHjqGq4R2IyEM/I1p9b/wXIbN+rqJXQm/h7HIXCAMZPitDaSJRh/tzWrP2JZU3FA4mY7Smj24Wg==
-  dependencies:
-    js-yaml "^3.13.1"
-    lodash "^4.17.15"
 
 nib@^1.1.2:
   version "1.1.2"
