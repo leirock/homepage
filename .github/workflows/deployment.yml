@@ -64,6 +64,7 @@ jobs:
         yarn global add hexo-cli
         yarn install
         sed -i '18s/imageLink/imageLink.replace(\/\![0-9]{3,}x\/,"")/' themes/next/source/js/utils.js
+        sed -i '4s/{{ title }}/{{ "Posts | " + title }}/' themes/next/layout/index.swig
         yarn build
         sed -i '30s/Hello!/Zhang Donglei/' public/index.html
         sed -i '60s/Hello! | //' public/index.html
@@ -95,7 +96,7 @@ jobs:
       env:
         OSS_BUCKET: ${{ secrets.OSS_BUCKET }} #bucket name without endpoint domain
       run: |
-        rm -rf public/css/ public/js/ public/images/ public/index/
+        rm -rf public/css/ public/js/ public/images/
         ossutil rm -rf oss://$OSS_BUCKET/
         ossutil cp -rf public/ oss://$OSS_BUCKET/
 

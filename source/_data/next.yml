@@ -119,7 +119,7 @@ darkmode: false
 menu:
   about: / || user-circle
   research: research/ || university
-  articles: articles/ || pencil
+  posts: posts/ || pencil
   overview: 
     default: overview/ || th
     series: series || list

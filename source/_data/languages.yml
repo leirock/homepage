@@ -1,8 +1,6 @@
 en:
-  title:
-    archive: Articles
   menu:
-    articles: Articles
+    posts: Posts
     overview: Overview
     series: Series
     research: Research
