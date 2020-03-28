@@ -9,6 +9,8 @@ en:
     posted: " "
     comments:
       valine: Comments
+    post_lang: English /
+    link_lang: 中文
   counter:
     tag_cloud:
       other: <i class="fa fa-fw fa-tags"></i> %d tags in total
