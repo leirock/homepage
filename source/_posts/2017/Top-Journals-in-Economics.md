@@ -5,6 +5,7 @@ tags: [econ]
 sticky: 0
 mathjax: false
 comments: true
+i18n: https://blog.dlzhang.com/posts/2017/经济学顶尖学术期刊/
 date: 2017-02-20 09:30:00
 ---
 
