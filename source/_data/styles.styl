@@ -39,26 +39,31 @@
   }
   //标签云与分类页
   .tag-cloud a, .posts-expand .post-tags a, li.category-list-item a {
-    color: #fff !important;
+    color: var(--text-color) !important;
     background: $site-blue !important;
     &:hover {
       background: $site-buttom-background-hover !important;
     }
   }
   @media (max-width: 767px) {
-    li.category-list-item a  {
+    li.category-list-item a {
       background: none !important;
+      color: var(--link-color) !important;
+      &:hover {
+        background: none !important;
+        color: var(--text-color) !important;
+      }
     }
   }
   //侧边导航栏与代码文字颜色
   .sidebar-nav li, code { 
-    color: #fff !important;
+    color: var(--text-color) !important;
   }
 
   // Valine darkmode
   //评论文字
   .v p, .v a, .v .vbtn, .v em {
-    color: #fff !important;
+    color: var(--text-color) !important;
   }
   //回复按钮
   .v .vlist .vcard .vh .vmeta .vat {
@@ -82,22 +87,14 @@
       }
   }
   //长回复评论隐藏展开
-  .v .vlist .vcard .vcontent.expand{
+  .v .vlist .vcard .vcontent.expand {
     &:before {
       background:linear-gradient(180deg,hsla(0,0%,0%,0),hsla(210, 29%, 20%,.9)) !important;
     }
     &:after {
-      color: #fff !important;
+      color: var(--text-color) !important;
       background:hsla(210, 29%, 20%,.9) !important;
     }
-  }
-}
-
-//思源宋体适配
-.menu .menu-item a, .posts-collapse .post-title a, .posts-expand .post-title-link {
-  color: black;
-  @media (prefers-color-scheme: dark) {
-    color:#fff;
   }
 }
 
@@ -106,16 +103,21 @@
   //正文链接，相关推荐链接
   .post-body a, .popular-posts .popular-posts-item .popular-posts-title a {
     border-bottom: 1px solid #ccc;
-    color: $text-color;
+    color: var(--text-color);
     &:hover {
       color: $link-hover-color;
       border-bottom-color: $link-hover-color;
     }
   }
 
+//思源宋体适配
+.menu .menu-item a, .posts-collapse .post-title a, .posts-expand .post-title-link {
+  color: var(--text-color);
+}
+
   //上一篇下一篇链接
-  .post-nav-item:last-child a {
-    color: $text-color;
+  .post-nav-item a {
+    color: var(--text-color);
     &:hover {
       color: $link-hover-color;
       border-bottom-color: $link-hover-color;
@@ -163,7 +165,7 @@ body {
 .site-subtitle {
   font-family: $font-family-kaiti;
   font-weight: bold;
-  color: white;
+  color: #fff;
 }
 .header-inner {
   margin-top: $site-top-margin;
@@ -302,7 +304,7 @@ blockquote p, .post-body .note {
     transition: 0.2s ease-out;
     padding: 10px 15px;
     background: $site-blue-light;
-    color: white
+    color: #fff;
     border-bottom: none;
     border-radius: 15px;
     line-height: 4;
@@ -336,7 +338,7 @@ blockquote p, .post-body .note {
   &:hover {
     text-decoration: none;
     background: $site-buttom-background-hover;
-    color: white !important;
+    color: #fff !important;
     -webkit-box-shadow: $site-buttom-shadow-hover;
     -moz-box-shadow: $site-buttom-shadow-hover;
     box-shadow: $site-buttom-shadow-hover;
@@ -357,7 +359,7 @@ blockquote p, .post-body .note {
 
   &:hover {
     background: $site-buttom-background-hover;
-    color: white;
+    color: #fff;
     -webkit-box-shadow: $site-buttom-shadow-hover;
     -moz-box-shadow: $site-buttom-shadow-hover;
     box-shadow: $site-buttom-shadow-hover;
@@ -401,13 +403,13 @@ textarea#veditor.veditor.vinput  {
 }
 .btn {
   padding: 3px 15px
-  color: white !important;
+  color: #fff !important;
   background-color: #bdc3c7;
   border: 0px;
   border-radius: 15px;
 
   &:hover {
-    color: white !important;
+    color: #fff !important;
     background: $site-blue;
     text-decoration: none !important;
   }
