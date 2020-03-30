@@ -1,3 +1,112 @@
+@media (prefers-color-scheme: dark) {
+  :root {
+    --body-bg-color: #15202b;
+    --content-bg-color: #192734;
+    --menu-item-bg-color: #131d27;
+    --text-color: #fff;
+  }
+  //网站背景
+  body {
+    background-image: none !important;
+  }
+  //网站标题logo背景
+  .site-brand-container {
+    opacity: 0.75;
+  }
+  //首页文章标题左侧
+  .index .post-title {
+    border-left: $site-light-blue;
+  }
+  //引用与侧边介绍栏
+  blockquote, .site-description {
+    color: #ccc;
+  }
+  //文章标题下信息栏链接
+  .index .post-meta a, .posts-expand .post-meta a {
+    color: #bbb;
+    &:hover {
+      color: #ccc;
+      border-bottom-color: #ccc !important;
+    }
+  }
+  //文章标题下信息栏
+  .index .post-meta, .posts-expand .post-meta {
+    color: #bbb;
+  }
+  //正文标签提示框背景
+  .post-body .note {
+    background: #15202b !important;
+  }
+  //标签云与分类页
+  .tag-cloud a, .posts-expand .post-tags a, li.category-list-item a {
+    color: #fff !important;
+    background: $site-blue !important;
+    &:hover {
+      background: $site-buttom-background-hover !important;
+    }
+  }
+  //侧边导航栏与代码文字颜色
+  .sidebar-nav li, code { 
+    color: #fff !important;
+  }
+
+  // Valine darkmode
+  //评论文字
+  .v p, .v a, .v .vbtn, .v em {
+    color: #fff !important;
+  }
+  //回复按钮
+  .v .vlist .vcard .vh .vmeta .vat {
+    color: #999 !important;
+  }
+  //行内代码背景
+  .v code {
+    background-color: inherit !important;
+  }
+  //代码框背景
+  .v pre {
+    background-color: $site-blue !important;
+  }
+  //查看更多评论按钮
+  .v .vbtn {
+    border-color: #333 !important;
+    background: $site-blue !important;
+    &:hover {
+      border-color: #555 !important;
+      background: $site-blue-light !important;
+      }
+  }
+  //长回复评论隐藏展开
+  .v .vlist .vcard .vcontent.expand{
+    &:before {
+      background:linear-gradient(180deg,hsla(0,0%,0%,0),hsla(210, 29%, 20%,.9)) !important;
+    }
+    &:after {
+      color: #fff !important;
+      background:hsla(210, 29%, 20%,.9) !important;
+    }
+  }
+}
+
+//思源宋体适配
+.menu .menu-item a, .posts-collapse .post-title a, .posts-expand .post-title-link {
+  color: black;
+  @media (prefers-color-scheme: dark) {
+    color:#fff;
+  }
+}
+
+//链接文本
+@media (prefers-color-scheme: light) {
+  .post-body a {
+    border-bottom: 1px solid #ccc;
+    &:hover {
+      color: $link-hover-color;
+      border-bottom-color: $link-hover-color;
+    }
+  }
+}
+
 //页面最上面黑细条
 .headband {
   display: none;
@@ -93,24 +202,9 @@ body {
   text-align: left;
 }
 
-//思源宋体适配
-.menu .menu-item a, .posts-collapse .post-title a, .posts-expand .post-title-link {
-  color: black;
-}
-
 //正文字号
 .post-body {
   font-size: 1.05em;
-}
-
-//链接文本
-.post-body a{
-  color: #0477ab;
-  border-bottom: none;
-
-  &:hover {
-    text-decoration: underline;
-  }
 }
 
 //文章图片标题
@@ -124,11 +218,12 @@ body {
 //段落中代码
 code {
   font-size: 85%;
+  background: none;
 }
 
 //代码框
 .highlight-container {
-  background: #008b8b;
+  background: $site-blue;
 }
 .highlight figcaption {
   font-family: $font-family-monospace;
@@ -339,5 +434,5 @@ textarea#veditor.veditor.vinput  {
 
 //页脚
 .footer, .footer a{
-  color: #666;
+  color: #888;
 }
