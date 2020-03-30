@@ -45,6 +45,11 @@
       background: $site-buttom-background-hover !important;
     }
   }
+  @media (max-width: 767px) {
+    li.category-list-item a  {
+      background: none !important;
+    }
+  }
   //侧边导航栏与代码文字颜色
   .sidebar-nav li, code { 
     color: #fff !important;
@@ -98,8 +103,19 @@
 
 //链接文本
 @media (prefers-color-scheme: light) {
-  .post-body a {
+  //正文链接，相关推荐链接
+  .post-body a, .popular-posts .popular-posts-item .popular-posts-title a {
     border-bottom: 1px solid #ccc;
+    color: $text-color;
+    &:hover {
+      color: $link-hover-color;
+      border-bottom-color: $link-hover-color;
+    }
+  }
+
+  //上一篇下一篇链接
+  .post-nav-item:last-child a {
+    color: $text-color;
     &:hover {
       color: $link-hover-color;
       border-bottom-color: $link-hover-color;
@@ -132,12 +148,10 @@ body {
   margin-top: $site-top-margin; 
   border-radius: $border-radius;
   margin-left: 3px; 
-
   @media (max-width: 767px) {
     margin: 5px 10px 0;
   }
 }
-
 #sub-menu.menu .menu-item a:hover::after {
   background-color: transparent;
 }
@@ -152,8 +166,7 @@ body {
   color: white;
 }
 .header-inner {
-  margin-top: $site-top-margin; 
-
+  margin-top: $site-top-margin;
   @media (max-width: 767px) {
     margin-top: 0; 
     border-top-left-radius: 0;
@@ -176,11 +189,13 @@ body {
 .post-block, #posts > article + article .post-block {
   margin-top: $site-top-margin;
   margin-left: 3px; 
-
   @media (max-width: 767px) {
-    padding: 25px 0 15px !important;
+    padding: 25px 18px 15px !important;
     margin: 8px 15px 20px !important;
   }
+}
+.post-block {
+  padding: 40px 40px 25px;
 }
 
 //文章标题与标题下信息
@@ -264,7 +279,10 @@ blockquote p, .post-body .note {
 //分类页
 @media (max-width: 767px) {
   .category-all-page .category-list-item {
-    margin: 5px 40px;
+    margin: 10px 40px;
+  }
+  .category-all-page .category-all ul {
+    list-style-type:disc;
   }
 }
 @media (min-width: 767px) {
@@ -291,6 +309,7 @@ blockquote p, .post-body .note {
     word-break: keep-all;
 
     &:hover {
+      color: #fff;
       text-decoration: none;
       -webkit-box-shadow: $site-buttom-shadow-hover;
       -moz-box-shadow: $site-buttom-shadow-hover;
@@ -348,7 +367,6 @@ blockquote p, .post-body .note {
 //评论区
 .comments{
   margin-left: 3px;
-
   @media (max-width: 767px) {
     padding: 15px;
     margin: 0 15px 20px;
@@ -371,6 +389,7 @@ textarea#veditor.veditor.vinput  {
   border-radius: 1em;
 }
 
+/*
 //阅读全文按钮
 .post-button {
   text-align: right;
@@ -393,6 +412,7 @@ textarea#veditor.veditor.vinput  {
     text-decoration: none !important;
   }
 }
+*/
 
 //赞赏按钮
 .reward-container button {
@@ -412,11 +432,6 @@ textarea#veditor.veditor.vinput  {
     -moz-box-shadow: $site-buttom-shadow-hover;
     box-shadow: $site-buttom-shadow-hover;
   }
-}
-
-//分享按钮
-.post-widgets {
-  padding-top: 10px;
 }
 
 //页码栏
