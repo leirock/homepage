@@ -316,8 +316,8 @@ tagcloud:
   # All values below are same as default, change them by yourself.
   min: 12 # Minimun font size in px
   max: 30 # Maxium font size in px
-  start: "#4286f4" # Start color (hex, rgba, hsla or color keywords)
-  end: "#373B44" # End color (hex, rgba, hsla or color keywords)
+  start: "#aaa" # Start color (hex, rgba, hsla or color keywords)
+  end: "#111" # End color (hex, rgba, hsla or color keywords)
   amount: 200 # Amount of tags, change it if you have more than 200 tags
 
 # Google Calendar
@@ -356,7 +356,7 @@ codeblock:
   # Code Highlight theme
   # Available values: normal | night | night eighties | night blue | night bright | solarized | solarized dark | galactic
   # See: https://github.com/chriskempson/tomorrow-theme
-  highlight_theme: solarized dark
+  highlight_theme: galactic
   # Add copy button on codeblock
   copy_button:
     enable: true

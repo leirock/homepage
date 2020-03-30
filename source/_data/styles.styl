@@ -3,15 +3,13 @@
     --body-bg-color: #15202b;
     --content-bg-color: #192734;
     --menu-item-bg-color: #131d27;
-    --text-color: #fff;
+    --link-color: #eee;
+    --link-hover-color: #fff;
+    --text-color: #eee;
   }
   //网站背景
   body {
     background-image: none !important;
-  }
-  //网站标题logo背景
-  .site-brand-container {
-    opacity: 0.75;
   }
   //首页文章标题左侧
   .index .post-title {
@@ -35,11 +33,12 @@
   }
   //正文标签提示框背景
   .post-body .note {
-    background: #15202b !important;
+    background: var(--body-bg-color) !important;
   }
+
   //标签云与分类页
   .tag-cloud a, .posts-expand .post-tags a, li.category-list-item a {
-    color: var(--text-color) !important;
+    color: var(--link-color) !important;
     background: $site-blue !important;
     &:hover {
       background: $site-buttom-background-hover !important;
@@ -51,13 +50,9 @@
       color: var(--link-color) !important;
       &:hover {
         background: none !important;
-        color: var(--text-color) !important;
+        color: var(--link-hover-color) !important;
       }
     }
-  }
-  //侧边栏：文章目录、站点概览两个标题
-  .sidebar-nav li { 
-    color: var(--text-color);
   }
 
   // Valine darkmode
@@ -79,11 +74,10 @@
   }
   //查看更多评论按钮
   .v .vbtn {
-    border-color: #333 !important;
     background: $site-blue !important;
     &:hover {
-      border-color: #555 !important;
-      background: $site-blue-light !important;
+      border-color: $site-buttom-background-hover !important;
+      background: $site-buttom-background-hover !important;
       }
   }
   //长回复评论隐藏展开
@@ -98,30 +92,27 @@
   }
 }
 
-//链接文本
-@media (prefers-color-scheme: light) {
-  //正文链接，相关推荐链接
-  .post-body a, .popular-posts .popular-posts-item .popular-posts-title a {
-    border-bottom: 1px solid #ccc;
-    color: var(--text-color);
-    &:hover {
-      color: $link-hover-color;
-      border-bottom-color: $link-hover-color;
-    }
+//正文链接，相关推荐链接
+.post-body a, .popular-posts .popular-posts-item .popular-posts-title a {
+  border-bottom: 1px solid #ccc;
+  color: var(--text-color);
+  &:hover {
+    color: var(--link-hover-color);
+    border-bottom-color: var(--link-hover-color);
   }
+}
 
 //思源宋体适配
 .menu .menu-item a, .posts-collapse .post-title a, .posts-expand .post-title-link {
   color: var(--text-color);
 }
 
-  //上一篇下一篇链接
-  .post-nav-item a {
-    color: var(--text-color);
-    &:hover {
-      color: $link-hover-color;
-      border-bottom-color: $link-hover-color;
-    }
+//上一篇下一篇链接
+.post-nav-item a {
+  color: var(--text-color);
+  &:hover {
+    color: var(--link-hover-color);
+    border-bottom-color: var(--link-hover-color);
   }
 }
 
@@ -151,21 +142,22 @@ body {
   border-radius: $border-radius;
   margin-left: 3px; 
   @media (max-width: 767px) {
-    margin: 5px 10px 0;
+    margin: 8px 10px 0;
   }
 }
 #sub-menu.menu .menu-item a:hover::after {
   background-color: transparent;
 }
 
-//侧边栏
+//侧边栏：网站标题
 .site-title {
   font-weight: bold;
 }
+//侧边栏：网站标题下标语
 .site-subtitle {
   font-family: $font-family-kaiti;
   font-weight: bold;
-  color: #fff;
+  color: var(--brand-color);
 }
 .header-inner {
   margin-top: $site-top-margin;
@@ -183,8 +175,13 @@ body {
 .sidebar {
   background: transparent;
 }
+//侧边栏：社交媒体图标
 .links-of-author a {
   font-size: 1em;
+}
+//侧边栏：文章目录、站点概览两个标题
+.sidebar-nav li { 
+  color: var(--link-color);
 }
 
 //文章页
@@ -221,7 +218,7 @@ body {
 
 //正文字号
 .post-body {
-  font-size: 1.05em;
+  font-size: 1em;
 }
 
 //文章图片标题
@@ -274,10 +271,11 @@ blockquote p, .post-body .note {
   font-weight: bold;
 }
 
-//归档页
+/* 归档页Cheers
 .archive .collection-title {
   display: none !important;
 }
+*/
 
 //分类页
 @media (max-width: 767px) {
