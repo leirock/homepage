@@ -6,7 +6,7 @@
 title: Zhang Donglei
 subtitle:
 description: <div>Never say you know the essence,</div><div>let alone the truth.</div><div>无曰已是，无曰遂真。</div><div>― Zhejiang University Anthem</div>
-keywords: [Zhang Donglei, 张栋磊]
+keywords: [Donglei, 张栋磊, cuhk, zju, economics]
 author:
 language: en
 timezone: Asia/Shanghai
@@ -64,7 +64,7 @@ index_generator:
   order_by: -date
 
 # Category & Tag
-default_category: uncategorized
+default_category: Ramble
 category_map:
 tag_map:
 
@@ -92,20 +92,27 @@ include:
 exclude:
 ignore:
 
-# Extensions
-## Plugins: https://hexo.io/plugins/
-## Themes: https://hexo.io/themes/
-theme: next
-
-# Hexo server module
-## Use `hexo server`
-server:
-  port: 4000
-  ip: 127.0.0.1
-
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
   - type: git
     repo: https://GH_TOKEN@github.com/lei2rock/homepage.git
     branch: master
+
+# Extensions
+## Plugins: https://hexo.io/plugins/
+## Themes: https://hexo.io/themes/
+theme: next
+
+## Hexo server module
+## Use `hexo server`
+server:
+  port: 4000
+  ip: 127.0.0.1
+
+## Sitemap
+## https://github.com/ludoviclefevre/hexo-generator-seo-friendly-sitemap
+sitemap:
+    path: sitemap.xml
+    tag: false
+    category: false

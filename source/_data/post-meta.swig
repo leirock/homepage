@@ -4,7 +4,7 @@
     <span class="post-meta-item-icon">
     <i class="fa fa-globe"></i>
     </span>
-    <span class="post-meta-item-text">{{ __('post.post_lang') }}</span>
+    <span>{{ __('post.post_lang') }}</span>
     <a href="{{ post.i18n }}" target="_blank" rel="noopener" data-pjax-state="">{{ __('post.link_lang') }}</a>
 </span>
 {%- endif %}
