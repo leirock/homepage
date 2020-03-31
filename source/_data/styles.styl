@@ -2,12 +2,13 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --body-bg-color: #15202b;
-    --content-bg-color: #192734;
-    --menu-item-bg-color: #131d27;
-    --link-color: #e1e1e1;
-    --link-hover-color: #fff;
-    --text-color: #e1e1e1;
+    --body-bg-color: rgb(21, 32, 43);
+    --content-bg-color: rgb(25, 39, 52);
+    --menu-item-bg-color: rgb(19, 29, 39);
+    --link-color: rgb(225, 225, 225);
+    --link-hover-color: rgb(255, 255, 255); //#fff
+    --text-color: rgb(225, 225, 225);
+    --text-color-light: rgb(204, 204, 204); //#ccc
   }
   //网站背景
   body {
@@ -19,7 +20,7 @@
   }
   //引用文字与侧边介绍栏
   blockquote, .site-description {
-    color: #ccc;
+    color: var(--text-color-light);
   }
   //note式引用框上下引号
   .blockquote-center {
@@ -36,8 +37,8 @@
   .post-meta a {
     color: #bbb;
     &:hover {
-      color: #ccc;
-      border-bottom-color: #ccc !important;
+      color: var(--text-color-light);
+      border-bottom-color: var(--text-color-light) !important;
     }
   }
   .post-meta {
@@ -67,21 +68,13 @@
   }
 
   //Valine
-  //评论文字
-  .v p, .v a, .v .vbtn, .v em, .v code {
-    color: var(--text-color) !important;
-  }
-  //回复、表情/预览按钮
-  .v .vlist .vcard .vh .vmeta .vat, .v .vwrap .vedit .vctrl span {
+  //回复、表情/预览按钮、评论框下评论数、左下角MD图标
+  .v .vlist .vcard .vh .vmeta .vat, .v .vwrap .vedit .vctrl span, .v .vinfo .col, .v .vinfo .vcount .vnum, .v .vwrap .vcontrol .col svg {
     color: #bbb !important;
-  }
-  //行内代码背景
-  .v code {
-    background-color: inherit !important;
   }
   //代码框背景
   .v pre {
-    background-color: $site-blue !important;
+    background-color: rgb(29, 31, 33) !important;
   }
   //查看更多评论按钮
   .v .vbtn {
@@ -369,7 +362,7 @@ blockquote p, .post-body .note {
   }
 }
 
-//评论区
+//评论区位置调整
 .comments {
   margin-left: 3px;
   @media (max-width: 767px) {
@@ -377,13 +370,22 @@ blockquote p, .post-body .note {
     margin: 0 15px 20px;
   }
 }
+//不显示评论操作系统浏览器信息
 .v .vlist .vcard .vhead .vsys { 
   display: none !important;
 }
 //评论框背景
 textarea#veditor.veditor.vinput  {
-  background: url($comment-background) 100% 100% no-repeat
-  opacity: 0.5;
+  background: url($comment-background) 100% 100% no-repeat;
+  color: var(--text-color);
+}
+//评论文字颜色
+.v p, .v a, .v .vbtn, .v em, .v code, .v .vwrap .vheader .vinput {
+  color: var(--text-color) !important;
+}
+//评论文字行内代码背景
+.v code {
+  background-color: inherit !important;
 }
 
 //返回最上按钮
