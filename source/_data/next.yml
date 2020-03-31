@@ -620,7 +620,7 @@ valine:
   placeholder: To receive reply notify, please provide E-Mail. # Comment box placeholder
   avatar: wavatar # Gravatar style
   guest_info: nick,mail # Custom comment header, nick,mail,link 
-  pageSize: 10 # Pagination size
+  pageSize: 5 # Pagination size
   language: en # Language, available values: en, zh-cn
   visitor: false # Article reading statistic
   comment_count: true # If false, comment count will only be displayed in post page, not in home page
