@@ -3,7 +3,9 @@ title: Series
 comments: false
 ---
 
-<center><i class="fa fa-fw fa-list"></i> 1 series in total</center>
+<style>.post-body a {border-bottom:none;}</style>
+
+<center><i class="fas fa-cube"></i>&nbsp; 1 series in total</center>
 
 ## Policy Discussion
 

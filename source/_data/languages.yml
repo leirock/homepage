@@ -1,5 +1,6 @@
 en:
   menu:
+    home: About
     posts: Posts
     overview: Overview
     series: Series
@@ -10,8 +11,8 @@ en:
     link_lang: 中文
   counter:
     tag_cloud:
-      other: <i class="fa fa-fw fa-tags"></i> %d tags in total
+      other: <i class="fas fa-tags"></i>&nbsp; %d tags in total
     categories:
-      other: <i class="fa fa-fw fa-th"></i> %d categories in total
+      other: <i class="fas fa-th"></i>&nbsp; %d categories in total
   reward:
-    donate: <i class="fa fa-qrcode fa-2x" style="line-height:35px;"></i>
+    donate: <i class="fas fa-qrcode" style="font-size:1.7em;line-height:1.2em;"></i>
