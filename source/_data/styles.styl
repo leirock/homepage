@@ -1,106 +1,128 @@
-//————————————————————黑暗模式设置开始————————————————————//
+/* header */
+/* header-隐藏顶部线条 */
+.headband {
+  display: none;
+}
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --body-bg-color: rgb(21, 32, 43);
-    --content-bg-color: rgb(25, 39, 52);
-    --menu-item-bg-color: rgb(19, 29, 39);
-    --link-color: rgb(225, 225, 225);
-    --link-hover-color: rgb(255, 255, 255); //#fff
-    --text-color: rgb(225, 225, 225);
-    --text-color-light: rgb(204, 204, 204); //#ccc
-  }
-  //网站背景
-  body {
-    background-image: none !important;
-  }
-  //首页文章标题左侧
-  .index .post-title {
-    border-left: $site-light-blue;
-  }
-  //引用文字与侧边介绍栏
-  blockquote, .site-description {
-    color: var(--text-color-light);
-  }
-  //note式引用框上下引号
-  .blockquote-center {
-    &:before {
-      border-top: 1px solid #111;
-      filter: invert(100%);
-    }
-    &:after {
-      border-bottom: 1px solid #111;
-      filter: invert(100%);
-    }
-  }
-  //文章标题下信息栏链接
-  .post-meta a {
-    color: #bbb;
-    &:hover {
-      color: var(--text-color-light);
-      border-bottom-color: var(--text-color-light) !important;
-    }
-  }
-  //正文标签提示框背景
-  .post-body .note {
-    background: var(--body-bg-color) !important;
-  }
-  //标签云与分类页
-  .tag-cloud a, .posts-expand .post-tags a, li.category-list-item a {
-    color: var(--link-color) !important;
-    background: $site-blue !important;
-    &:hover {
-      background: $site-buttom-background-hover !important;
-    }
-  }
-  @media (max-width: 767px) {
-    li.category-list-item a {
-      background: none !important;
-      color: var(--link-color) !important;
-      &:hover {
-        background: none !important;
-        color: var(--link-hover-color) !important;
-      }
-    }
-  }
-
-  //Valine
-  //回复、表情/预览按钮、评论框下评论数
-  .v .vlist .vcard .vh .vmeta .vat, .v .vwrap .vedit .vctrl span, .v .vinfo .col, .v .vinfo .vcount .vnum {
-    color: #bbb !important;
-  }
-  //左下角MD图标
-  .v .vwrap .vcontrol .col svg {
-   fill: #bbb !important;
-  }
-  //代码框背景
-  .v pre {
-    background-color: rgb(29, 31, 33) !important;
-  }
-  //查看更多评论按钮
-  .v .vbtn {
-    background: $site-blue !important;
-    &:hover {
-      border-color: $site-buttom-background-hover !important;
-      background: $site-buttom-background-hover !important;
-    }
-  }
-  //长回复评论隐藏展开
-  .v .vlist .vcard .vcontent.expand {
-    &:before {
-      background:linear-gradient(180deg,hsla(0,0%,0%,0),hsla(210, 29%, 20%,.9)) !important;
-    }
-    &:after {
-      color: var(--text-color) !important;
-      background:hsla(210, 29%, 20%,.9) !important;
-    }
+/* header-顶部空白 */
+.header {
+  margin: $site-top-margin auto 0;
+  +mobile() {
+    margin-top: 0;
   }
 }
 
-//————————————————————黑暗模式设置结束————————————————————//
+/* header-顶部圆角 */
+.header-inner {
+  border-radius: $myradius;
+  +mobile() {
+    border-radius: 0 0 $myradius $myradius;
+  }
+}
 
-//正文链接，相关推荐链接
-.post-body a, .popular-posts .popular-posts-item .popular-posts-title a {
+/* header-页面背景 */
+body {
+  background-image: url($body-bg-url);
+  background-repeat: repeat;
+  background-attachment: fixed;
+  background-position: 50% 50%; 
+}
+
+/* sidebar */
+/* sidebar-标题背景 */
+.site-brand-container {
+  background: url($site-brand-bg-url);
+  background-position: 70% 20%;
+  background-size: cover;
+}
+
+/* sidebar-标题加粗 */
+.site-title {
+  font-weight: bold;
+}
+
+/* sidebar-副标题 */
+.site-subtitle {
+  font-family: $font-family-kaiti;
+  font-weight: bold;
+  color: var(--brand-color);
+}
+
+/* sidebar-侧边背景 */
+.sidebar {
+  background: transparent;
+}
+
+/* sidebar-侧边圆角 */
+.sidebar-inner {
+  border-radius: $myradius;
+}
+
+/* sidebar-文章目录、站点概览 */
+.sidebar-nav li { 
+  color: var(--link-color);
+}
+
+/* sidebar-隐藏归档菜单 */
+.menu-item-archives {
+  display: none !important;
+}
+
+/* sidebar-二级菜单 */
+.sub-menu {
+  border-radius: $myradius;
+}
+
+/* post */
+/* post-文章卡片圆角 */
+.post-block,
+.post-block+.post-block {
+  border-radius: $myradius;
+}
+
+/* post-文章标题 */
+.posts-expand .post-title {
+  font-size: 1.35em;
+  font-weight: bold;
+}
+
+/* post-文章信息 */
+.posts-expand .post-meta {
+  margin-bottom: 20px;
+}
+
+/* post-首页文章标题 */
+.index .post-title {
+  text-align: left;
+  border-left: $site-blue 8px solid;
+  padding-left: 10px;
+}
+
+/* post-首页文章信息 */
+.index .post-meta {
+  text-align: left;
+}
+
+/* post-正文字号 */
+.post-body {
+  font-size: 1em;
+}
+
+/* post-段后距 */
+p {
+  margin-bottom: 10px;
+}
+
+/* post-字体颜色（思源宋体） */
+.menu .menu-item a,
+.posts-collapse .post-title a,
+.posts-expand .post-title-link {
+  color: var(--text-color);
+}
+
+/* post-超链接 */
+.post-body a,
+.popular-posts .popular-posts-item .popular-posts-title a {
   border-bottom: 1px solid #ccc;
   color: var(--text-color);
   &:hover {
@@ -109,12 +131,41 @@
   }
 }
 
-//思源宋体适配
-.menu .menu-item a, .posts-collapse .post-title a, .posts-expand .post-title-link {
+/* post-图片标题 */
+.post-body .image-caption {
+  margin: 0px auto 15px;
+}
+
+/* post-图片阴影 */
+.posts-expand .post-body img {
+  box-shadow: $image-box-shadow;
+}
+
+/* post-行内代码 */
+code {
+  font-size: 85%;
+  background: none;
   color: var(--text-color);
 }
 
-//上一篇下一篇链接
+/* post-代码块 */
+.highlight-container {
+  background: $site-blue;
+}
+
+/* post-引用与 note 字体 */
+blockquote p,
+.post-body .note {
+  font-family: $font-family-kaiti;
+}
+
+/* post-文字加粗 */
+.post-body .tabs ul.nav-tabs li.tab a, //标签选择卡片
+.popular-posts-header { //相关推荐标题
+  font-weight: bold;
+}
+
+/* post-上一篇下一篇链接 */
 .post-nav-item a {
   color: var(--text-color);
   &:hover {
@@ -123,174 +174,69 @@
   }
 }
 
-//页面最上面黑细条
-.headband {
-  display: none;
+/* pagination */
+.pagination,
+.pagination .prev,
+.pagination .next,
+.pagination .page-number {
+  border:none;
+}
+.pagination .page-number.current {
+  border-radius: 100%;
+  background: $site-blue;
+}
+.pagination {
+  background: none;
+  box-shadow: none;
 }
 
-//导航区背景
-.site-brand-container {
-  background: url($site-brand-background);
-  background-position: 70% 20%;
-  background-size: cover;
-}
-
-//页面背景
-body {
-  background-image: url($body-background);
-  background-repeat: repeat;
-  background-attachment: fixed;
-  background-position: 50% 50%; 
-}
-
-//二级菜单
-.sub-menu {
-  margin-top: $site-top-margin; 
-  border-radius: $border-radius;
-  margin-left: 3px; 
-  @media (max-width: 767px) {
-    margin: 8px 10px 0;
-  }
-}
-#sub-menu.menu .menu-item a:hover::after {
-  background-color: transparent;
-}
-
-//侧边栏：网站标题
-.site-title {
-  font-weight: bold;
-}
-//侧边栏：网站标题下标语
-.site-subtitle {
-  font-family: $font-family-kaiti;
-  font-weight: bold;
-  color: var(--brand-color);
-}
-.header-inner {
-  margin-top: $site-top-margin;
-  @media (max-width: 767px) {
-    margin-top: 0; 
-    border-top-left-radius: 0;
-    border-top-right-radius: 0;
-    border-bottom-right-radius: $border-radius;
-    border-bottom-left-radius: $border-radius;
-  }
-}
-.sidebar-inner {
-  margin-top: 12px; 
-}
-.sidebar {
-  background: transparent;
-}
-//侧边导航栏
-.menu-item-archives {
-  display: none !important;
-}
-//侧边栏：社交媒体图标
-.links-of-author a {
-  font-size: 1em;
-}
-//侧边栏：文章目录、站点概览两个标题
-.sidebar-nav li { 
+/* footer */
+.footer, .footer a {
   color: var(--link-color);
 }
 
-//文章页
-.post-block, #posts > article + article .post-block {
-  margin-top: $site-top-margin;
-  margin-left: 3px; 
-  @media (max-width: 767px) {
-    padding: 25px 18px 15px !important;
-    margin: 8px 15px 20px !important;
-  }
-}
-.post-block {
-  padding: 40px 40px 25px;
+/* Valine comment */
+/* comment-圆角 */
+.comments {
+  border-radius: $myradius;
 }
 
-//文章标题与标题下信息
-.posts-expand .post-title {
-  font-size: 1.37em;
-  font-weight: bold;
-}
-.posts-expand .post-meta {
-  margin: 3px 0 40px 0;
+/* comment-不显示 OS 浏览器 */
+.v .vlist .vcard .vhead .vsys { 
+  display: none !important;
 }
 
-//首页文章标题
-.index .post-title {
-  text-align: left;
-  border-left: $site-blue 8px solid;
-  padding-left: 10px;
-}
-.index .post-meta {
-  text-align: left;
-}
-
-//正文字号
-.post-body {
-  font-size: 1em;
-}
-
-//文章图片标题
-.post-body .image-caption {
-  margin: 0px auto 15px;
-}
-
-//段落中代码
-code {
-  font-size: 85%;
-  background: none;
+/* comment-输入框 */
+textarea#veditor.veditor.vinput  {
+  background: url($comment-bg-url) 100% 100% no-repeat;
   color: var(--text-color);
 }
 
-//代码框
-.highlight-container {
-  background: $site-blue;
-}
-.highlight figcaption {
-  font-family: $font-family-monospace;
-}
-
-//引用文字字体
-blockquote p, .post-body .note {
-  font-family: $font-family-kaiti;
-}
-.blockquote-center {
-  margin: 40px 0 !important;
+/* comment-文字颜色 */
+.v p, //评论正文
+.v a, //超链接
+.v .vbtn,  //按钮
+.v em, //斜体
+.v code, //代码
+.v .vwrap .vheader .vinput {  //输入框
+  color: var(--text-color) !important;
 }
 
-//相关文章移动端缩进
-@media (max-width: 767px) {
-  .popular-posts {
-    padding: 0 18px;
-  }
-  .popular-posts-header {
-    margin-left: 18px;
-    margin-right: 18px;
-  }
-}
-.popular-posts-header {
-  font-weight: bold;
+/* comment-行内代码背景 */
+.v code {
+  background-color: inherit !important;
 }
 
-//分享页标签卡片
-.post-body .tabs ul.nav-tabs li.tab a {
-  font-weight: bold;
+/* categories */
+.category-all-page .category-list-item {
+  margin: 10px 40px;
 }
-
-//分类页
-@media (max-width: 767px) {
-  .category-all-page .category-list-item {
-    margin: 10px 40px;
-  }
-  .category-all-page .category-all ul {
-    list-style-type:disc;
-  }
+.category-all-page .category-all ul {
+  list-style-type:disc;
 }
 @media (min-width: 767px) {
   .category-all-page .category-list-item {
-    margin-left: 15px;
+    margin: 10px 12px;
   }
   ul.category-list {
     text-align: center;
@@ -319,22 +265,20 @@ blockquote p, .post-body .note {
       box-shadow: $site-buttom-shadow-hover;
     }
   }
-  .category-all-page .category-list {
-    padding-top: 10px;
-  }
 }
 
-//标签云
-.tag-cloud a {
+/* tags */
+.tag-cloud a, //标签云
+.posts-expand .post-tags a  { //文章末标签
   -webkit-box-shadow: $site-buttom-shadow;
   -moz-box-shadow: $site-buttom-shadow;
   box-shadow: $site-buttom-shadow;
   transition: 0.2s ease-out;
   padding: 2px 10px;
   margin: 8px;
-  background: #f5f5f5;
+  background: #f2f2f2;
   border-bottom: none;
-  border-radius: 12px;
+  border-radius: 16px;
 
   &:hover {
     text-decoration: none;
@@ -346,54 +290,8 @@ blockquote p, .post-body .note {
   }
 }
 
-//文章页内标签
-.posts-expand .post-tags a {
-  -webkit-box-shadow: $site-buttom-shadow;
-  -moz-box-shadow: $site-buttom-shadow;
-  box-shadow: $site-buttom-shadow;
-  transition: 0.2s ease-out;
-  padding: 3px 5px;
-  margin: 5px;
-  background: #f5f5f5;
-  border-bottom: none;
-  border-radius: 15px;
-
-  &:hover {
-    background: $site-buttom-background-hover;
-    color: #fff;
-    -webkit-box-shadow: $site-buttom-shadow-hover;
-    -moz-box-shadow: $site-buttom-shadow-hover;
-    box-shadow: $site-buttom-shadow-hover;
-  }
-}
-
-//评论区位置调整
-.comments {
-  margin-left: 3px;
-  @media (max-width: 767px) {
-    padding: 15px;
-    margin: 0 15px 20px;
-  }
-}
-//不显示评论操作系统浏览器信息
-.v .vlist .vcard .vhead .vsys { 
-  display: none !important;
-}
-//评论框背景
-textarea#veditor.veditor.vinput  {
-  background: url($comment-background) 100% 100% no-repeat;
-  color: var(--text-color);
-}
-//评论文字颜色
-.v p, .v a, .v .vbtn, .v em, .v code, .v .vwrap .vheader .vinput {
-  color: var(--text-color) !important;
-}
-//评论文字行内代码背景
-.v code {
-  background-color: inherit !important;
-}
-
-//返回最上按钮
+/* button */
+/* button-back2top */
 .back-to-top {
   background: $site-blue;
   opacity: 0.8;
@@ -402,7 +300,7 @@ textarea#veditor.veditor.vinput  {
   border-radius: 1em;
 }
 
-//赞赏按钮
+/* button-reward */
 .reward-container button {
   height: 35px;
   width: 35px;
@@ -422,20 +320,111 @@ textarea#veditor.veditor.vinput  {
   }
 }
 
-//页码栏
-.pagination, .pagination .prev, .pagination .next, .pagination .page-number {
-  border:none;
+/* 修改选中字符的颜色 */
+::selection {
+  background: rgba(0, 149, 255, 0.2);
+  color: var(--link-color);
 }
-.pagination .page-number.current {
-  border-radius: 100%;
-  background: $site-blue;
-}
-.pagination {
-  background: none;
-  box-shadow: none;
+::-moz-selection {
+  background: rgba(0, 149, 255, 0.2);
+  color: var(--link-color);
 }
 
-//页脚
-.footer, .footer a {
-  color: var(--link-color);
+
+/***********************************************************/
+/*********************** 黑暗模式设置 ************************/
+/***********************************************************/
+@media (prefers-color-scheme: dark) {
+  :root {
+    --body-bg-color: rgb(21, 32, 43);
+    --content-bg-color: rgb(25, 39, 52);
+    --menu-item-bg-color: rgb(19, 29, 39);
+    --link-color: rgb(225, 225, 225);
+    --link-hover-color: rgb(255, 255, 255); //#fff
+    --text-color: rgb(225, 225, 225);
+  }
+  //网站背景
+  body {
+    background-image: none !important;
+  }
+  //引用文字与侧边介绍栏
+  blockquote, .site-description {
+    color: #ccc;
+  }
+  //note式引用框上下引号
+  .blockquote-center {
+    &:before {
+      border-top: 1px solid #111;
+      filter: invert(100%);
+    }
+    &:after {
+      border-bottom: 1px solid #111;
+      filter: invert(100%);
+    }
+  }
+  //文章标题下信息栏链接
+  .post-meta a {
+    color: #bbb;
+    &:hover {
+      color: var(--link-hover-color);
+    }
+  }
+  //正文标签提示框背景
+  .post-body .note {
+    background: var(--body-bg-color) !important;
+  }
+  //标签云与分类页
+  .tag-cloud a,
+  .posts-expand .post-tags a,
+  li.category-list-item a {
+    color: var(--link-color) !important;
+    background: $site-blue !important;
+    &:hover {
+      background: $site-buttom-background-hover !important;
+    }
+  }
+  @media (max-width: 767px) {
+    li.category-list-item a {
+      background: none !important;
+      color: var(--link-color) !important;
+      &:hover {
+        background: none !important;
+        color: var(--link-hover-color) !important;
+      }
+    }
+  }
+
+  //Valine
+  .v .vlist .vcard .vh .vmeta .vat, //回复按钮
+  .v .vwrap .vedit .vctrl span, //表情按钮
+  .v .vinfo .col, //预览按钮
+  .v .vinfo .vcount .vnum { //评论框下评论数
+    color: #bbb !important;
+  }
+  //左下角MD图标
+  .v .vwrap .vcontrol .col svg {
+   fill: #bbb !important;
+  }
+  //代码块背景
+  .v pre {
+    background-color: rgb(29, 31, 33) !important;
+  }
+  //查看更多评论按钮
+  .v .vbtn {
+    background: $site-blue !important;
+    &:hover {
+      border-color: $site-buttom-background-hover !important;
+      background: $site-buttom-background-hover !important;
+    }
+  }
+  //长回复评论隐藏展开
+  .v .vlist .vcard .vcontent.expand {
+    &:before {
+      background:linear-gradient(180deg,hsla(0,0%,0%,0),hsla(210, 29%, 20%,.9)) !important;
+    }
+    &:after {
+      color: var(--text-color) !important;
+      background:hsla(210, 29%, 20%,.9) !important;
+    }
+  }
 }

@@ -169,9 +169,6 @@ text_align:
   desktop: left
   mobile: left
 
-# Reduce padding / margin indents on devices with narrow width.
-mobile_layout_economy: true
-
 # Android Chrome header panel color ($brand-bg / $headband-bg => $black-deep).
 android_chrome_color: "#6c599f"
 
