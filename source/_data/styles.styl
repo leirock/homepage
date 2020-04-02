@@ -1,4 +1,7 @@
-/* header */
+/***********************************************************/
+/************************* Header **************************/
+/***********************************************************/
+
 /* header-隐藏顶部线条 */
 .headband {
   display: none;
@@ -6,7 +9,7 @@
 
 /* header-顶部空白 */
 .header {
-  margin: $header-margin-top auto 0;
+  margin-top: 10px;
 
   +mobile() {
     margin-top: 0;
@@ -15,7 +18,7 @@
 
 /* header-顶部圆角 */
 .header-inner {
-  border-radius: $myradius;
+  myradius();
 
   +mobile() {
     border-radius: 0 0 $myradius $myradius;
@@ -25,12 +28,15 @@
 /* header-页面背景 */
 body {
   background-image: url($body-bg-url);
+  background-position: 50% 50%;
   background-repeat: repeat;
   background-attachment: fixed;
-  background-position: 50% 50%;
 }
 
-/* sidebar */
+/***********************************************************/
+/************************ Sidebar **************************/
+/***********************************************************/
+
 /* sidebar-标题背景 */
 .site-brand-container {
   background: url($site-brand-bg-url);
@@ -55,9 +61,10 @@ body {
   background: transparent;
 }
 
-/* sidebar-侧边圆角 */
-.sidebar-inner {
-  border-radius: $myradius;
+/* sidebar-圆角 */
+.sidebar-inner, //侧边
+.sub-menu { //二级菜单
+  myradius();
 }
 
 /* sidebar-文章目录、站点概览 */
@@ -70,22 +77,20 @@ body {
   display: none !important;
 }
 
-/* sidebar-二级菜单 */
-.sub-menu {
-  border-radius: $myradius;
-}
+/***********************************************************/
+/************************** Post ***************************/
+/***********************************************************/
 
-/* post */
 /* post-文章卡片圆角 */
 .post-block,
 .post-block+.post-block {
-  border-radius: $myradius;
+  myradius();
 }
 
 /* post-首页文章标题 */
 .index .post-title {
   text-align: left;
-  border-left: $myblue 8px solid;
+  border-left: $btn-default-bg 8px solid;
   padding-left: 10px;
 }
 
@@ -160,7 +165,7 @@ code {
 
 /* post-代码块 */
 .highlight-container {
-  background: $myblue;
+  background: $btn-default-bg;
 }
 
 /* post-引用与 note 字体 */
@@ -175,17 +180,46 @@ blockquote p,
   font-weight: bold;
 }
 
-/* post-上一篇下一篇链接 */
-.post-nav-item a {
-  color: var(--text-color);
+/***********************************************************/
+/************************ Button ***************************/
+/***********************************************************/
 
-  &:hover {
-    color: var(--link-hover-color);
-    border-bottom-color: var(--link-hover-color);
+/* button-back2top */
+.back-to-top {
+  background: $btn-default-bg;
+  opacity: 0.8;
+  font-weight: bold;
+  font-size: 1em;
+  border-radius: 1em;
+}
+
+/* button-reward */
+.reward-container button {
+  height: 35px;
+  width: 35px;
+  padding: 1.5px 0 0;
+  background: $btn-default-bg;
+  border-radius: 5px;
+  btn-shadow();
+
+  &:hover{
+    background: $btn-default-hover-bg;
   }
 }
 
-/* pagination */
+/* 修改选中字符的颜色 */
+::selection {
+  selection-color();
+}
+
+::-moz-selection {
+  selection-color();
+}
+
+/***********************************************************/
+/****************** Pagination & Footer ********************/
+/***********************************************************/
+
 .pagination {
   border: none;
   background: none;
@@ -197,23 +231,19 @@ blockquote p,
 .pagination .page-number {
   border: none;
   border-radius: 100%;
-  transition: 0.2s ease-out;
+  the-transition-ease-out();
 
   &:hover {
     color: #fff;
-    background: $myblue-light;
-    -webkit-box-shadow: $btn-shadow;
-    -moz-box-shadow: $btn-shadow;
-    box-shadow: $btn-shadow;
+    background: $btn-default-hover-bg;
+    btn-shadow-only();
   }
 }
 
 .pagination .page-number.current {
   border-radius: 100%;
-  background: $myblue;
-  -webkit-box-shadow: $btn-shadow;
-  -moz-box-shadow: $btn-shadow;
-  box-shadow: $btn-shadow;
+  background: $btn-default-bg;
+  btn-shadow-only();
 }
 
 /* footer */
@@ -222,10 +252,76 @@ blockquote p,
   color: var(--link-color);
 }
 
-/* Valine comment */
+/***********************************************************/
+/************************ Overview *************************/
+/***********************************************************/
+
+/* categories */
++mobile() {
+  .category-all-page .category-list-item {
+    margin: 10px 40px;
+  }
+
+  .category-all-page .category-all ul {
+    list-style-type: disc;
+  }
+}
+
++tablet-desktop() {
+  .category-all-page .category-list-item {
+    margin: 10px 12px;
+  }
+
+  ul.category-list {
+    text-align: center;
+  }
+
+  li.category-list-item {
+    display: inline-block;
+  }
+
+  li.category-list-item a {
+    line-height: 4;
+    word-break: keep-all;
+    padding: 10px 15px;
+    font-weight: bold;
+    color: #fff;
+    background: $btn-default-bg;
+    border-bottom: none;
+    border-radius: 15px;
+    btn-shadow();
+
+    &:hover {
+      text-decoration: none;
+      background: $btn-default-hover-bg;
+    }
+  }
+}
+
+/* tags */
+.tag-cloud a, //标签云
+.posts-expand .post-tags a { //文章末标签
+  padding: 2px 10px;
+  margin: 8px;
+  background: #f2f2f2;
+  border-bottom: none;
+  border-radius: 15px;
+  btn-shadow();
+
+  &:hover {
+    color: #fff !important;
+    text-decoration: none;
+    background: $btn-default-hover-bg;
+  }
+}
+
+/***********************************************************/
+/******************** Valine Comment ***********************/
+/***********************************************************/
+
 /* comment-圆角 */
 .comments {
-  border-radius: $myradius;
+  myradius();
 }
 
 /* comment-不显示 OS 浏览器 */
@@ -253,17 +349,11 @@ blockquote p,
 .v .vbtn {
   border: none !important;
   color: #fff !important;
-  background: $myblue !important;
-  -webkit-box-shadow: $btn-shadow;
-  -moz-box-shadow: $btn-shadow;
-  box-shadow: $btn-shadow;
-  transition: 0.2s ease-out;
+  background: $btn-default-bg !important;
+  btn-shadow();
 
   &:hover {
-    background: $myblue-light !important;
-    -webkit-box-shadow: $btn-shadow;
-    -moz-box-shadow: $btn-shadow;
-    box-shadow: $btn-shadow;
+    background: $btn-default-hover-bg !important;
   }
 }
 
@@ -295,129 +385,11 @@ textarea#veditor.veditor.vinput {
   color: #c5c8c6 !important;
 }
 
-/* categories */
-.category-all-page .category-list-item {
-  margin: 10px 40px;
-}
-
-.category-all-page .category-all ul {
-  list-style-type: disc;
-}
-
-@media (min-width: 767px) {
-  .category-all-page .category-list-item {
-    margin: 10px 12px;
-  }
-
-  ul.category-list {
-    text-align: center;
-  }
-
-  li.category-list-item {
-    display: inline-block;
-  }
-
-  li.category-list-item a {
-    padding: 10px 15px;
-    background: $myblue;
-    color: #fff;
-    font-weight: bold;
-    border-bottom: none;
-    border-radius: 15px;
-    line-height: 4;
-    word-break: keep-all;
-    -webkit-box-shadow: $btn-shadow;
-    -moz-box-shadow: $btn-shadow;
-    box-shadow: $btn-shadow;
-    transition: 0.2s ease-out;
-
-    &:hover {
-      background: $myblue-light;
-      text-decoration: none;
-      -webkit-box-shadow: $btn-shadow-hover;
-      -moz-box-shadow: $btn-shadow-hover;
-      box-shadow: $btn-shadow-hover;
-    }
-  }
-}
-
-/* tags */
-.tag-cloud a, //标签云
-.posts-expand .post-tags a { //文章末标签
-  padding: 2px 10px;
-  margin: 8px;
-  background: #f2f2f2;
-  border-bottom: none;
-  border-radius: 16px;
-  -webkit-box-shadow: $btn-shadow;
-  -moz-box-shadow: $btn-shadow;
-  box-shadow: $btn-shadow;
-  transition: 0.2s ease-out;
-
-  &:hover {
-    text-decoration: none;
-    background: $myblue-light;
-    color: #fff !important;
-    -webkit-box-shadow: $btn-shadow-hover;
-    -moz-box-shadow: $btn-shadow-hover;
-    box-shadow: $btn-shadow-hover;
-  }
-}
-
-/* button */
-/* button-back2top */
-.back-to-top {
-  background: $myblue;
-  opacity: 0.8;
-  font-weight: bold;
-  font-size: 1em;
-  border-radius: 1em;
-}
-
-/* button-reward */
-.reward-container button {
-  height: 35px;
-  width: 35px;
-  padding: 1.5px 0 0;
-  background: $myblue;
-  border-radius: 5px;
-  -webkit-box-shadow: $btn-shadow;
-  -moz-box-shadow: $btn-shadow;
-  box-shadow: $btn-shadow;
-  transition: 0.2s ease-out;
-
-  &:hover {
-    background: $myblue-light;
-    -webkit-box-shadow: $btn-shadow-hover;
-    -moz-box-shadow: $btn-shadow-hover;
-    box-shadow: $btn-shadow-hover;
-  }
-}
-
-/* 修改选中字符的颜色 */
-::selection {
-  background: rgba(0, 149, 255, 0.2);
-  color: var(--link-color);
-}
-
-::-moz-selection {
-  background: rgba(0, 149, 255, 0.2);
-  color: var(--link-color);
-}
-
-
 /***********************************************************/
 /*********************** 黑暗模式设置 ************************/
 /***********************************************************/
+
 @media (prefers-color-scheme: dark) {
-  :root {
-    --body-bg-color: rgb(21, 32, 43);
-    --content-bg-color: rgb(25, 39, 52);
-    --menu-item-bg-color: rgb(19, 29, 39);
-    --link-color: rgb(200, 200, 200);
-    --link-hover-color: rgb(255, 255, 255); //#fff
-    --text-color: rgb(225, 225, 225);
-  }
 
   /* 网站背景 */
   body {
@@ -460,12 +432,8 @@ textarea#veditor.veditor.vinput {
   /* 标签 */
   .tag-cloud a,
   .posts-expand .post-tags a {
-    color: var(--link-color) !important;
-    background: $myblue;
-
-    &:hover {
-      background: $myblue-light;
-    }
+    color: var(--text-color) !important;
+    background: $btn-default-bg;
   }
 
   /* 长回复评论隐藏展开 */

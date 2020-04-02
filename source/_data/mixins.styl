@@ -1,0 +1,27 @@
+btn-shadow() {
+  -webkit-box-shadow: $box-shadow;
+  -moz-box-shadow: $box-shadow;
+  box-shadow: $box-shadow;
+  transition: 0.2s ease-out;
+
+  &:hover {
+    -webkit-box-shadow: $box-shadow-hover;
+    -moz-box-shadow: $box-shadow-hover;
+    box-shadow: $box-shadow-hover;
+  }
+}
+
+btn-shadow-only() {
+  -webkit-box-shadow: $box-shadow;
+  -moz-box-shadow: $box-shadow;
+  box-shadow: $box-shadow;
+}
+
+selection-color() {
+  background: rgba(0, 149, 255, 0.2);
+  color: var(--link-color);
+}
+
+myradius() {
+  border-radius: $myradius;
+}
