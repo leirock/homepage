@@ -7,6 +7,7 @@
 /* header-顶部空白 */
 .header {
   margin: $header-margin-top auto 0;
+
   +mobile() {
     margin-top: 0;
   }
@@ -15,6 +16,7 @@
 /* header-顶部圆角 */
 .header-inner {
   border-radius: $myradius;
+
   +mobile() {
     border-radius: 0 0 $myradius $myradius;
   }
@@ -25,7 +27,7 @@ body {
   background-image: url($body-bg-url);
   background-repeat: repeat;
   background-attachment: fixed;
-  background-position: 50% 50%; 
+  background-position: 50% 50%;
 }
 
 /* sidebar */
@@ -59,7 +61,7 @@ body {
 }
 
 /* sidebar-文章目录、站点概览 */
-.sidebar-nav li { 
+.sidebar-nav li {
   color: var(--link-color);
 }
 
@@ -96,8 +98,9 @@ body {
 .posts-expand .post-title {
   font-size: 1.35em;
   font-weight: bold;
+
   +mobile() {
-    margin-top:10px;
+    margin-top: 10px;
   }
 }
 
@@ -132,6 +135,7 @@ p {
 .post-body a,
 .popular-posts .popular-posts-item .popular-posts-title a {
   border-bottom-color: #ccc;
+
   &:hover {
     border-bottom-color: var(--link-hover-color);
   }
@@ -174,6 +178,7 @@ blockquote p,
 /* post-上一篇下一篇链接 */
 .post-nav-item a {
   color: var(--text-color);
+
   &:hover {
     color: var(--link-hover-color);
     border-bottom-color: var(--link-hover-color);
@@ -182,24 +187,27 @@ blockquote p,
 
 /* pagination */
 .pagination {
-  border:none;
+  border: none;
   background: none;
   box-shadow: none;
 }
+
 .pagination .prev,
 .pagination .next,
 .pagination .page-number {
-  border:none;
+  border: none;
   border-radius: 100%;
   transition: 0.2s ease-out;
+
   &:hover {
     color: #fff;
     background: $myblue-light;
     -webkit-box-shadow: $btn-shadow;
     -moz-box-shadow: $btn-shadow;
-    box-shadow: $btn-shadow ;
+    box-shadow: $btn-shadow;
   }
 }
+
 .pagination .page-number.current {
   border-radius: 100%;
   background: $myblue;
@@ -209,7 +217,8 @@ blockquote p,
 }
 
 /* footer */
-.footer, .footer a {
+.footer,
+.footer a {
   color: var(--link-color);
 }
 
@@ -220,7 +229,7 @@ blockquote p,
 }
 
 /* comment-不显示 OS 浏览器 */
-.v .vlist .vcard .vhead .vsys { 
+.v .vlist .vcard .vhead .vsys {
   display: none !important;
 }
 
@@ -228,7 +237,7 @@ blockquote p,
 .v p, //评论正文
 .v a, //超链接
 .v em, //斜体
-.v .vwrap .vheader .vinput {  //输入框
+.v .vwrap .vheader .vinput { //输入框
   color: var(--text-color) !important;
 }
 
@@ -254,7 +263,7 @@ blockquote p,
     background: $myblue-light !important;
     -webkit-box-shadow: $btn-shadow;
     -moz-box-shadow: $btn-shadow;
-    box-shadow: $btn-shadow ;
+    box-shadow: $btn-shadow;
   }
 }
 
@@ -265,7 +274,7 @@ blockquote p,
 }
 
 /* comment-输入框 */
-textarea#veditor.veditor.vinput  {
+textarea#veditor.veditor.vinput {
   background: url($comment-bg-url) 100% 100% no-repeat;
   color: var(--text-color);
 }
@@ -290,19 +299,24 @@ textarea#veditor.veditor.vinput  {
 .category-all-page .category-list-item {
   margin: 10px 40px;
 }
+
 .category-all-page .category-all ul {
-  list-style-type:disc;
+  list-style-type: disc;
 }
+
 @media (min-width: 767px) {
   .category-all-page .category-list-item {
     margin: 10px 12px;
   }
+
   ul.category-list {
     text-align: center;
   }
-  li.category-list-item  {
+
+  li.category-list-item {
     display: inline-block;
   }
+
   li.category-list-item a {
     padding: 10px 15px;
     background: $myblue;
@@ -329,7 +343,7 @@ textarea#veditor.veditor.vinput  {
 
 /* tags */
 .tag-cloud a, //标签云
-.posts-expand .post-tags a  { //文章末标签
+.posts-expand .post-tags a { //文章末标签
   padding: 2px 10px;
   margin: 8px;
   background: #f2f2f2;
@@ -411,7 +425,8 @@ textarea#veditor.veditor.vinput  {
   }
 
   /* 引用文字与侧边介绍栏 */
-  blockquote, .site-description {
+  blockquote,
+  .site-description {
     color: #ccc;
   }
 
@@ -421,6 +436,7 @@ textarea#veditor.veditor.vinput  {
       border-top: 1px solid #111;
       filter: invert(100%);
     }
+
     &:after {
       border-bottom: 1px solid #111;
       filter: invert(100%);
@@ -430,6 +446,7 @@ textarea#veditor.veditor.vinput  {
   /* 文章标题下信息栏链接 */
   .post-meta a {
     color: #bbb;
+
     &:hover {
       color: var(--link-hover-color);
     }
@@ -445,6 +462,7 @@ textarea#veditor.veditor.vinput  {
   .posts-expand .post-tags a {
     color: var(--link-color) !important;
     background: $myblue;
+
     &:hover {
       background: $myblue-light;
     }
@@ -453,11 +471,12 @@ textarea#veditor.veditor.vinput  {
   /* 长回复评论隐藏展开 */
   .v .vlist .vcard .vcontent.expand {
     &:before {
-      background:linear-gradient(180deg,hsla(0,0%,0%,0),hsla(210, 29%, 20%,.9)) !important;
+      background: linear-gradient(180deg, hsla(0, 0%, 0%, 0), hsla(210, 29%, 20%, .9)) !important;
     }
+
     &:after {
       color: var(--text-color) !important;
-      background:hsla(210, 29%, 20%,.9) !important;
+      background: hsla(210, 29%, 20%, .9) !important;
     }
   }
 }
