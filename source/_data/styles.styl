@@ -381,7 +381,11 @@ textarea#veditor.veditor.vinput  {
 }
 
 /* 修改选中字符的颜色 */
-::selection,
+::selection {
+  background: rgba(0, 149, 255, 0.2);
+  color: var(--link-color);
+}
+
 ::-moz-selection {
   background: rgba(0, 149, 255, 0.2);
   color: var(--link-color);
