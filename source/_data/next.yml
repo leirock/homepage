@@ -3,10 +3,8 @@
 # See: https://theme-next.org/docs/theme-settings/
 # ---------------------------------------------------------------
 
-# Remove unnecessary files after hexo generate.
 minify: true
 
-# Define custom file paths.
 # Create your custom files in site directory `source/_data` and uncomment needed files below.
 custom_file_path:
   head: source/_data/head.swig
@@ -20,7 +18,6 @@ custom_file_path:
 #  mixin: source/_data/mixins.styl
   style: source/_data/styles.styl
 
-
 # ---------------------------------------------------------------
 # Site Information Settings
 # See: https://theme-next.org/docs/getting-started/
@@ -31,25 +28,15 @@ favicon:
   medium: https://web-1256060851.file.myqcloud.com/assets/img/favicon-32x32.png
   apple_touch_icon: https://web-1256060851.file.myqcloud.com/assets/img/apple-touch-icon.png
   safari_pinned_tab: https://web-1256060851.file.myqcloud.com/assets/img/safari-pinned-tab.svg
-  #android_manifest: /images/manifest.json
-  #ms_browserconfig: /images/browserconfig.xml
 
 footer:
-  # Specify the date when the site was setup. If not defined, current year will be used.
   since: 2015
-
-  # Icon between year and copyright info.
   icon:
     name: fas fa-heart
     animated: true
     color: '#f06292'
-
-  # If not defined, `author` from Hexo `_config.yml` will be used.
   copyright: Zhang Donglei
-
-  # Powered by Hexo & NexT
   powered: false
-
 
 # ---------------------------------------------------------------
 # Scheme Settings
@@ -62,11 +49,6 @@ darkmode: true
 # Menu Settings
 # ---------------------------------------------------------------
 
-# Usage: `Key: /link/ || icon`
-# Key is the name of menu item. If the translation for this item is available, the translated text will be loaded, otherwise the Key name will be used. Key is case-senstive.
-# Value before `||` delimiter is the target link, value after `||` delimiter is the name of Font Awesome icon.
-# When running the site in a subdirectory (e.g. yoursite.com/blog), remove the leading slash from link value (/archives -> archives).
-# External url should start with http:// or https://
 menu:
   home: / || fas fa-user-circle
   research: /research/ || fas fa-university
@@ -76,7 +58,6 @@ menu:
     series: series/ || fas fa-cube
     tags: tags/ || fas fa-tags
   contact: /contact/ || fas fa-paper-plane
-
 
 # ---------------------------------------------------------------
 # Sidebar Settings
@@ -102,7 +83,6 @@ toc:
   # If true, all words will placed on next lines if header width longer then sidebar width.
   wrap: true
 
-
 # ---------------------------------------------------------------
 # Post Settings
 # See: https://theme-next.org/docs/theme-settings/posts
@@ -127,7 +107,6 @@ reward:
   wechatpay: https://web-1256060851.file.myqcloud.com/images/wechat-pay.jpg
   alipay: https://web-1256060851.file.myqcloud.com/images/alipay.jpg
 
-# Related popular posts
 # Dependencies: https://github.com/tea3/hexo-related-popular-posts
 related_posts:
   enable: true
@@ -143,7 +122,6 @@ post_edit:
 # Available values: left | right | false
 post_navigation: right
 
-
 # ---------------------------------------------------------------
 # Custom Page Settings
 # See: https://theme-next.org/docs/theme-settings/custom-pages
@@ -151,13 +129,11 @@ post_navigation: right
 
 # TagCloud settings for tags page.
 tagcloud:
-  # All values below are same as default, change them by yourself.
   min: 12 # Minimun font size in px
   max: 30 # Maxium font size in px
   start: "#aaa" # Start color (hex, rgba, hsla or color keywords)
   end: "#111" # End color (hex, rgba, hsla or color keywords)
   amount: 200 # Amount of tags, change it if you have more than 200 tags
-
 
 # ---------------------------------------------------------------
 # Misc Theme Settings
@@ -191,7 +167,6 @@ back2top:
   sidebar: false
   # Scroll percent label in b2t button.
   scrollpercent: true
-
 
 # ---------------------------------------------------------------
 # Font Settings
@@ -237,27 +212,18 @@ font:
     external: true
     family: Source Code Pro
 
-
 # ---------------------------------------------------------------
 # SEO Settings
 # ---------------------------------------------------------------
 
 google_site_verification: SJUudYL5q_atXSgew2qwy69FXOnSnNB2rAmwHmcBT9U
-
-# Disable Baidu transformation on mobile devices.
 disable_baidu_transformation: true
 baidu_site_verification: 2QXEpIlRcv
 baidu_push: true
 
-
 # ---------------------------------------------------------------
 # Third Party Plugins & Services Settings
 # See: https://theme-next.org/docs/third-party-services/
-# More plugins: https://github.com/theme-next/awesome-next
-# You may need to install dependencies or set CDN URLs in `vendors`
-# There are two different CDN providers by default:
-#   - jsDelivr (cdn.jsdelivr.net), works everywhere even in China
-#   - CDNJS (cdnjs.cloudflare.com), provided by cloudflare
 # ---------------------------------------------------------------
 
 math:
@@ -265,22 +231,10 @@ math:
   mathjax:
     enable: true
 
-# Easily enable fast Ajax navigation on your website.
-# Dependencies: https://github.com/theme-next/theme-next-pjax
 pjax: true
-
-# FancyBox is a tool that offers a nice and elegant way to add zooming functionality for images.
-# For more information: https://fancyapps.com/fancybox
 fancybox: true
-
-# Vanilla JavaScript plugin for lazyloading images.
-# For more information: https://github.com/ApoorvSaxena/lozad.js
 lazyload: true
-
-# Pangu Support
-# For more information: https://github.com/vinta/pangu.js
 pangu: true
-
 
 # ---------------------------------------------------------------
 # Comments Settings
@@ -304,7 +258,6 @@ valine:
   serverURLs: # When the custom domain name is enabled, fill it in here (it will be detected automatically by default, no need to fill in)
   #post_meta_order: 0
 
-
 # ---------------------------------------------------------------
 # Statistics and Analytics
 # See: https://theme-next.org/docs/third-party-services/statistics-and-analytics
@@ -313,13 +266,7 @@ valine:
 # Google Analytics
 google_analytics:
   tracking_id: UA-141207776-2
-  # By default, NexT will load an external gtag.js script on your site.
-  # If you only need the pageview feature, set the following option to true to get a better performance.
-  only_pageview: false
 
-# Show number of visitors of each article.
-# You can visit https://leancloud.cn to get AppID and AppKey.
-# AppID and AppKey are recommended to be the same as valine's for counter compatibility.
 # Do not enable both `valine.visitor` and `leancloud_visitors`.
 leancloud_visitors:
   enable: true
@@ -328,13 +275,11 @@ leancloud_visitors:
   # Required for apps from CN region
   server_url: # <your server url>
 
-
 # ---------------------------------------------------------------
 # Search Services
 # See: https://theme-next.org/docs/third-party-services/search-services
 # ---------------------------------------------------------------
 
-# Local Search
 # Dependencies: https://github.com/theme-next/hexo-generator-searchdb
 local_search:
   enable: true
@@ -347,7 +292,6 @@ local_search:
   unescape: false
   # Preload the search data when the page loads.
   preload: true
-
 
 # ---------------------------------------------------------------
 # Tags Settings
@@ -367,7 +311,6 @@ tabs:
   transition:
     tabs: true
     labels: true
-
 
 # ---------------------------------------------------------------
 # Animation Settings
