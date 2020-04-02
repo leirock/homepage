@@ -2,31 +2,32 @@
 $content-desktop              = 80%;
 $content-desktop-large        = 72%;
 $content-desktop-largest      = 55%;
-$site-top-margin              = 12px;
-$border-radius-inner          = 8px 8px 8px 8px;
+$header-margin-top            = 10px;
 $myradius                     = 8px;
 
 // Color and shadow
 $text-color                   = rgb(28, 28, 33);
-$site-blue                    = rgb(52, 73, 94);
-$site-blue-light              = rgb(100, 154, 182);
+$link-color                   = $text-color ;
 $link-hover-color             = rgb(4, 119, 171);
+$myblue                       = rgb(52, 73, 94);
+$myblue-light                 = rgb(100, 154, 182);
 $image-box-shadow             = 0 5px 15px 0px rgba(0, 0, 0, 0.4);
-$site-buttom-shadow           = 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
-$site-buttom-shadow-hover     = 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
-$site-buttom-background-hover = rgba(100,154,182,0.902);
+$btn-shadow                   = 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+$btn-shadow-hover             = 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
 
 // Font family
+$font-family-latin            = "EB Garamond"
 $font-family-chinese          = "Noto Serif SC", "PingFang SC", "Microsoft YaHei";
-$font-family-kaiti            = "EB Garamond", STKaiti, KaiTi, SimKai, DFKai-SB, $font-family-chinese, sans-serif;
-$font-family-base             = "EB Garamond", $font-family-chinese, sans-serif;
+$font-family-kaiti            = STKaiti, KaiTi, SimKai, DFKai-SB;
+$font-family-quote            = $font-family-latin, $font-family-kaiti, $font-family-chinese, sans-serif;
+$font-family-base             = $font-family-latin, $font-family-chinese, sans-serif;
 $font-family-posts            = $font-family-base;
 $font-family-headings         = $font-family-base;
 
-// Images CDN url
-$img-cdn-url                  = "https://web-1256060851.file.myqcloud.com";
-$site-brand-bg-url            = $img-cdn-url + "/assets/img/header-bg.jpg";
-$body-bg-url                  = $img-cdn-url + "/assets/img/body-bg.png";
-$comment-bg-url               = $img-cdn-url + "/assets/img/comment-bg.png";
-$center-quote-left			  = $img-cdn-url + "/assets/img/quote-l.svg";
-$center-quote-right 		  = $img-cdn-url + "/assets/img/quote-r.svg";
+// Image assets CDN url
+$img-cdn-url                  = "https://web-1256060851.file.myqcloud.com/assets/img/";
+$site-brand-bg-url            = $img-cdn-url + "header-bg.jpg";
+$body-bg-url                  = $img-cdn-url + "body-bg.png";
+$comment-bg-url               = $img-cdn-url + "comment-bg.png";
+$center-quote-left			  = $img-cdn-url + "quote-l.svg";
+$center-quote-right 		  = $img-cdn-url + "quote-r.svg";
