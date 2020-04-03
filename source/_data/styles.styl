@@ -28,11 +28,13 @@
 /* header-页面背景 */
 body {
   background-image: url($body-bg-url);
-  background-position: 50% 50%;
   background-repeat: repeat;
   background-attachment: fixed;
-}
 
+  @media (prefers-color-scheme: dark) {
+    background-image: none;
+  }
+}
 /***********************************************************/
 /************************ Sidebar **************************/
 /***********************************************************/
@@ -44,16 +46,15 @@ body {
   background-size: cover;
 }
 
-/* sidebar-标题加粗 */
-.site-title {
-  font-weight: bold;
-}
-
 /* sidebar-副标题 */
 .site-subtitle {
   font-family: $font-family-quote;
-  font-weight: bold;
   color: var(--brand-color);
+}
+
+/* sidebar-站点描述介绍 */
+.site-description {
+  color: var(--blockquote-color);
 }
 
 /* sidebar-侧边背景 */
@@ -119,21 +120,20 @@ body {
   font-size: 0.8em;
 }
 
-/* post-正文字号 */
-.post-body {
-  font-size: 1em;
-}
-
 /* post-段后距 */
 p {
   margin-bottom: 10px;
 }
 
-/* post-字体颜色（思源宋体） */
-.menu .menu-item a,
-.posts-collapse .post-title a,
-.posts-expand .post-title-link {
-  color: var(--text-color);
+/* post-正文字号 */
+.post-body {
+  font-size: 1em;
+}
+
+/* post-文字加粗 */
+.post-body .tabs ul.nav-tabs li.tab a, //标签选择卡片
+.popular-posts-header { //相关推荐标题
+  font-weight: bold;
 }
 
 /* post-超链接 */
@@ -174,12 +174,6 @@ blockquote p,
   font-family: $font-family-quote;
 }
 
-/* post-文字加粗 */
-.post-body .tabs ul.nav-tabs li.tab a, //标签选择卡片
-.popular-posts-header { //相关推荐标题
-  font-weight: bold;
-}
-
 /***********************************************************/
 /************************ Button ***************************/
 /***********************************************************/
@@ -201,10 +195,6 @@ blockquote p,
   background: $btn-default-bg;
   border-radius: 5px;
   btn-shadow();
-
-  &:hover{
-    background: $btn-default-hover-bg;
-  }
 }
 
 /* 修改选中字符的颜色 */
@@ -220,18 +210,26 @@ blockquote p,
 /****************** Pagination & Footer ********************/
 /***********************************************************/
 
+/* pagination-删去页码框 */
 .pagination {
   border: none;
   background: none;
   box-shadow: none;
 }
 
+/* pagination-当前页码 */
+.pagination .page-number.current {
+  border-radius: 100%;
+  background: $btn-default-bg !important;
+  btn-shadow-only();
+}
+
+/* pagination-页码按钮 */
 .pagination .prev,
 .pagination .next,
 .pagination .page-number {
   border: none;
   border-radius: 100%;
-  the-transition-ease-out();
 
   &:hover {
     color: #fff;
@@ -240,16 +238,10 @@ blockquote p,
   }
 }
 
-.pagination .page-number.current {
-  border-radius: 100%;
-  background: $btn-default-bg;
-  btn-shadow-only();
-}
-
 /* footer */
 .footer,
 .footer a {
-  color: var(--link-color);
+  color: var(--blockquote-color);
 }
 
 /***********************************************************/
@@ -281,7 +273,7 @@ blockquote p,
   }
 
   li.category-list-item a {
-    line-height: 4;
+    line-height: 5;
     word-break: keep-all;
     padding: 10px 15px;
     font-weight: bold;
@@ -293,7 +285,6 @@ blockquote p,
 
     &:hover {
       text-decoration: none;
-      background: $btn-default-hover-bg;
     }
   }
 }
@@ -311,12 +302,16 @@ blockquote p,
   &:hover {
     color: #fff !important;
     text-decoration: none;
-    background: $btn-default-hover-bg;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    color: var(--text-color) !important;
+    background: $btn-default-bg;
   }
 }
 
 /***********************************************************/
-/******************** Valine Comment ***********************/
+/*********** Valine Comment (with darkmode) ****************/
 /***********************************************************/
 
 /* comment-圆角 */
@@ -342,7 +337,7 @@ blockquote p,
 .v .vwrap .vedit .vctrl span, //表情按钮
 .v .vinfo .col, //预览按钮
 .v .vinfo .vcount .vnum { //评论框下评论数
-  color: var(--link-color) !important;
+  color: var(--blockquote-color) !important;
 }
 
 /* comment-查看更多、评论按钮 */
@@ -351,15 +346,11 @@ blockquote p,
   color: #fff !important;
   background: $btn-default-bg !important;
   btn-shadow();
-
-  &:hover {
-    background: $btn-default-hover-bg !important;
-  }
 }
 
 /* comment-MD图标 */
 .v .vwrap .vcontrol .col svg {
-  fill: var(--link-color) !important;
+  fill: var(--blockquote-color) !important;
   opacity: 0.75;
 }
 
@@ -385,63 +376,12 @@ textarea#veditor.veditor.vinput {
   color: #c5c8c6 !important;
 }
 
-/***********************************************************/
-/*********************** 黑暗模式设置 ************************/
-/***********************************************************/
-
+/* comment-长回复隐藏 */
 @media (prefers-color-scheme: dark) {
-
-  /* 网站背景 */
-  body {
-    background-image: none;
-  }
-
-  /* 引用文字与侧边介绍栏 */
-  blockquote,
-  .site-description {
-    color: #ccc;
-  }
-
-  /* note式引用框上下引号 */
-  .blockquote-center {
-    &:before {
-      border-top: 1px solid #111;
-      filter: invert(100%);
-    }
-
-    &:after {
-      border-bottom: 1px solid #111;
-      filter: invert(100%);
-    }
-  }
-
-  /* 文章标题下信息栏链接 */
-  .post-meta a {
-    color: #bbb;
-
-    &:hover {
-      color: var(--link-hover-color);
-    }
-  }
-
-  /* 正文标签提示框背景 */
-  .post-body .note {
-    background: var(--body-bg-color) !important;
-  }
-
-  /* 标签 */
-  .tag-cloud a,
-  .posts-expand .post-tags a {
-    color: var(--text-color) !important;
-    background: $btn-default-bg;
-  }
-
-  /* 长回复评论隐藏展开 */
   .v .vlist .vcard .vcontent.expand {
     &:before {
       background: linear-gradient(180deg, hsla(0, 0%, 0%, 0), hsla(210, 29%, 20%, .9)) !important;
     }
-
     &:after {
       color: var(--text-color) !important;
       background: hsla(210, 29%, 20%, .9) !important;
