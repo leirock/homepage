@@ -46,8 +46,14 @@ body {
   background-size: cover;
 }
 
+/* sidebar-标题 */
+.site-subtitle {
+  font-weight: bold;
+}
+
 /* sidebar-副标题 */
 .site-subtitle {
+  font-weight: bold;
   font-family: $font-family-quote;
   color: var(--brand-color);
 }
@@ -117,7 +123,7 @@ body {
 
 /* post-文章编辑按钮 */
 .posts-expand .post-title .post-edit-link {
-  font-size: 0.8em;
+  font-size: .8em;
 }
 
 /* post-段后距 */
@@ -139,7 +145,7 @@ p {
 /* post-超链接 */
 .post-body a,
 .popular-posts .popular-posts-item .popular-posts-title a {
-  border-bottom-color: #ccc;
+  border-bottom-color: $grey-light;
 
   &:hover {
     border-bottom-color: var(--link-hover-color);
@@ -181,7 +187,7 @@ blockquote p,
 /* button-back2top */
 .back-to-top {
   background: $btn-default-bg;
-  opacity: 0.8;
+  opacity: .8;
   font-weight: bold;
   font-size: 1em;
   border-radius: 1em;
@@ -294,7 +300,7 @@ blockquote p,
 .posts-expand .post-tags a { //文章末标签
   padding: 2px 10px;
   margin: 8px;
-  background: #f2f2f2;
+  background: $whitesmoke;
   border-bottom: none;
   border-radius: 15px;
   btn-shadow();
@@ -351,7 +357,7 @@ blockquote p,
 /* comment-MD图标 */
 .v .vwrap .vcontrol .col svg {
   fill: var(--blockquote-color) !important;
-  opacity: 0.75;
+  opacity: .75;
 }
 
 /* comment-输入框 */
@@ -368,12 +374,12 @@ textarea#veditor.veditor.vinput {
 
 /* comment-代码块背景 */
 .v pre {
-  background-color: rgb(29, 31, 33) !important;
+  background-color: $myblue-deepest !important;
 }
 
 /* comment-代码块代码颜色 */
 .v pre code {
-  color: #c5c8c6 !important;
+  color: $whitesmoke !important;
 }
 
 /* comment-长回复隐藏 */
