@@ -95,10 +95,22 @@ pagination_dir: page
 ## Themes: https://hexo.io/themes/
 theme: next
 
-## Hexo server module
+# Hexo server module
 ## Use `hexo server`
 server:
   ip: 127.0.0.1
+
+# Minifier & Optimization plugin
+## See: https://github.com/chenzhutian/hexo-all-minifier
+all_minifier: true
+html_minifier:
+  silent: true
+css_minifier:
+  silent: true
+js_minifier:
+  silent: true
+image_minifier:
+  enable: false
 
 
 # ************************************************************************************************************

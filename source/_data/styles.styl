@@ -218,25 +218,24 @@ blockquote p,
   box-shadow: none;
 }
 
-/* pagination-当前页码 */
-.pagination .page-number.current {
-  border-radius: 100%;
-  background: $btn-default-bg !important;
-  btn-shadow-only();
-}
-
 /* pagination-页码按钮 */
 .pagination .prev,
 .pagination .next,
 .pagination .page-number {
   border: none;
-  border-radius: 100%;
+  border-radius: 50%;
 
   &:hover {
     color: #fff;
     background: $btn-default-hover-bg;
     btn-shadow-only();
   }
+}
+
+/* pagination-当前页码 */
+.pagination .page-number.current {
+  background: $btn-default-bg;
+  btn-shadow-only();
 }
 
 /* footer */
