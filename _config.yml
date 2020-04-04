@@ -122,6 +122,9 @@ image_minifier:
 
 theme_config:
 
+  # Color style: Day of Mourning
+  gray: false
+
   minify: true
 
   # Create your custom files in site directory `source/_data` and uncomment needed files below.
@@ -199,8 +202,8 @@ theme_config:
   toc:
     # Automatically add list number to toc.
     number: false
-    # If true, all words will placed on next lines if header width longer then sidebar width.
-    wrap: true
+    # Maximum heading depth of generated toc.
+    max_depth: 4 # 显示到<h4>(####)
 
   # ---------------------------------------------------------------
   # Post Settings
