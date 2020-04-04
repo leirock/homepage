@@ -141,6 +141,16 @@ theme_config:
     style: source/_data/styles.styl
 
   # ---------------------------------------------------------------
+  # Scheme & Color Settings
+  # ---------------------------------------------------------------
+
+  scheme: Gemini
+  darkmode: true
+  # Color style: Day of Mourning
+  # Disable darkmode first
+  gray: false
+
+  # ---------------------------------------------------------------
   # Site Information Settings
   # See: https://theme-next.org/docs/getting-started/
   # ---------------------------------------------------------------
@@ -159,13 +169,6 @@ theme_config:
       color: '#f06292'
     copyright: Zhang Donglei
     powered: false
-
-  # ---------------------------------------------------------------
-  # Scheme Settings
-  # ---------------------------------------------------------------
-
-  scheme: Gemini
-  darkmode: true
 
   # ---------------------------------------------------------------
   # Menu Settings
