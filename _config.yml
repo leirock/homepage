@@ -203,7 +203,7 @@ theme_config:
     # Automatically add list number to toc.
     number: false
     # Maximum heading depth of generated toc.
-    max_depth: 4 # 显示到<h4>(####)
+    max_depth: 4 # <h4>(####)
 
   # ---------------------------------------------------------------
   # Post Settings
