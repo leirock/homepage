@@ -46,8 +46,10 @@ if (hexo-config('gray')) {
     filter: grayscale(100%);
     filter: gray;
   }
-  body {
-    background-image: url($body-bg-gray-url);
+  @media (prefers-color-scheme: light) {
+    body {
+      background-image: url($body-bg-gray-url);
+    }
   }
 }
 
