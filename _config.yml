@@ -122,9 +122,6 @@ image_minifier:
 
 theme_config:
 
-  # Color style: Day of Mourning
-  gray: false
-
   minify: true
 
   # Create your custom files in site directory `source/_data` and uncomment needed files below.
