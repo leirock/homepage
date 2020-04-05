@@ -1,21 +1,23 @@
-btn-shadow() {
-  -webkit-box-shadow: $box-shadow;
-  -moz-box-shadow: $box-shadow;
-  box-shadow: $box-shadow;
-  the-transition-ease-out();
-
-  &:hover {
-    -webkit-box-shadow: $box-shadow-hover;
-    -moz-box-shadow: $box-shadow-hover;
-    box-shadow: $box-shadow-hover;
-    background: $btn-default-hover-bg !important;
-  }
-}
-
 btn-shadow-only() {
   -webkit-box-shadow: $box-shadow;
   -moz-box-shadow: $box-shadow;
   box-shadow: $box-shadow;
+}
+
+btn-shadow-hover-only() {
+  -webkit-box-shadow: $box-shadow-hover;
+  -moz-box-shadow: $box-shadow-hover;
+  box-shadow: $box-shadow-hover;
+}
+
+btn-shadow() {
+  btn-shadow-only();
+  the-transition-ease-out();
+
+  &:hover {
+    btn-shadow-hover-only();
+    background: $btn-default-hover-bg !important;
+  }
 }
 
 selection-color() {
