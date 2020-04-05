@@ -360,8 +360,8 @@ theme_config:
   # See: https://theme-next.org/docs/third-party-services/comments
   # ---------------------------------------------------------------
 
-comments:
-  lazyload: true
+  comments:
+    lazyload: true
 
   valine:
     enable: true
