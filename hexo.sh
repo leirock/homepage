@@ -66,8 +66,6 @@ else
 				echo " "
 				printf "\033[32mINFO \033[0m 开始复制文件...\n";
 				echo "--------------------------------------------------"
-				cp -f ../blog/source/_data/body-end.swig source/_data/body-end.swig
-				printf "\033[32mINFO \033[0m 已复制 body-end.swig \n";
 				cp -f ../blog/source/_data/head.swig source/_data/head.swig
 				printf "\033[32mINFO \033[0m 已复制 head.swig \n";
 				cp -f ../blog/source/_data/mixins.styl source/_data/mixins.styl

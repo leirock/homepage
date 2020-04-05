@@ -132,7 +132,7 @@ theme_config:
     postMeta: source/_data/post-meta.swig
   #  postBodyEnd: source/_data/post-body-end.swig
   #  footer: source/_data/footer.swig
-    bodyEnd: source/_data/body-end.swig
+  #  bodyEnd: source/_data/body-end.swig
     variable: source/_data/variables.styl
     mixin: source/_data/mixins.styl
     style: source/_data/styles.styl
@@ -166,7 +166,7 @@ theme_config:
     icon:
       name: fas fa-heart
       animated: true
-      color: '#f06292'
+      color: "#f06292"
     copyright: Zhang Donglei
     powered: false
 
@@ -452,7 +452,7 @@ theme_config:
     pangu: //cdn.jsdelivr.net/npm/pangu@4/dist/browser/pangu.min.js
 
     # valine: //cdn.jsdelivr.net/npm/valine@1/dist/Valine.min.js
-    valine: //cdn.jsdelivr.net/gh/xaoxuu/volantis@1.0/js/volantis.min.js
+    valine: //cdn.jsdelivr.net/gh/xCss/Valine@master/dist/Valine.min.js
 
   # Assets
   css: https://web-1256060851.file.myqcloud.com/assets/homepage-css
