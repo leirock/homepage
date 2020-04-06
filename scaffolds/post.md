@@ -2,7 +2,6 @@
 title: {{ title }}
 categories: []
 tags: []
-top: false
 mathjax: false
 comments: true
 toc:
