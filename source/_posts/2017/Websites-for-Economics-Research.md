@@ -5,7 +5,7 @@ tags: [econ]
 sticky: 0
 mathjax: false
 comments: true
-i18n: https://blog.dlzhang.com/posts/2017/经济学学习科研相关网站/
+i18n: https://blog.dlzhang.com/posts/2017/Websites-for-Economics-Research/
 date: 2017-02-21 18:30:00
 ---
 
