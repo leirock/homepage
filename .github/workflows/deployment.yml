@@ -71,7 +71,7 @@ jobs:
         sed -i '4s/{{ title }}/{{ "Posts | " + title }}/' themes/next/layout/index.swig
         yarn build
         sed -i '30s/Hello!/Zhang Donglei/' public/index.html
-        sed -i '62s/Hello! | //' public/index.html
+        sed -i '72s/Hello! | //' public/index.html
 
     - name: Setup Tencent coscmd
       env:

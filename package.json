@@ -12,7 +12,6 @@
   },
   "dependencies": {
     "hexo": "^4.2.0",
-    "hexo-all-minifier": "^0.5.3",
     "hexo-generator-category": "^1.0.0",
     "hexo-generator-feed": "^2.2.0",
     "hexo-generator-index": "^1.0.0",
