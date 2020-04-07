@@ -365,8 +365,8 @@ theme_config:
 
   valine:
     enable: true
-    appid: ydaoV9samWgzerLX7OHEbRgk-MdYXbMMI # Your leancloud application appid
-    appkey: 5jRfX3rExENmJqhdzkRqPndP # Your leancloud application appkey
+    appid: kFHTBntgB1yCSuRr4dvHmW3P-MdYXbMMI # Your leancloud application appid
+    appkey: ETuWaRbjRtRDh1TFMafYRDL1 # Your leancloud application appkey
     placeholder: To receive reply notify, please provide E-Mail. # Comment box placeholder
     avatar: wavatar # Gravatar style
     guest_info: nick,mail # Custom comment header, nick,mail,link 
@@ -390,8 +390,8 @@ theme_config:
   # Do not enable both `valine.visitor` and `leancloud_visitors`.
   leancloud_visitors:
     enable: true
-    app_id: ydaoV9samWgzerLX7OHEbRgk-MdYXbMMI # <your app id>
-    app_key: 5jRfX3rExENmJqhdzkRqPndP # <your app key>
+    app_id: kFHTBntgB1yCSuRr4dvHmW3P-MdYXbMMI # <your app id>
+    app_key: ETuWaRbjRtRDh1TFMafYRDL1 # <your app key>
     # Required for apps from CN region
     server_url: # <your server url>
     security: false
