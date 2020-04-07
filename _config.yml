@@ -356,29 +356,6 @@ theme_config:
   pangu: true
 
   # ---------------------------------------------------------------
-  # Comments Settings
-  # See: https://theme-next.org/docs/third-party-services/comments
-  # ---------------------------------------------------------------
-
-  comments:
-    lazyload: true
-
-  valine:
-    enable: true
-    appid: ydaoV9samWgzerLX7OHEbRgk-MdYXbMMI # Your leancloud application appid
-    appkey: 5jRfX3rExENmJqhdzkRqPndP # Your leancloud application appkey
-    placeholder: To receive reply notify, please provide E-Mail. # Comment box placeholder
-    avatar: wavatar # Gravatar style
-    guest_info: nick,mail # Custom comment header, nick,mail,link 
-    pageSize: 5 # Pagination size
-    language: en # Language, available values: en, zh-cn
-    visitor: false # Article reading statistic
-    comment_count: true # If false, comment count will only be displayed in post page, not in home page
-    recordIP: true # Whether to record the commenter IP
-    serverURLs: # When the custom domain name is enabled, fill it in here (it will be detected automatically by default, no need to fill in)
-    #post_meta_order: 0
-
-  # ---------------------------------------------------------------
   # Statistics and Analytics
   # See: https://theme-next.org/docs/third-party-services/statistics-and-analytics
   # ---------------------------------------------------------------
@@ -386,15 +363,6 @@ theme_config:
   # Google Analytics
   google_analytics:
     tracking_id: UA-141207776-2
-
-  # Do not enable both `valine.visitor` and `leancloud_visitors`.
-  leancloud_visitors:
-    enable: true
-    app_id: ydaoV9samWgzerLX7OHEbRgk-MdYXbMMI # <your app id>
-    app_key: 5jRfX3rExENmJqhdzkRqPndP # <your app key>
-    # Required for apps from CN region
-    server_url: # <your server url>
-    security: false
 
   # ---------------------------------------------------------------
   # Search Services
@@ -450,9 +418,6 @@ theme_config:
     lazyload: //cdn.jsdelivr.net/npm/lozad@1/dist/lozad.min.js
 
     pangu: //cdn.jsdelivr.net/npm/pangu@4/dist/browser/pangu.min.js
-
-    # valine: //cdn.jsdelivr.net/npm/valine@1/dist/Valine.min.js
-    valine: //cdn.jsdelivr.net/gh/xCss/Valine@master/dist/Valine.min.js
 
   # Assets
   css: https://web-1256060851.file.myqcloud.com/assets/homepage-css
