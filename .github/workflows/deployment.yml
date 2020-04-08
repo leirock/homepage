@@ -16,11 +16,6 @@ jobs:
       with:
         submodules: true
 
-#    - name: Setup Node.js
-#      uses: actions/setup-node@v1
-#      with:
-#        node-version: '12.x'
-
     - name: Setup Python
       uses: actions/setup-python@v1
       with:
@@ -56,12 +51,6 @@ jobs:
         restore-keys: |
           ${{ runner.os }}-pip-
 
-#    - name: Fix Wrong Update Time
-#      run: |
-#        find source/_posts -name '*.md' | while read file
-#        do touch -d "$(git log -1 --format="@%ct" "$file")" "$file"
-#        done
-
     - name: Install dependencies & Generate static files
       run: |
         export PATH="$PATH:$(yarn global bin)"
@@ -86,6 +75,7 @@ jobs:
     - name: Deploy assets to cos
       run: |
         coscmd upload -rs --delete public/css assets/homepage-css
+        rm -rf public/css/ public/js/ public/images/
 
     - name: Deploy to server
       uses: easingthemes/ssh-deploy@v2.0.9
@@ -96,19 +86,6 @@ jobs:
         REMOTE_HOST: ${{ secrets.REMOTE_HOST }}
         REMOTE_USER: ${{ secrets.REMOTE_USER }}
         TARGET: ${{ secrets.REMOTE_TARGET }}
-
-#    - name: Deploy to Github for Backup
-#      env:
-#        GIT_NAME: lei2rock
-#        GIT_EMAIL: ${{ secrets.GIT_EMAIL }}
-#        REPO: github.com/lei2rock/homepage
-#        GH_TOKEN: ${{ secrets.GH_TOKEN }}
-#      run: |
-#        cd ./public && git init && git add .
-#        git config --global user.name $GIT_NAME
-#        git config --global user.email $GIT_EMAIL
-#        git commit -m "Site deployed by GitHub Actions"
-#        git push --force --quiet "https://$GH_TOKEN@$REPO" master:master
 
     - name: Telegram Notification
       if: cancelled() == false
