@@ -87,20 +87,15 @@ jobs:
       run: |
         coscmd upload -rs --delete public/css assets/homepage-css
 
-    - name: Setup Aliyun oss util
-      uses: manyuanrong/setup-ossutil@v1.0
-      with:
-        endpoint: ${{ secrets.OSS_ENDPOINT }}
-        access-key-id: ${{ secrets.OSS_KEY_ID }}
-        access-key-secret: ${{ secrets.OSS_KEY_SECRET }}
-
-    - name: Deploy html to oss
+    - name: Deploy
+      uses: easingthemes/ssh-deploy@v2
       env:
-        OSS_BUCKET: ${{ secrets.OSS_BUCKET }} #bucket name without endpoint domain
-      run: |
-        rm -rf public/css/ public/js/ public/images/
-        ossutil rm -rf oss://$OSS_BUCKET/
-        ossutil cp -rf public/ oss://$OSS_BUCKET/
+        SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
+        ARGS: "-avz --delete"
+        SOURCE: "public/"
+        REMOTE_HOST: ${{ secrets.REMOTE_HOST }}
+        REMOTE_USER: ${{ secrets.REMOTE_USER }}
+        TARGET: ${{ secrets.REMOTE_TARGET }}
 
 #    - name: Deploy to Github for Backup
 #      env:
