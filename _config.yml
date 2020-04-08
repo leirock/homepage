@@ -150,6 +150,7 @@ theme_config:
     safari_pinned_tab: https://web-1256060851.file.myqcloud.com/assets/img/safari-pinned-tab.svg
 
   footer:
+    since: 2015
     icon:
       name: fas fa-heart
       animated: true
