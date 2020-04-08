@@ -87,8 +87,8 @@ jobs:
       run: |
         coscmd upload -rs --delete public/css assets/homepage-css
 
-    - name: Deploy
-      uses: easingthemes/ssh-deploy@v2
+    - name: Deploy to server
+      uses: easingthemes/ssh-deploy@v2.0.9
       env:
         SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
         ARGS: "-avz --delete"
