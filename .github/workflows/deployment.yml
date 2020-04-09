@@ -2,7 +2,7 @@ name: Deployment
 
 on:
   push:
-    braches: [src] # only push events on source branch trigger deployment
+    branches: [src] # only push events on source branch trigger deployment
 
 jobs:
   hexo-deployment:
@@ -11,7 +11,7 @@ jobs:
       TZ: Asia/Shanghai
 
     steps:
-    - name: Checkout Source
+    - name: Checkout source
       uses: actions/checkout@v2
       with:
         submodules: true
@@ -87,7 +87,7 @@ jobs:
         REMOTE_USER: ${{ secrets.REMOTE_USER }}
         TARGET: ${{ secrets.REMOTE_TARGET }}
 
-    - name: Telegram Notification
+    - name: Telegram notification
       if: cancelled() == false
       uses: xinthink/action-telegram@v1.1
       with:

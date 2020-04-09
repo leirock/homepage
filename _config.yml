@@ -219,10 +219,6 @@ theme_config:
     enable: true
     url: https://github.com/lei2rock/homepage/tree/src/source/ # Link for view source
 
-  # Show previous post and next post in post footer if exists
-  # Available values: left | right | false
-  post_navigation: right
-
   # ---------------------------------------------------------------
   # Custom Page Settings
   # See: https://theme-next.org/docs/theme-settings/custom-pages
@@ -317,7 +313,6 @@ theme_config:
   google_site_verification: SJUudYL5q_atXSgew2qwy69FXOnSnNB2rAmwHmcBT9U
   disable_baidu_transformation: true
   baidu_site_verification: 2QXEpIlRcv
-  baidu_push: true
 
   # ---------------------------------------------------------------
   # Third Party Plugins & Services Settings
