@@ -1,4 +1,4 @@
-# <div align="center"><a title="My personal website repository" href="https://github.com/lei2rock/homepage"><img align="center" width="75" height="75" src="https://user-images.githubusercontent.com/19180725/77293471-5a9ded80-6d1d-11ea-9e96-4d364f31e84f.png"></a> Personal Website</div>
+# <div align="center"><a title="My homepage repository" href="https://github.com/lei2rock/homepage"><img align="center" width="75" height="75" src="https://user-images.githubusercontent.com/19180725/77293471-5a9ded80-6d1d-11ea-9e96-4d364f31e84f.png"></a> My Homepage</div>
 
 <p align="center">
 <br>
@@ -7,7 +7,7 @@
 <a href="https://github.com/lei2rock/homepage/actions"><img src="https://img.shields.io/github/workflow/status/lei2rock/homepage/Deployment?label=GitHub+Actions&logo=GitHub+Actions&style=flat-square"></a>
 </p>
 
-The `src` branch of this repository contains all source files of my personal website.
+This repository contains all source files of my homepage.
 
 All articles and photos provided in this repository are licensed under a [Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License](http://creativecommons.org/licenses/by-nc-sa/4.0/). For commercial use, please contact me by email first.
 

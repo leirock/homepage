@@ -213,12 +213,6 @@ theme_config:
   related_posts:
     enable: true
 
-  # Post edit
-  # Dependencies: https://github.com/hexojs/hexo-deployer-git
-  post_edit:
-    enable: true
-    url: https://github.com/lei2rock/homepage/tree/src/source/ # Link for view source
-
   # ---------------------------------------------------------------
   # Custom Page Settings
   # See: https://theme-next.org/docs/theme-settings/custom-pages

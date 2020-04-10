@@ -1,16 +1,6 @@
 <script type="text/javascript">
-// Automatically jump to https
-  if (location.protocol !== 'https:' && location.hostname !== '127.0.0.1') {
-    location.href = location.href.replace('http:', 'https:');
-  }
-
-// Locate comment position
-  if(window.location.hash){
-    var checkExist = setInterval(function() {
-      if ($(window.location.hash).length) {
-        $('html, body').animate({scrollTop: $(window.location.hash).offset().top-90}, 1000);
-        clearInterval(checkExist);
-      }
-    }, 100);
-  }
+window.addEventListener('load', () => {
+	console.log('\n%cDonglei\'s Homepage%cv3.0.0%c\n', 'padding: 8px; background: #3f5973; font-weight: bold; font-size: large; color: white;', 'padding: 8px; background: #649ab6; font-size: large; color: #eee;','');
+	console.log(`The time it takes to load the pages is ${Math.round(performance.now() * 100) / 100}ms`);
+});
 </script>
