@@ -64,7 +64,7 @@ highlight:
 # order_by: Posts order. (Order by date descending by default)
 index_generator:
   path: posts
-  per_page: 15
+  per_page: 10
   order_by: -date
 
 # Category & Tag
@@ -94,11 +94,6 @@ pagination_dir: page
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
 theme: next
-
-# Hexo server module
-## Use `hexo server`
-server:
-  ip: 127.0.0.1
 
 
 # ************************************************************************************************************
@@ -157,6 +152,15 @@ theme_config:
       color: "#f06292"
     copyright: Zhang Donglei
     powered: false
+
+  # See: https://creativecommons.org/share-your-work/licensing-types-examples
+  # Available values of license: by | by-nc | by-nc-nd | by-nc-sa | by-nd | by-sa | zero
+  # You can set a language value if you prefer a translated version of CC license, e.g. deed.zh
+  creative_commons:
+    license: by-nc-sa
+    sidebar: true
+    post: true
+    language:
 
   # ---------------------------------------------------------------
   # Menu Settings
