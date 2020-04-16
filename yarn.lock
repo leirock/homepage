@@ -638,9 +638,9 @@ combined-stream@~0.0.4, combined-stream@~0.0.5:
     delayed-stream "0.0.5"
 
 command-exists@^1.2.8:
-  version "1.2.8"
-  resolved "https://registry.yarnpkg.com/command-exists/-/command-exists-1.2.8.tgz#715acefdd1223b9c9b37110a149c6392c2852291"
-  integrity sha512-PM54PkseWbiiD/mMsbvW351/u+dafwTJ0ye2qB60G1aGQP9j3xK2gmMDc+R34L3nDtx4qMCitXT75mkbkGJDLw==
+  version "1.2.9"
+  resolved "https://registry.yarnpkg.com/command-exists/-/command-exists-1.2.9.tgz#c50725af3808c8ab0260fd60b01fbfa25b954f69"
+  integrity sha512-LTQ/SGc+s0Xc0Fu5WaKnR0YiygZkm9eKFvyS+fRsU7/ZWFF8ykFM6Pc9aCVf1+xasOOZpO3BAVgVrKvsqKHV7w==
 
 commander@^2.5.0:
   version "2.20.3"
@@ -2997,9 +2997,9 @@ resolve-url@^0.2.1:
   integrity sha1-LGN/53yJOv0qZj/iGqkIAGjiBSo=
 
 resolve@^1.11.0, resolve@^1.8.1:
-  version "1.15.1"
-  resolved "https://registry.yarnpkg.com/resolve/-/resolve-1.15.1.tgz#27bdcdeffeaf2d6244b95bb0f9f4b4653451f3e8"
-  integrity sha512-84oo6ZTtoTUpjgNEr5SJyzQhzL72gaRodsSfyxC/AXRvwu0Yse9H8eF9IpGo7b8YetZhlI6v7ZQ6bKBFV/6S7w==
+  version "1.16.0"
+  resolved "https://registry.yarnpkg.com/resolve/-/resolve-1.16.0.tgz#063dc704fa3413e13ac1d0d1756a7cbfe95dd1a7"
+  integrity sha512-LarL/PIKJvc09k1jaeT4kQb/8/7P+qV4qSnN2K80AES+OHdfZELAKVOBjxsvtToT/uLOfFbvYvKfZmV8cee7nA==
   dependencies:
     path-parse "^1.0.6"
 
