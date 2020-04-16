@@ -77,7 +77,7 @@ jobs:
         rm -rf public/css/ public/js/ public/images/
 
     - name: Deploy to server
-      uses: easingthemes/ssh-deploy@v2
+      uses: easingthemes/ssh-deploy@v2.1.2
       env:
         ARGS: "-avz --delete"
         SOURCE: "public/"
@@ -89,7 +89,7 @@ jobs:
 
     - name: Telegram notification
       if: cancelled() == false
-      uses: xinthink/action-telegram@v1
+      uses: xinthink/action-telegram@v1.1
       with:
         botToken: ${{ secrets.TG_BOT_TOKEN }} #use bot @BotFather
         chatId: ${{ secrets.TG_CHAT_ID }} #use bot @userinfobot
