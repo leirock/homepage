@@ -73,7 +73,9 @@ jobs:
 
     - name: Deploy assets to cos
       run: |
-        coscmd upload -rs --delete public/css assets/homepage-css
+        coscmd upload -rs --delete public/css assets-hexo/css
+        coscmd upload -rs --delete public/js assets-hexo/js
+        coscmd upload -rs --delete source/img assets-hexo/img
         rm -rf public/css/ public/js/ public/images/
 
     - name: Deploy to server
