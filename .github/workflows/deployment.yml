@@ -75,7 +75,7 @@ jobs:
       run: |
         coscmd upload -rs --delete public/css assets-hexo/css -f
         coscmd upload -rs --delete public/js assets-hexo/js -f
-        coscmd upload -rs --delete source/img assets-hexo/img -f
+        coscmd upload -rs --delete source/images assets-hexo/img -f
         rm -rf public/css/ public/js/ public/images/
 
     - name: Deploy to server
