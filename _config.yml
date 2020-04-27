@@ -139,10 +139,10 @@ theme_config:
   # ---------------------------------------------------------------
 
   favicon:
-    small: https://web-1256060851.file.myqcloud.com/assets-hexo/img/favicon-16x16.png
-    medium: https://web-1256060851.file.myqcloud.com/assets-hexo/img/favicon-32x32.png
-    apple_touch_icon: https://web-1256060851.file.myqcloud.com/assets-hexo/img/apple-touch-icon.png
-    safari_pinned_tab: https://web-1256060851.file.myqcloud.com/assets-hexo/img/safari-pinned-tab.svg
+    small: https://web-1256060851.cos.ap-shanghai.myqcloud.com/assets-hexo/img/favicon-16x16.png
+    medium: https://web-1256060851.cos.ap-shanghai.myqcloud.com/assets-hexo/img/favicon-32x32.png
+    apple_touch_icon: https://web-1256060851.cos.ap-shanghai.myqcloud.com/assets-hexo/img/apple-touch-icon.png
+    safari_pinned_tab: https://web-1256060851.cos.ap-shanghai.myqcloud.com/assets-hexo/img/safari-pinned-tab.svg
 
   footer:
     since: 2015
@@ -392,6 +392,6 @@ theme_config:
     pangu: //cdn.jsdelivr.net/npm/pangu@4/dist/browser/pangu.min.js
 
   # Assets
-  css: https://web-1256060851.file.myqcloud.com/assets-hexo/css
-  js: https://web-1256060851.file.myqcloud.com/assets-hexo/js
-  images: https://web-1256060851.file.myqcloud.com/assets-hexo/img
+  css: https://web-1256060851.cos.ap-shanghai.myqcloud.com/assets-hexo/css
+  js: https://web-1256060851.cos.ap-shanghai.myqcloud.com/assets-hexo/js
+  images: https://web-1256060851.cos.ap-shanghai.myqcloud.com/assets-hexo/img
