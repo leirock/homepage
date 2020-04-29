@@ -5,9 +5,9 @@ tags: [econ]
 sticky: 0
 mathjax: false
 comments: true
-i18n: https://mirror.zdl.one/archives/70/
-cid: 70
-date: 2017-02-20 09:30:00
+i18n: https://blog.dlzhang.com/posts/21/
+pid: 2
+date: 2017-02-20 09:30:02
 ---
 
 The rank of this list is based on [SUFE journal list](http://econ.shufe.edu.cn/se/kxyj_con/87/1489).

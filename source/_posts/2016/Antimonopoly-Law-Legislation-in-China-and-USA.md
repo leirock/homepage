@@ -5,8 +5,8 @@ tags: [antitrust, law]
 sticky: 0
 mathjax: false
 comments: true
-i18n: https://mirror.zdl.one/archives/61/
-cid: 61
+i18n: https://blog.dlzhang.com/posts/18/
+pid: 1
 date: 2016-12-16 18:31:22
 ---
 

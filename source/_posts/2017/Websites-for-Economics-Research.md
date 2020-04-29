@@ -5,9 +5,9 @@ tags: [econ]
 sticky: 0
 mathjax: false
 comments: true
-i18n: https://mirror.zdl.one/archives/71/
-cid: 71
-date: 2017-02-21 18:30:00
+i18n: https://blog.dlzhang.com/posts/22/
+pid: 3
+date: 2017-02-21 18:30:01
 ---
 
 ## 1. Papers and Journals
