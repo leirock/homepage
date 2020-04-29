@@ -19,7 +19,7 @@ timezone: Asia/Shanghai
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
 url: https://dlzhang.com
 root: /
-permalink: /posts/:year/:title/
+permalink: /archives/:cid/
 permalink_defaults:
 pretty_urls:
   trailing_index: true # Set to false to remove trailing 'index.html' from permalinks
@@ -29,7 +29,7 @@ pretty_urls:
 source_dir: source
 public_dir: public
 tag_dir: overview/tags
-archive_dir: archives
+archive_dir: overview/timeline
 category_dir: overview
 code_dir: downloads/code
 i18n_dir: :lang
@@ -172,8 +172,8 @@ theme_config:
     posts: /posts/ || fas fa-feather-alt
     overview: 
       default: /overview/ || fas fa-th
-      series: series/ || fas fa-cube
       tags: tags/ || fas fa-tags
+      timeline: timeline/ || fas fa-archive
     contact: /contact/ || fas fa-paper-plane
 
   # ---------------------------------------------------------------
@@ -252,13 +252,6 @@ theme_config:
       show_result: true
       # Available values: default | flat | mac
       style: mac
-
-  back2top:
-    enable: true
-    # Back to top in sidebar.
-    sidebar: false
-    # Scroll percent label in b2t button.
-    scrollpercent: true
 
   # ---------------------------------------------------------------
   # Font Settings

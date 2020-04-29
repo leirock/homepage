@@ -24,15 +24,15 @@ if [ "$answer" == "1" ] || [ "$answer" == "" ]; then
 	echo " "
 	printf "\033[32mINFO \033[0m 启动本地预览...\n"
 	echo " "
-	sed -i "" 's#https://web-1256060851.cos.ap-shanghai.myqcloud.com/assets/homepage-css#css#g' _config.yml
-	sed -i "" 's#https://web-1256060851.cos.ap-shanghai.myqcloud.com/assets/js#js#g' _config.yml
+	sed -i "" 's#https://web-1256060851.cos.ap-shanghai.myqcloud.com/assets-hexo/homepage-css#css#g' _config.yml
+	sed -i "" 's#https://web-1256060851.cos.ap-shanghai.myqcloud.com/assets-hexo/js#js#g' _config.yml
 	sed -i "" '18s/imageLink/imageLink.replace(\/\![0-9]{3,}x\/,"")/' themes/next/source/js/utils.js
 	sed -i "" '4s/{{ title }}/{{ "Posts | " + title }}/' themes/next/layout/index.swig
 	printf "\033[32mINFO \033[0m Hexo will also run at \033[4mhttp://local.zdl.one:4000\033[0m . Press Ctrl+C to stop.\n"
 	hexo s
 	hexo clean
-	sed -i "" 's#css: css#css: https://web-1256060851.cos.ap-shanghai.myqcloud.com/assets/homepage-css#g' _config.yml
-	sed -i "" 's#js: js#js: https://web-1256060851.cos.ap-shanghai.myqcloud.com/assets/js#g' _config.yml
+	sed -i "" 's#css: css#css: https://web-1256060851.cos.ap-shanghai.myqcloud.com/assets-hexo/homepage-css#g' _config.yml
+	sed -i "" 's#js: js#js: https://web-1256060851.cos.ap-shanghai.myqcloud.com/assets-hexo/js#g' _config.yml
 	sed -i "" '18s/.replace(\/\!\[0-9\]{3,}x\/,\"\")//' themes/next/source/js/utils.js
 	sed -i "" '4s/"Posts | " + //' themes/next/layout/index.swig
 	echo " "

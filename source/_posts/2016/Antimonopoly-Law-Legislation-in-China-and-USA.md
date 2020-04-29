@@ -5,7 +5,8 @@ tags: [antitrust, law]
 sticky: 0
 mathjax: false
 comments: true
-i18n: https://mirror.zdl.one/posts/2016/中美反垄断法立法过程比较研究-摘要/
+i18n: https://mirror.zdl.one/archives/61/
+cid: 61
 date: 2016-12-16 18:31:22
 ---
 

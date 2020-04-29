@@ -5,7 +5,8 @@ tags: [econ]
 sticky: 0
 mathjax: false
 comments: true
-i18n: https://mirror.zdl.one/posts/2017/经济学学习科研相关网站/
+i18n: https://mirror.zdl.one/archives/71/
+cid: 71
 date: 2017-02-21 18:30:00
 ---
 

@@ -5,7 +5,8 @@ tags: [econ]
 sticky: 0
 mathjax: false
 comments: true
-i18n: https://mirror.zdl.one/posts/2017/经济学顶尖学术期刊/
+i18n: https://mirror.zdl.one/archives/70/
+cid: 70
 date: 2017-02-20 09:30:00
 ---
 
