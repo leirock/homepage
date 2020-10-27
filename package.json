@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "hexo": "^5.2.0",
+    "hexo-all-minifier": "^0.5.5",
     "hexo-cake-moon-menu": "^2.2.0",
     "hexo-generator-archive": "^1.0.0",
     "hexo-generator-category": "^1.0.0",

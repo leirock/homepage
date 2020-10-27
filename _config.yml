@@ -111,7 +111,7 @@ deploy:
 ## See: https://github.com/chenzhutian/hexo-all-minifier
 all_minifier: true
 html_minifier:
-  silent: true
+  enable: false
 css_minifier:
   silent: true
 js_minifier:
