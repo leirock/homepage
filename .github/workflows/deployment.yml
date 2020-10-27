@@ -16,23 +16,18 @@ jobs:
       with:
         submodules: true
 
+    - name: Setup Node.js
+      uses: actions/setup-node@v1
+      with:
+        node-version: '12.x'
+
     - name: Setup Python
       uses: actions/setup-python@v1
       with:
         python-version: '3.x'
 
-    - name: Get yarn cache directory path
-      id: yarn-cache-dir-path
-      run: echo "::set-output name=dir::$(yarn cache dir)"
-
-    - name: Yarn cache
-      uses: actions/cache@v1
-      id: yarn-cache # use this to check for `cache-hit` (`steps.yarn-cache.outputs.cache-hit != 'true'`)
-      with:
-        path: ${{ steps.yarn-cache-dir-path.outputs.dir }}
-        key: ${{ runner.os }}-yarn-${{ hashFiles('**/yarn.lock') }}
-        restore-keys: |
-          ${{ runner.os }}-yarn-
+    - name: Yarn install cache
+      uses: c-hive/gha-yarn-cache@v1
 
     - name: Get pip cache
       id: pip-cache
@@ -52,14 +47,15 @@ jobs:
 
     - name: Install dependencies & Generate static files
       run: |
+        node -v
         export PATH="$PATH:$(yarn global bin)"
         yarn global add hexo-cli
         yarn install
-        sed -i '18s/imageLink/imageLink.replace(\/\![0-9]{3,}x\/,"")/' themes/next/source/js/utils.js
-        sed -i '4s/{{ title }}/{{ "Posts | " + title }}/' themes/next/layout/index.swig
+        sed -i '26s/imageLink/imageLink.replace(\/\![0-9]{3,}x\/,"")/' node_modules/hexo-theme-next/source/js/utils.js
+        sed -i '4s/{{ title }}/{{ "Posts | " + title }}/' node_modules/hexo-theme-next/layout/index.swig
         yarn build
-        sed -i '30s/Hello!/Zhang Donglei/' public/index.html
-        sed -i '62s/Hello! | //' public/index.html
+        sed -i '31s/Hello!/Zhang Donglei/' public/index.html
+        sed -i '64s/Hello! | //' public/index.html
 
     - name: Setup coscmd
       env:
@@ -73,10 +69,7 @@ jobs:
 
     - name: Deploy assets to cos
       run: |
-        coscmd upload -rs --delete public/css assets-hexo/css -f
-        coscmd upload -rs --delete public/js assets-hexo/js -f
-        coscmd upload -rs --delete source/images assets-hexo/img -f
-        rm -rf public/css/ public/js/ public/images/
+        coscmd upload -rs --delete public/css assets/css-homepage -f
 
     - name: Deploy to server
       uses: easingthemes/ssh-deploy@v2.1.2

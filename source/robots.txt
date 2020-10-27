@@ -1,5 +1,4 @@
 User-agent: *
-Disallow: /articles/
 Disallow: /page/
 
 Sitemap: https://dlzhang.com/sitemap.xml

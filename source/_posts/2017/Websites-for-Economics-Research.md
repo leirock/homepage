@@ -14,7 +14,7 @@ date: 2017-02-21 18:30:01
 
 - [EconPaper](http://econpapers.repec.org/)
 - [IDEAS](https://ideas.repec.org/)
-- [Top Journals in Economics](http://blog.donglei.me/en/posts/40e31eef/)<!-- more -->
+- [Top Journals in Economics](/posts/2/)<!-- more -->
 
 ## 2. Forums
 
