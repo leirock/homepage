@@ -1,6 +1,5 @@
 ---
 title: Contact
-comments: false
 ---
 
 ![Songxi Village, Zhejiang Prov.](https://website-1256060851.cos.ap-hongkong.myqcloud.com/pages/about/songxi.jpg!600x)

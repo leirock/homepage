@@ -5,18 +5,8 @@
 
 minify: true
 
-# Define custom file paths.
-# Create your custom files in site directory `source/_data` and uncomment needed files below.
 custom_file_path:
-  head: source/_data/head.njk
-  #header: source/_data/header.njk
-  #sidebar: source/_data/sidebar.njk
-  postMeta: source/_data/post-meta.njk
-  #postBodyEnd: source/_data/post-body-end.njk
-  #footer: source/_data/footer.njk
-  #bodyEnd: source/_data/body-end.njk
   variable: source/_data/variables.styl
-  mixin: source/_data/mixins.styl
   style: source/_data/styles.styl
 
 # ---------------------------------------------------------------
@@ -43,39 +33,26 @@ favicon:
 # ---------------------------------------------------------------
 
 menu:
-  home: / || fas fa-user-circle
-  research: /research/ || fas fa-university
-  posts: /posts/ || fas fa-feather-alt
-  overview: 
-    default: /overview/ || fas fa-th
-    tags: tags/ || fas fa-tags
-    timeline: timeline/ || fas fa-archive
-  contact: /contact/ || fas fa-paper-plane
+  About: / || fas fa-user-circle
+  Contact: /contact/ || fas fa-paper-plane
+  Posts: https://blog.dlzhang.com/overview/tags/English/ || fas fa-feather-alt
 
 # ---------------------------------------------------------------
 # Sidebar Settings
-# See: https://theme-next.js.org/docs/theme-settings/sidebar
 # ---------------------------------------------------------------
 
-# Posts / Categories / Tags in sidebar.
 site_state: false
 
 social:
   Weibo: https://weibo.com/1156774800 || fab fa-weibo
   Twitter: https://twitter.com/lei2rock || fab fa-twitter
   GitHub: https://github.com/lei2rock || fab fa-github
-  RSS: /atom.xml || fa fa-rss
 
 social_icons:
   icons_only: true
 
-toc:
-  # Automatically add list number to toc.
-  number: false
-
 # ---------------------------------------------------------------
 # Footer Settings
-# See: https://theme-next.js.org/docs/theme-settings/footer
 # ---------------------------------------------------------------
 
 footer:
@@ -88,41 +65,10 @@ footer:
   powered: false
 
 # ---------------------------------------------------------------
-# Post Settings
-# See: https://theme-next.js.org/docs/theme-settings/posts
-# ---------------------------------------------------------------
-
-read_more_btn: false
-
-post_meta:
-  item_text: false
-  updated_at:
-    enable: false
-
-# Use icon instead of the symbol # to indicate the tag at the bottom of the post
-tag_icon: true
-
-related_posts:
-  enable: true
-
-# ---------------------------------------------------------------
 # Misc Theme Settings
-# See: https://theme-next.js.org/docs/theme-settings/miscellaneous
 # ---------------------------------------------------------------
 
-# Android Chrome header panel color ($brand-bg / $headband-bg => $black-deep).
 android_chrome_color: "#6c599f"
-
-codeblock:
-  theme:
-    light: tomorrow
-    dark: tomorrow-night
-  copy_button:
-    enable: true
-    style: mac
-
-back2top:
-  enable: false
 
 # ---------------------------------------------------------------
 # Font Settings
@@ -130,41 +76,16 @@ back2top:
 
 font:
   enable: true
-
-  # Uri of fonts host, e.g. https://fonts.googleapis.com (Default).
-  host:
-
-  # Global font settings used for all elements inside <body>.
   global:
-    external: true
     family: EB Garamond
-    size:
-
-  # Font settings for site title (.site-title).
   title:
-    external: true
     family: Fondamento
-    size:
-
-  # Font settings for headlines (<h1> to <h6>).
   headings:
-    external: true
     family: Noto Serif SC
     size: 1.48
 
-  # Font settings for posts (.post-body).
-  posts:
-    external: true
-    family:
-
-  # Font settings for <code> and code blocks.
-  codes:
-    external: true
-    family:
-
 # ---------------------------------------------------------------
 # SEO Settings
-# See: https://theme-next.js.org/docs/theme-settings/seo
 # ---------------------------------------------------------------
 
 disable_baidu_transformation: true
@@ -173,15 +94,7 @@ baidu_site_verification: 2QXEpIlRcv
 
 # ---------------------------------------------------------------
 # Third Party Plugins & Services Settings
-# See: https://theme-next.js.org/docs/third-party-services/
-# More plugins: https://github.com/next-theme/awesome-next
-# You may need to install the corresponding dependency packages
 # ---------------------------------------------------------------
-
-math:
-  # hexo-renderer-pandoc (or hexo-renderer-kramed) required for full MathJax support.
-  mathjax:
-    enable: true
 
 pjax: true
 fancybox: true
@@ -190,43 +103,23 @@ pangu: true
 
 # ---------------------------------------------------------------
 # Statistics and Analytics
-# See: https://theme-next.js.org/docs/third-party-services/statistics-and-analytics
 # ---------------------------------------------------------------
 
-# Google Analytics
 google_analytics:
   tracking_id: UA-141207776-2
 
 # ---------------------------------------------------------------
-# Search Services
-# See: https://theme-next.js.org/docs/third-party-services/search-services
-# ---------------------------------------------------------------
-
-local_search:
-  enable: true
-
-# ---------------------------------------------------------------
 # Tags Settings
-# See: https://theme-next.js.org/docs/tag-plugins/
 # ---------------------------------------------------------------
 
-# Note tag (bs-callout)
 note:
   style: simple
   icons: true
-
-# Tabs tag
-tabs:
-  transition:
-    tabs: true
-    labels: true
 
 # ---------------------------------------------------------------
 # Animation Settings
 # ---------------------------------------------------------------
 
-# Use Animate.css to animate everything.
-# For more information: https://animate.style
 motion:
   enable: false
 
