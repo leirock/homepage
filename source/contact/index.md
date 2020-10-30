@@ -2,7 +2,7 @@
 title: Contact
 ---
 
-![Songxi Village, Zhejiang Prov.](https://website-1256060851.cos.ap-hongkong.myqcloud.com/pages/about/songxi.jpg!600x)
+![Songxi Village, Zhejiang Prov.](https://website-1256060851.cos.ap-hongkong.myqcloud.com/pages/more/songxi.jpg!600x)
 
 　**Email:** zhangdonglei (at) link.cuhk.edu.hk
 　**Phone:** +852 3943 1588

@@ -70,6 +70,10 @@ footer:
 
 android_chrome_color: "#6c599f"
 
+back2top:
+  enable: true
+  scrollpercent: true
+
 # ---------------------------------------------------------------
 # Font Settings
 # ---------------------------------------------------------------

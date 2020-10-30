@@ -51,6 +51,7 @@ jobs:
         export PATH="$PATH:$(yarn global bin)"
         yarn global add hexo-cli
         yarn install
+        sed -i '26s/imageLink/imageLink.replace(\/\![0-9]{3,}x\/,"")/' node_modules/hexo-theme-next/source/js/utils.js
         yarn build
         sed -i 's/<title>| Zhang/<title>Zhang/' public/index.html
 
@@ -67,6 +68,7 @@ jobs:
     - name: Deploy assets to cos
       run: |
         coscmd upload -rs --delete public/css assets/css-homepage -f
+        rm -rf public/css public/js public/images
 
     - name: Deploy to server
       uses: easingthemes/ssh-deploy@v2.1.2
