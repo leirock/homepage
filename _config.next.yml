@@ -35,7 +35,7 @@ favicon:
 menu:
   About: / || fas fa-user-circle
   Contact: /contact/ || fas fa-paper-plane
-  Posts: https://blog.dlzhang.com/overview/tags/English/ || fas fa-feather-alt
+  Blog Posts: https://blog.dlzhang.com/overview/tags/English/ || fas fa-feather-alt
 
 # ---------------------------------------------------------------
 # Sidebar Settings
@@ -45,7 +45,6 @@ site_state: false
 
 social:
   Weibo: https://weibo.com/1156774800 || fab fa-weibo
-  Twitter: https://twitter.com/lei2rock || fab fa-twitter
   GitHub: https://github.com/lei2rock || fab fa-github
 
 social_icons:
