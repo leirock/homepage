@@ -23,10 +23,10 @@ gray: false
 # ---------------------------------------------------------------
 
 favicon:
-  small: https://website-1256060851.cos.ap-hongkong.myqcloud.com/assets/images/favicon-16x16.png
-  medium: https://website-1256060851.cos.ap-hongkong.myqcloud.com/assets/images/favicon-32x32.png
-  apple_touch_icon: https://website-1256060851.cos.ap-hongkong.myqcloud.com/assets/images/apple-touch-icon.png
-  safari_pinned_tab: https://website-1256060851.cos.ap-hongkong.myqcloud.com/assets/images/safari-pinned-tab.svg
+  small: /images/favicon-16x16.png
+  medium: /images/favicon-32x32.png
+  apple_touch_icon: /images/apple-touch-icon.png
+  safari_pinned_tab: /images/safari-pinned-tab.svg
 
 # ---------------------------------------------------------------
 # Menu Settings
@@ -67,6 +67,9 @@ footer:
 # Misc Theme Settings
 # ---------------------------------------------------------------
 
+# Preconnect CDN for fonts and plugins.
+preconnect: true
+
 android_chrome_color: "#6c599f"
 
 back2top:
@@ -80,11 +83,10 @@ back2top:
 font:
   enable: true
   global:
-    family: EB Garamond
+    family: EB Garamond, Noto Serif SC
   title:
     family: Fondamento
   headings:
-    family: Noto Serif SC
     size: 1.48
 
 # ---------------------------------------------------------------
@@ -125,12 +127,3 @@ note:
 
 motion:
   enable: false
-
-#! ==============================================================
-#! See: https://theme-next.js.org/docs/advanced-settings/vendors
-#! ==============================================================
-
-# Assets
-css: https://website-1256060851.cos.ap-hongkong.myqcloud.com/assets/css-homepage
-js: https://website-1256060851.cos.ap-hongkong.myqcloud.com/assets/js
-images: https://website-1256060851.cos.ap-hongkong.myqcloud.com/assets/images
