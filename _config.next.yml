@@ -127,3 +127,8 @@ note:
 
 motion:
   enable: false
+
+
+vendors:
+  # The CDN provider of NexT internal scripts.
+  internal: jsdelivr
