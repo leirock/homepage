@@ -102,9 +102,6 @@ baidu_site_verification: 2QXEpIlRcv
 # ---------------------------------------------------------------
 
 pjax: true
-fancybox: true
-lazyload: true
-pangu: true
 
 # ---------------------------------------------------------------
 # Statistics and Analytics
@@ -112,14 +109,6 @@ pangu: true
 
 google_analytics:
   tracking_id: UA-141207776-2
-
-# ---------------------------------------------------------------
-# Tags Settings
-# ---------------------------------------------------------------
-
-note:
-  style: simple
-  icons: true
 
 # ---------------------------------------------------------------
 # Animation Settings
@@ -134,6 +123,5 @@ vendors:
   internal: jsdelivr
 
 #Assets
-css: //cdn.jsdelivr.net/gh/lei2rock/homepage@assets/css
-js: //cdn.jsdelivr.net/gh/lei2rock/blog@assets/js
+css: //cdn.jsdelivr.net/gh/lei2rock/homepage@assets
 images: //cdn.jsdelivr.net/gh/lei2rock/blog@assets/images
