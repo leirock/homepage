@@ -165,7 +165,19 @@ blockquote p,
   font-family: $font-family-quote;
 }
 
-/************************** Other ***************************/
+/* post-行内代码 */
+code {
+  font-size: 85%;
+  background: none;
+  color: var(--text-color);
+}
+
+/* post-思源宋体列表打叉修复 */
+li {
+  text-align: left;
+}
+
+/************************ Button ***************************/
 
 /* button-back2top */
 .back-to-top {
@@ -181,6 +193,8 @@ blockquote p,
   background: rgba(0, 149, 255, 0.2);
   color: var(--blockquote-color);
 }
+
+/****************** Pagination & Footer ********************/
 
 /* footer */
 .footer,

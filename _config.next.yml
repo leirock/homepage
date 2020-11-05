@@ -23,10 +23,10 @@ gray: false
 # ---------------------------------------------------------------
 
 favicon:
-  small: /images/favicon-16x16.png
-  medium: /images/favicon-32x32.png
-  apple_touch_icon: /images/apple-touch-icon.png
-  safari_pinned_tab: /images/safari-pinned-tab.svg
+  small: //cdn.jsdelivr.net/gh/lei2rock/blog@assets/images/favicon-16x16.png
+  medium: //cdn.jsdelivr.net/gh/lei2rock/blog@assets/images/favicon-32x32.png
+  apple_touch_icon: //cdn.jsdelivr.net/gh/lei2rock/blog@assets/images/apple-touch-icon.png
+  safari_pinned_tab: //cdn.jsdelivr.net/gh/lei2rock/blog@assets/images/safari-pinned-tab.svg
 
 # ---------------------------------------------------------------
 # Menu Settings
@@ -132,3 +132,8 @@ motion:
 vendors:
   # The CDN provider of NexT internal scripts.
   internal: jsdelivr
+
+#Assets
+css: //cdn.jsdelivr.net/gh/lei2rock/homepage@assets/css
+js: //cdn.jsdelivr.net/gh/lei2rock/blog@assets/js
+images: //cdn.jsdelivr.net/gh/lei2rock/blog@assets/images
