@@ -1,11 +1,12 @@
-name: Deployment
+name: Homepage@lei2rock
 
 on:
   push:
-    branches: [master] # only push events on source branch trigger deployment
+    branches:
+      - master
 
 jobs:
-  hexo-deployment:
+  deploy:
     runs-on: ubuntu-latest
     env:
       TZ: Asia/Shanghai
@@ -13,8 +14,6 @@ jobs:
     steps:
     - name: Checkout source
       uses: actions/checkout@v2
-#     with:
-#       submodules: true
 
     - name: Setup Node.js
       uses: actions/setup-node@v1
@@ -24,16 +23,18 @@ jobs:
     - name: Yarn install cache
       uses: c-hive/gha-yarn-cache@v1
 
-    - name: Install dependencies & Generate static files
+    - name: Install dependencies
       run: |
         node -v
         export PATH="$PATH:$(yarn global bin)"
         yarn global add hexo-cli
         yarn install
+
+    - name: Generate Hexo site
+      run: |
         yarn build
         sed -i 's/<title>| Zhang/<title>Zhang/' public/index.html
-        rm -rf public/images
-        cp -rf source/images public/
+        rm -rf public/images public/js
 
     - name: Deploy to server
       uses: easingthemes/ssh-deploy@v2.1.5
@@ -45,20 +46,6 @@ jobs:
         REMOTE_PORT: ${{ secrets.REMOTE_PORT }}
         REMOTE_USER: ${{ secrets.REMOTE_USER }}
         TARGET: ${{ secrets.REMOTE_TARGET }}
-
-    - name: Deploy to Github for CDN
-      env:
-        GIT_NAME: lei2rock
-        GIT_EMAIL: ${{ secrets.GIT_EMAIL }}
-        REPO: github.com/lei2rock/homepage
-        GH_TOKEN: ${{ secrets.GH_TOKEN }}
-      run: |
-        cd ./public/css
-        git init && git add .
-        git config --global user.name $GIT_NAME
-        git config --global user.email $GIT_EMAIL
-        git commit -m "Deployed by GitHub Actions"
-        git push --force --quiet "https://$GH_TOKEN@$REPO" master:assets
 
     - name: Telegram notification
       if: cancelled() == false
