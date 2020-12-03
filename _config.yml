@@ -4,9 +4,9 @@
 
 # Site
 title: Zhang Donglei
-subtitle: ''
-description: <div>Never say you know the essence,</div><div>let alone the truth.</div><div>无曰已是，无曰遂真。</div>
-keywords: [Donglei, 张栋磊, cuhk, economics]
+subtitle:
+description:
+keywords: [Donglei, 张栋磊, cuhk, economics, lei2rock]
 author:
 language: en
 timezone: Asia/Shanghai
@@ -15,7 +15,7 @@ timezone: Asia/Shanghai
 ## If your site is put in a subdirectory, set url as 'http://example.com/child' and root as '/child/'
 url: https://dlzhang.com
 root: /
-permalink: :year/:month/:day/:title/
+permalink: /posts/:pid/
 permalink_defaults:
 pretty_urls:
   trailing_index: true # Set to false to remove trailing 'index.html' from permalinks
@@ -100,7 +100,12 @@ ignore:
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
-theme: next
+theme: white
+
+# Deployment
+## Docs: https://hexo.io/docs/one-command-deployment
+deploy:
+  type: ''
 
 # Minifier & Optimization plugin
 ## See: https://github.com/chenzhutian/hexo-all-minifier

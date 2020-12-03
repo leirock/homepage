@@ -1,0 +1,3 @@
+[submodule "themes/white"]
+	path = themes/white
+	url = https://github.com/FuShaoLei/hexo-theme-white
