@@ -1,5 +1,5 @@
 <a href="https://hexo.io"><img src="https://img.shields.io/badge/Generator-Hexo-0e83cd?&logo=hexo&style=flat-square"></a>
-<a href="https://github.com/next-theme/hexo-theme-next"><img src="https://img.shields.io/badge/Theme-NexT-181717.svg?&style=flat-square"></a>
+<a href="https://github.com/FuShaoLei/hexo-theme-white"><img src="https://img.shields.io/badge/Theme-White-eaeaea.svg?&style=flat-square"></a>
 <a href="https://github.com/lei2rock/homepage/actions"><img src="https://img.shields.io/github/workflow/status/lei2rock/homepage/Deployment?label=GitHub+Actions&logo=GitHub+Actions&style=flat-square"></a>
 
 This repository contains all source files of my homepage.
