@@ -53,8 +53,8 @@ site_description: Zhang Donglei's Homepage (@lei2rock). #The default meta descri
 #Add description property to any page to change the meta description
 menu:
   HOME: /
-  ABOUT: /about
-  NEWS: /news
+  ABOUT: /about/
+  NEWS: /posts/news/
   博客: https://blog.dlzhang.com
 
 
