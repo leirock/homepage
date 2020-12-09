@@ -36,7 +36,6 @@ jobs:
       run: |
         yarn build
         cp -r source/favicon.ico public/favicon.ico
-        rm -rf public/archives public/posts
 
     - name: Deploy to server
       uses: easingthemes/ssh-deploy@v2.1.5
