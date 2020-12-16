@@ -18,9 +18,9 @@ jobs:
         submodules: true
 
     - name: Setup Node.js
-      uses: actions/setup-node@v1
+      uses: actions/setup-node@v2
       with:
-        node-version: '12.x'
+        node-version: '14'
 
     - name: Yarn install cache
       uses: c-hive/gha-yarn-cache@v1
@@ -34,7 +34,7 @@ jobs:
 
     - name: Generate Hexo site
       run: |
-        yarn build
+        hexo generate
         cp -r source/favicon.ico public/favicon.ico
 
     - name: Deploy to server
