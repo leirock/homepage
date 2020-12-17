@@ -19,22 +19,16 @@ jobs:
 
     - name: Setup Node.js
       uses: actions/setup-node@v2
-      with:
-        node-version: '14.15.2'
 
     - name: Yarn install cache
       uses: c-hive/gha-yarn-cache@v1
 
     - name: Install dependencies
-      run: |
-        node -v
-        yarn global add hexo-cli
-        echo "$(yarn global bin)" >> $GITHUB_PATH
-        yarn install
+      run: yarn install
 
     - name: Generate Hexo site
       run: |
-        hexo generate
+        yarn build
         cp -r source/favicon.ico public/favicon.ico
 
     - name: Deploy to server
