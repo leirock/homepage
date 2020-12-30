@@ -1,6 +1,6 @@
-<a href="https://hexo.io"><img src="https://img.shields.io/badge/Generator-Hexo-0e83cd?&logo=hexo&style=flat-square"></a>
-<a href="https://github.com/FuShaoLei/hexo-theme-white"><img src="https://img.shields.io/badge/Theme-White-eaeaea.svg?&style=flat-square"></a>
-<a href="https://github.com/lei2rock/homepage/actions"><img src="https://img.shields.io/github/workflow/status/lei2rock/homepage/Deployment?label=GitHub+Actions&logo=GitHub+Actions&style=flat-square"></a>
+[![Generator Hexo](https://img.shields.io/badge/Generator-Hexo-blue?style=flat-square&logo=hexo)](https://hexo.io)
+[![Theme White](https://img.shields.io/badge/Theme-White-eaeaea?&style=flat-square&logo=github)](https://github.com/FuShaoLei/hexo-theme-white)
+[![Build Status](https://img.shields.io/github/workflow/status/lei2rock/Homepage/Homepage@lei2rock?&label=GitHub+Actions&style=flat-square&logo=gitHub+actions)](https://github.com/lei2rock/Homepage/actions?query=workflow%3AHomepage@lei2rock)
 
 This repository contains all source files of my homepage.
 
