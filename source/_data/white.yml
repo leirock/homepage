@@ -46,7 +46,7 @@ archive_img_mode:
     - https://cdn.jsdelivr.net/gh/fushaolei/cdn-white@1.0/cover/15.jpg
 
 # icon
-icon: https://cdn.jsdelivr.net/gh/lei2rock/CDN/images/favicon-32x32.png #标签页图标
+icon: /favicon.png #标签页图标
 #  header
 site_name: Zhang Donglei
 site_description: Zhang Donglei's Homepage (@lei2rock). #The default meta description for all the meta descriptions
@@ -54,7 +54,7 @@ site_description: Zhang Donglei's Homepage (@lei2rock). #The default meta descri
 menu:
   HOME: /
   ABOUT: /about/
-  NEWS: /posts/news/
+#  NEWS: /posts/news/
   博客: https://blog.dlzhang.com
 
 

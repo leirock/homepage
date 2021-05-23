@@ -32,7 +32,7 @@ jobs:
     - name: Generate Hexo site
       run: |
         yarn build
-        cp -r source/favicon.ico public/favicon.ico
+        rm -f public/favicon.ico
 
     - name: Deploy to server
       uses: easingthemes/ssh-deploy@v2.1.5
