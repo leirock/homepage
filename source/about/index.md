@@ -11,7 +11,7 @@ date: 2020-12-04 00:00:00
 
 ### My CV
 
-[<i class="ri-file-pdf-line"></i> Download CV](https://website-1256060851.file.myqcloud.com/files/cv_donglei_zhang.pdf)
+[<i class="ri-file-pdf-line"></i> Download CV](https://website-1256060851.cos.ap-hongkong.myqcloud.com/files/cv_donglei_zhang.pdf)
 
 ### Contact
 
