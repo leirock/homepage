@@ -55,7 +55,7 @@ menu:
   HOME: /
   ABOUT: /about/
 #  NEWS: /posts/news/
-  博客: https://blog.dlzhang.com
+  BLOG: https://blog.dlzhang.com
 
 
 ## 本地搜索
@@ -80,9 +80,6 @@ contact:
   Github:
     - https://github.com/lei2rock
     - ri-github-line
-  Bilibili:
-    - https://space.bilibili.com/7454906
-    - ri-bilibili-line
   RSS:
     - https://blog.dlzhang.com/atom.xml
     - ri-rss-line

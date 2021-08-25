@@ -6,14 +6,4 @@ pid: news
 
 ## Incoming
 
-......
-
 ## Past
-
-### Dec 4, 2020
-
-Launched the new homepage of my website.
-
-### Nov 9, 2020
-
-Moved to office CYT 941.
