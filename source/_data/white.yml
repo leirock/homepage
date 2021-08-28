@@ -49,7 +49,7 @@ archive_img_mode:
 icon: /favicon.png #标签页图标
 #  header
 site_name: Zhang Donglei
-site_description: Zhang Donglei's Homepage (@lei2rock). #The default meta description for all the meta descriptions
+site_description: Zhang Donglei's Homepage. #The default meta description for all the meta descriptions
 #Add description property to any page to change the meta description
 menu:
   HOME: /
@@ -75,10 +75,10 @@ intro:
 #更多图标：https://remixicon.com/
 contact:
   Weibo:
-    - https://weibo.com/7216640993
+    - https://weibo.com/leirock
     - ri-weibo-line
   Github:
-    - https://github.com/lei2rock
+    - https://github.com/leirock
     - ri-github-line
   RSS:
     - https://blog.dlzhang.com/atom.xml
@@ -135,7 +135,7 @@ pagination:
 ############## 其他 ##############
 
 # 页脚
-footer: Made with <span class="with-love" style="color:#f06292;display:inline-block;"><i class="ri-heart-fill"></i></span> by [@lei2rock](https://dlzhang.com) # markdown语法
+footer: Made with <span class="with-love" style="color:#f06292;display:inline-block;"><i class="ri-heart-fill"></i></span> by [@leirock](https://dlzhang.com) # markdown语法
 
 #有分类时是否开启menu分类页和自定义名字
 menu_categories:

@@ -3,7 +3,7 @@ title: About
 date: 2020-12-04 00:00:00
 ---
 
-　　I’m Zhang Donglei (张栋磊 in Chinese), and use Banban (@lei2rock) as my online handle. My hometown [Pujiang](https://en.wikipedia.org/wiki/Pujiang_County,_Zhejiang) is a very beautiful city in Zhejiang Province, China. 
+　　I’m Zhang Donglei (张栋磊 in Chinese), and use Banban (@leirock) as my online handle. My hometown [Pujiang](https://en.wikipedia.org/wiki/Pujiang_County,_Zhejiang) is a very beautiful city in Zhejiang Province, China. 
 
 　　I am now a Ph.D. candidate in Decision Sciences and Managerial Economics at CUHK Business School advised by [Prof. Hongyi Li](https://www.bschool.cuhk.edu.hk/staff/li-hongyi/). I am also an alumnus of Zhejiang University and The Hong Kong University of Science and Technology. 
 
