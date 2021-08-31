@@ -15,37 +15,17 @@ jobs:
     - name: Checkout source
       uses: actions/checkout@v2
       with:
-        submodules: true
         persist-credentials: false
-
-    - name: Setup Node.js
-      uses: actions/setup-node@v2
-      with:
-        node-version: '15.14.0'
-
-    - name: Yarn install cache
-      uses: actions/cache@v2.1.6
-      id: node-modules
-      with:
-        path: node_modules/
-        key: ${{ runner.os }}-node-modules-${{ hashFiles('yarn.lock') }}
-        restore-keys: |
-          ${{ runner.os }}-node-modules-
-
-    - name: Install dependencies
-      if: steps.node-modules.outputs.cache-hit != 'true'
-      run: yarn install --frozen-lockfile
 
     - name: Generate Hexo site
       run: |
-        yarn build
-        rm -f public/favicon.ico
+        rm -f .github .gitignore README.md
 
     - name: Deploy to server
       uses: easingthemes/ssh-deploy@v2.1.5
       env:
         ARGS: "-avz --delete"
-        SOURCE: "public/"
+        SOURCE: "/"
         SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
         REMOTE_HOST: ${{ secrets.REMOTE_HOST }}
         REMOTE_PORT: ${{ secrets.REMOTE_PORT }}
