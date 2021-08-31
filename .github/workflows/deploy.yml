@@ -19,7 +19,7 @@ jobs:
 
     - name: Generate Hexo site
       run: |
-        rm -f .github .gitignore README.md
+        rm -rf .github .gitignore README.md
 
     - name: Deploy to server
       uses: easingthemes/ssh-deploy@v2.1.5
