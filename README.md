@@ -1,1 +1,1 @@
-This repository contains all source files of my homepage.
+path = http://127.0.0.1/~leirock || http://localhost/~leirock
