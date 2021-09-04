@@ -17,15 +17,11 @@ jobs:
       with:
         persist-credentials: false
 
-    - name: Generate Hexo site
-      run: |
-        rm -rf .git .github .gitignore README.md
-
     - name: Deploy to server
       uses: easingthemes/ssh-deploy@v2.1.5
       env:
         ARGS: "-avz --delete"
-        SOURCE: "/"
+        SOURCE: "source/"
         SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
         REMOTE_HOST: ${{ secrets.REMOTE_HOST }}
         REMOTE_PORT: ${{ secrets.REMOTE_PORT }}
