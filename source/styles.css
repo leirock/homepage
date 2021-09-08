@@ -32,7 +32,11 @@
 }
 
 body {
-  font-family: 'Lato','Noto Serif SC','PingFang SC','Microsoft YaHei',sans-serif;; 
+  font-family: 'Lato','Noto Serif SC',ui-sans-serif,system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif;
+}
+
+h1 {
+  font-family: ui-sans-serif,system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif;
 }
 
 ul {
@@ -54,16 +58,8 @@ ul {
   text-align-last: start !important;
 }
 
-h1 {
-  font-family: ui-sans-serif,system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif;
-}
-
 .highlight {
   box-shadow: inset 0 -0.5em 0 rgba(243, 238, 102, 0.8);
-}
-
-.font-chinese {
-  font-family: "Noto Serif SC",ui-sans-serif,system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif;
 }
 
 figure {
