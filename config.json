@@ -1,0 +1,49 @@
+{
+	"head": {
+		"title": "Zhang Donglei",
+		"description": "This is Zhang Donglei, a naïve economics explorer. My research interests span the fields of applied microeconometrics. I share my life, thoughts, and experience on my blog.",
+		"keywords": "Zhang Donglei, Donglei, 张栋磊, Leirock, 个人主页, homepage, 经济学, economics",
+		"favicon": "/favicon.ico",
+		"faviconSvg": "https://cdn.jsdelivr.net/gh/leirock/assets@main/favicon/favicon.svg",
+		"faviconApple": "https://cdn.jsdelivr.net/gh/leirock/assets@main/favicon/apple-touch-icon.png",
+		"faviconManifest": "https://cdn.jsdelivr.net/gh/leirock/assets@main/favicon/manifest.webmanifest"
+	},
+	"intro": {
+		"title": "Zhang Donglei",
+		"subtitle": "Naïve explorer in economics",
+		"enter": "enter",
+		"supportAuthor": false,
+		"background": true
+	},
+	"main": {
+		"name": "Zhang Donglei",
+		"signature": "Naïve explorer in economics",
+		"avatar": {
+			"link": "https://cdn.jsdelivr.net/gh/leirock/assets@main/avatar/avatar-256.png",
+			"height": "100",
+			"width": "100"
+		},
+		"ul": {
+			"first": {
+				"href": "about/",
+				"icon": "smile",
+				"text": "About"
+			},		    
+			"second": {
+				"href": "blog/",
+				"icon": "pencil",
+				"text": "Blog"
+			},
+			"third": {
+				"href": "wiki/",
+				"icon": "palette",
+				"text": "Wiki"
+			},
+			"fourth": {
+				"href": "weibo/",
+				"icon": "weibo",
+				"text": "Weibo"
+			}
+		}
+	}
+}
