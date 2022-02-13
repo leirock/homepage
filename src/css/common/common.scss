@@ -42,13 +42,13 @@ img {
 }
 
 body {
-	cursor: url('assets/default.cur'),
+	cursor: url('/assets/default.cur'),
 		auto !important;
 }
 
 img,
 a {
-	cursor: url('assets/pointer.cur'),
+	cursor: url('/assets/pointer.cur'),
 		auto !important;
 }
 
