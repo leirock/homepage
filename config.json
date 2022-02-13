@@ -4,9 +4,8 @@
 		"description": "This is Zhang Donglei, a naïve explorer in economics. My research interests span the fields of applied microeconometrics.",
 		"keywords": "Zhang Donglei, Donglei, 张栋磊, Leirock, 个人主页, homepage, 经济学, economics",
 		"favicon": "/favicon.ico",
-		"faviconSvg": "https://cdn.jsdelivr.net/gh/leirock/assets@main/favicon/favicon.svg",
-		"faviconApple": "https://cdn.jsdelivr.net/gh/leirock/assets@main/favicon/apple-touch-icon.png",
-		"faviconManifest": "https://cdn.jsdelivr.net/gh/leirock/assets@main/favicon/manifest.webmanifest"
+		"faviconSvg": "/favicon.svg",
+		"faviconApple": "/apple-touch-icon.png"
 	},
 	"intro": {
 		"title": "Zhang Donglei",
@@ -19,7 +18,7 @@
 		"name": "Zhang Donglei",
 		"signature": "A naïve explorer in economics",
 		"avatar": {
-			"link": "https://cdn.jsdelivr.net/gh/leirock/assets@main/avatar/avatar-256.png",
+			"link": "https://sdn.geekzu.org/avatar/cc763511474fe24ffcc80257fb7cb970?s=256",
 			"height": "100",
 			"width": "100"
 		},
