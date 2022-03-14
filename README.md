@@ -1,8 +1,6 @@
 Leirock's Homepage
 ======================
 
-- Homepage was forked from [Tomotoes/HomePage](https://github.com/Tomotoes/HomePage)
-    - config.json (modified)
-    - components/head.pug (modified)
+- Homepage is modified from [Tomotoes/HomePage](https://github.com/Tomotoes/HomePage)
 
-- About page was forked from [Benbinbin/Portfolio](https://github.com/Benbinbin/Portfolio)
+- About page is modified from [Benbinbin/Portfolio](https://github.com/Benbinbin/Portfolio)

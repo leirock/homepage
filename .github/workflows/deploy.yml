@@ -17,22 +17,11 @@ jobs:
       with:
         persist-credentials: false
 
-    - name: Setup Node.js
-      uses: actions/setup-node@v2
-      with:
-        node-version: 14.x
-
-    - name: Install dependencies & Generate homepage
-      run: |
-        yarn install
-        cp -rf content/ dist
-        yarn build
-
     - name: Deploy to server
       uses: easingthemes/ssh-deploy@main
       env:
         ARGS: "-avz --delete"
-        SOURCE: "dist/"
+        SOURCE: "src/"
         SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
         REMOTE_HOST: ${{ secrets.REMOTE_HOST }}
         REMOTE_PORT: ${{ secrets.REMOTE_PORT }}

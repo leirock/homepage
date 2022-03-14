@@ -1,0 +1,167 @@
+* {
+    box-sizing: border-box;
+    -webkit-text-size-adjust: none
+}
+
+html {
+    font-size: 20px !important
+}
+
+body {
+    margin: 0;
+    font-family: Comic Sans MS, Helvetica Neue, Microsoft Yahei, -apple-system, sans-serif !important;
+}
+
+@font-face {
+    font-family: iconfont;
+    src: url(//at.alicdn.com/t/font_2809747_ptepc1jx7ma.woff2?t=1631564202554) format("woff2"), url(//at.alicdn.com/t/font_2809747_ptepc1jx7ma.woff?t=1631564202554) format("woff"), url(//at.alicdn.com/t/font_2809747_ptepc1jx7ma.ttf?t=1631564202554) format("truetype")
+}
+
+.icon {
+    display: block;
+    width: 1.5em;
+    height: 1.5em;
+    margin: 0 auto;
+    fill: currentColor;
+    font-family: iconfont !important;
+    font-size: inherit;
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale
+}
+
+.icon-palette:before {
+    content: "\e7e8"
+}
+
+.icon-weibo:before {
+    content: "\e8bb"
+}
+
+.icon-pencil:before {
+    content: "\ecd2"
+}
+
+.icon-smile:before {
+    content: "\e624"
+}
+
+.content {
+    background: radial-gradient(#313131, #0a0a0a)
+}
+
+
+#card {
+    height: 100vh;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -ms-flex-align: center;
+    align-items: center;
+    text-align: center;
+}
+
+#card .card-inner {
+    width: 35%
+}
+
+@media screen and (max-width:1024px) {
+    #card .card-inner {
+        width: 45%
+    }
+}
+
+@media screen and (max-width:768px) {
+    #card .card-inner {
+        width: 50%
+    }
+}
+
+@media screen and (max-width:540px) {
+    #card .card-inner {
+        width: 60% !important
+    }
+
+    #card .card-inner header h1 {
+        font-size: 1rem !important
+    }
+
+    #card .card-inner header h2,
+    #card .card-inner ul li {
+        font-size: .8rem !important
+    }
+}
+
+@media screen and (max-width:480px) {
+    #card .card-inner {
+        width: 90% !important
+    }
+}
+
+@media screen and (max-width:360px) {
+    #card .card-inner {
+        width: 100% !important
+    }
+}
+
+#card .card-inner header {
+    border-bottom: 1px solid hsla(0, 0%, 100%, .1);
+    margin-bottom: 40px
+}
+
+#card .card-inner header img {
+    border: 3px solid #fff;
+    border-radius: 50%;
+    vertical-align: middle
+}
+
+#card .card-inner header h1 {
+    margin: 15px 15px 0;
+    color: #fff;
+    font-size: 2rem;
+    line-height: 1.2em;
+    font-weight: 300
+}
+
+#card .card-inner header h2 {
+    color: #ccc;
+    letter-spacing: 3px;
+    font-size: .8rem;
+    font-weight: lighter
+}
+
+#card .card-inner ul {
+    margin: 0;
+    padding: 0;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    width: 100%;
+    -ms-flex-pack: distribute;
+    border-bottom: 1px solid hsla(0, 0%, 100%, .1);
+    padding-bottom: 40px
+}
+
+#card .card-inner ul li {
+    display: inline-block;
+    transition: all .2s;
+    width: 100%;
+    height: 100%;
+    border-left: .1px solid hsla(0, 0%, 100%, .1);
+    border-right: .1px solid hsla(0, 0%, 100%, .1)
+}
+
+#card .card-inner ul li a {
+    text-decoration: none;
+    color: #b6b6b6;
+    transition: all .2s
+}
+
+#card .card-inner ul li a:hover {
+    color: #f6f6f6;
+    text-shadow: 0 0 2px #f6f6f6
+}
+
+#card .card-inner ul li:hover {
+    transform: translateY(-2px)
+}
