@@ -1,4 +1,4 @@
-Leirock's Homepage
+Homepage
 ======================
 
-The homepage is modified from [Evan You](https://evanyou.mee)
+The homepage is modified from [Evan You](https://evanyou.me)
