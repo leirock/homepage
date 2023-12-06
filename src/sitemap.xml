@@ -3,21 +3,21 @@
 
     <url>
         <loc>https://dlzhang.com/</loc>
-        <lastmod>2023-08-14</lastmod>
+        <lastmod>2023-12-07</lastmod>
         <changefreq>monthly</changefreq>
         <priority>1.0</priority>
     </url>
 
     <url>
-        <loc>https://dlzhang.com/about/</loc>
-        <lastmod>2023-08-14</lastmod>
+        <loc>https://dlzhang.com/research/</loc>
+        <lastmod>2023-12-07</lastmod>
         <changefreq>monthly</changefreq>
         <priority>1.0</priority>
     </url>
 
     <url>
-        <loc>https://dlzhang.com/projects/</loc>
-        <lastmod>2023-08-14</lastmod>
+        <loc>https://dlzhang.com/links/</loc>
+        <lastmod>2023-12-07</lastmod>
         <changefreq>monthly</changefreq>
         <priority>1.0</priority>
     </url>
